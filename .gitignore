@@ -1,0 +1,10 @@
+.DS_Store
+.build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+Languify.xcodeproj/
+node_modules/
+backend/dist/
+.env
+*.local.xcconfig
