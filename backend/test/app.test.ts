@@ -181,6 +181,9 @@ describe("Languify API", () => {
     expect((await app.inject({ method: "POST", url: "/v1/rewind/explain", headers: auth(), payload: explainBody() })).statusCode).toBe(504);
     ai.failWith = new AIProviderError("bad", "invalid_output");
     expect((await app.inject({ method: "POST", url: "/v1/rewind/explain", headers: auth(), payload: explainBody() })).statusCode).toBe(502);
+    // Failed calls never use up the learner's quota.
+    const usage = await app.inject({ method: "GET", url: "/v1/usage", headers: auth() });
+    expect(usage.json().used.rewind_question ?? 0).toBe(0);
   });
 
   it("rejects Apple identity tokens it cannot verify", async () => {

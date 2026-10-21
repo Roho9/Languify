@@ -66,7 +66,10 @@ export async function buildApp(deps: AppDeps) {
     return ent.tier;
   }
 
-  /** Checks plan feature + daily quota, and consumes one unit if allowed. */
+  /**
+   * Checks plan feature + daily quota. Usage is recorded separately, only
+   * after the AI call succeeds, so failures never cost the learner a question.
+   */
   async function meter(req: FastifyRequest, reply: FastifyReply, action: MeteredAction, feature: Feature): Promise<boolean> {
     const subject = req.subject!;
     const plan = deps.catalog.plans[await tierOf(subject)];
@@ -81,8 +84,11 @@ export async function buildApp(deps: AppDeps) {
       reply.code(402).send({ error: "quota_exceeded", action, limit, resets_at: iso(nextUtcMidnight(now())) });
       return false;
     }
-    await deps.store.increment(subject, day, action);
     return true;
+  }
+
+  async function consume(req: FastifyRequest, action: MeteredAction) {
+    await deps.store.increment(req.subject!, utcDay(now()), action);
   }
 
   function parse<T extends z.ZodType>(schema: T, body: unknown, reply: FastifyReply): z.infer<T> | null {
@@ -154,6 +160,7 @@ export async function buildApp(deps: AppDeps) {
       const started = Date.now();
       try {
         const explanation = await deps.ai.explain(body);
+        await consume(req, "rewind_question");
         // Latency only. Never log transcript or answer content.
         req.log.info({ ms: Date.now() - started, status: explanation.status, lang: body.language }, "explain");
         return explanation;
@@ -167,7 +174,9 @@ export async function buildApp(deps: AppDeps) {
       if (!body) return;
       if (!(await meter(req, reply, "tutor_turn", "conversation_practice"))) return;
       try {
-        return await deps.ai.tutorTurn(body);
+        const turn = await deps.ai.tutorTurn(body);
+        await consume(req, "tutor_turn");
+        return turn;
       } catch (error) {
         return aiFailure(error, reply, req);
       }
@@ -178,7 +187,9 @@ export async function buildApp(deps: AppDeps) {
       if (!body) return;
       if (!(await meter(req, reply, "lesson_generation", "proactive_suggestions"))) return;
       try {
-        return await deps.ai.suggestions(body);
+        const suggestions = await deps.ai.suggestions(body);
+        await consume(req, "lesson_generation");
+        return suggestions;
       } catch (error) {
         return aiFailure(error, reply, req);
       }
@@ -189,7 +200,9 @@ export async function buildApp(deps: AppDeps) {
       if (!body) return;
       if (!(await meter(req, reply, "lesson_generation", "personalized_lessons"))) return;
       try {
-        return await deps.ai.lesson(body);
+        const lesson = await deps.ai.lesson(body);
+        await consume(req, "lesson_generation");
+        return lesson;
       } catch (error) {
         return aiFailure(error, reply, req);
       }
