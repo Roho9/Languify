@@ -8,3 +8,4 @@ node_modules/
 backend/dist/
 .env
 *.local.xcconfig
+Config/Local.xcconfig

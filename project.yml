@@ -1,0 +1,101 @@
+name: Languify
+options:
+  bundleIdPrefix: app.languify
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+configFiles:
+  Debug: Config/Debug.xcconfig
+  Release: Config/Release.xcconfig
+packages:
+  LanguifyKit:
+    path: Packages/LanguifyKit
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    SWIFT_APPROACHABLE_CONCURRENCY: YES
+targets:
+  Languify:
+    type: application
+    platform: iOS
+    sources:
+      - App/Sources
+      - Shared
+      - path: App/Resources
+        excludes: ["Info.plist"]
+    dependencies:
+      - package: LanguifyKit
+      - target: LanguifyWidgets
+    info:
+      path: App/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: Languify
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIBackgroundModes: [audio, remote-notification]
+        NSSupportsLiveActivities: true
+        NSMicrophoneUsageDescription: "Languify listens only while you've started a session, keeping the last few seconds of audio on your iPhone so it can explain what was just said. Audio is never saved or uploaded."
+        NSSpeechRecognitionUsageDescription: "Languify transcribes recent speech on your iPhone to explain Tamil and Malayalam words."
+        LanguifyAPIBaseURL: "$(LANGUIFY_API_BASE_URL)"
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.languify.Languify
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        CODE_SIGN_ENTITLEMENTS: "$(LANGUIFY_ENTITLEMENTS)"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: YES
+    scheme:
+      testTargets: [LanguifyTests, LanguifyUITests]
+      gatherCoverageData: true
+      storeKitConfiguration: App/Resources/Languify.storekit
+  LanguifyWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Widgets
+      - Shared
+    info:
+      path: Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: Languify
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.languify.Languify.Widgets
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) WIDGET_EXTENSION"
+  LanguifyTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [AppTests]
+    dependencies:
+      - target: Languify
+      - package: LanguifyKit
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+  LanguifyUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [AppUITests]
+    dependencies:
+      - target: Languify
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
