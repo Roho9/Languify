@@ -54,7 +54,7 @@ public struct QuizGenerator: Sendable {
         return questions
     }
 
-    func makeQuestion<R: RandomNumberGenerator>(type: QuizQuestionType, card: StudyCard, pool: [StudyCard], rng: inout R) -> QuizQuestion? {
+    public func makeQuestion<R: RandomNumberGenerator>(type: QuizQuestionType, card: StudyCard, pool: [StudyCard], rng: inout R) -> QuizQuestion? {
         let others = pool.filter { $0.id != card.id }
         func word(_ c: StudyCard) -> String { c.transliteration }
         let prompt: String

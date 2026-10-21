@@ -7,7 +7,11 @@ struct LanguifyApp: App {
     @State private var services: AppServices
 
     init() {
-        let services = AppServices(inMemoryStore: ProcessInfo.processInfo.arguments.contains("-ui-testing"))
+        let uiTesting = ProcessInfo.processInfo.arguments.contains("-ui-testing")
+        if uiTesting, let domain = Bundle.main.bundleIdentifier {
+            UserDefaults.standard.removePersistentDomain(forName: domain)
+        }
+        let services = AppServices(inMemoryStore: uiTesting)
         _services = State(initialValue: services)
         // App Intents (Siri, Shortcuts, Live Activity buttons) resolve the same
         // service graph as the UI.
@@ -16,7 +20,7 @@ struct LanguifyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            Text("Languify")
+            RootView()
                 .environment(services)
                 .modelContainer(services.modelContainer)
                 .task { await services.bootstrap() }

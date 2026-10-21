@@ -63,6 +63,23 @@ enum RewindOutcome: Equatable {
     }
 }
 
+/// What the rewind pipeline needs from a listening session. Lets tests supply
+/// audio without a microphone.
+protocol RewindAudioSource: AnyObject {
+    var isSessionActive: Bool { get }
+    func snapshot(lastSeconds: Double, endingAt: TimeInterval) -> AudioSnapshot
+    func beginProcessing()
+    func endProcessing(answer: String?)
+}
+
+extension ListeningSessionManager: RewindAudioSource {
+    var isSessionActive: Bool { state.isSessionActive }
+
+    func snapshot(lastSeconds: Double, endingAt: TimeInterval) -> AudioSnapshot {
+        buffer.snapshot(lastSeconds: lastSeconds, endingAt: endingAt)
+    }
+}
+
 /// Runs the Live Rewind pipeline:
 /// buffer snapshot -> on-device transcription (heritage language + English, in
 /// parallel) -> AI explanation over text only -> validation -> delivery ->
@@ -78,7 +95,7 @@ final class LiveRewindService {
     /// Answers from this session, newest first. Memory only; cleared when the session ends.
     private(set) var recentAnswers: [RewindAnswer] = []
 
-    private let session: ListeningSessionManager
+    private let session: RewindAudioSource
     private let transcriber: SpeechTranscribing
     private let api: LanguifyAPIClient
     private let preferences: PreferencesStore
@@ -91,7 +108,7 @@ final class LiveRewindService {
     static let silenceThreshold: Float = 0.002
 
     init(
-        session: ListeningSessionManager,
+        session: RewindAudioSource,
         transcriber: SpeechTranscribing,
         api: LanguifyAPIClient,
         preferences: PreferencesStore,
@@ -140,9 +157,9 @@ final class LiveRewindService {
         if let existing = query.transcript {
             transcript = existing
         } else {
-            guard session.state.isSessionActive else { return .notListening }
+            guard session.isSessionActive else { return .notListening }
             stage = "Listening back"
-            let snapshot = session.buffer.snapshot(lastSeconds: prefs.rewindDuration.seconds, endingAt: query.askedAt)
+            let snapshot = session.snapshot(lastSeconds: prefs.rewindDuration.seconds, endingAt: query.askedAt)
             guard snapshot.duration >= 0.5, snapshot.rms >= Self.silenceThreshold else { return .noSpeech }
 
             stage = "Transcribing on device"

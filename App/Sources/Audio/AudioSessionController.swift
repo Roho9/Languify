@@ -93,7 +93,7 @@ final class AudioSessionController {
     /// Outputs considered private to the listener. Bluetooth A2DP could in
     /// principle be a speaker or car; iOS gives no reliable way to tell, so the
     /// Settings screen explains this.
-    static let privatePorts: Set<AVAudioSession.Port> = [.headphones, .bluetoothA2DP, .bluetoothHFP, .bluetoothLE]
+    nonisolated static let privatePorts: Set<AVAudioSession.Port> = [.headphones, .bluetoothA2DP, .bluetoothHFP, .bluetoothLE]
 
     private func observe() {
         let center = NotificationCenter.default
