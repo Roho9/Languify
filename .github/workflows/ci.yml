@@ -1,0 +1,44 @@
+name: CI
+
+# Fast, deterministic checks only. Speech-model, local-LLM, simulator and
+# device benchmarks are run manually (see docs/benchmarks/Reproduction.md)
+# because they need assets, models or hardware CI runners do not have.
+on:
+  push:
+  pull_request:
+
+jobs:
+  core:
+    name: Core logic and buffer regression
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+      - name: LanguifyKit tests
+        run: swift test
+        working-directory: Packages/LanguifyKit
+      - name: Benchmark harness tests
+        run: swift test
+        working-directory: Benchmarks
+      - name: Quick buffer benchmark
+        run: swift run -c release LanguifyBench buffer --quick --impl shipping
+        working-directory: Benchmarks
+      - name: Regression check (buffer correctness and performance)
+        run: python3 -I Benchmarks/scripts/check_regressions.py --require buffer
+
+  backend:
+    name: Backend
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run typecheck:bench
+      - run: npm test

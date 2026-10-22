@@ -5,7 +5,7 @@ import {
   SuggestionsResponse,
   TutorResponse,
   checkExplanation,
-  type ExplainRequest,
+  type ExplainInput,
   type LessonRequest,
   type SuggestionsRequest,
   type TutorRequest,
@@ -45,26 +45,32 @@ export class OllamaLanguageAI implements LanguageAI {
     private readonly fetchImpl: typeof fetch = fetch,
   ) {}
 
-  async explain(req: ExplainRequest): Promise<Explanation> {
-    const result = await this.call(EXPLAIN_SYSTEM, explainUserTurn(req), Explanation);
+  async explain(req: ExplainInput): Promise<Explanation> {
+    const result = await this.call(EXPLAIN_SYSTEM, explainUserTurn(req), Explanation, req.detail_level === "detailed" ? 1_400 : 800);
     const problem = checkExplanation(result);
     if (problem) throw new AIProviderError(`explanation failed validation: ${problem}`, "invalid_output");
     return result;
   }
 
   tutorTurn(req: TutorRequest): Promise<TutorResponse> {
-    return this.call(TUTOR_SYSTEM, tutorUserTurn(req), TutorResponse);
+    return this.call(TUTOR_SYSTEM, tutorUserTurn(req), TutorResponse, 600);
   }
 
   suggestions(req: SuggestionsRequest): Promise<z.infer<typeof SuggestionsResponse>> {
-    return this.call(SUGGESTIONS_SYSTEM, suggestionsUserTurn(req), SuggestionsResponse);
+    return this.call(SUGGESTIONS_SYSTEM, suggestionsUserTurn(req), SuggestionsResponse, 1_500);
   }
 
   lesson(req: LessonRequest): Promise<Lesson> {
-    return this.call(LESSON_SYSTEM, lessonUserTurn(req), Lesson);
+    return this.call(LESSON_SYSTEM, lessonUserTurn(req), Lesson, 2_000);
   }
 
-  private async call<T extends z.ZodType>(system: string, user: string, schema: T): Promise<z.infer<T>> {
+  /**
+   * `maxTokens` caps generation (Ollama `num_predict`). Without a cap a
+   * structured-output generation occasionally ran unbounded in benchmarks;
+   * the cap keeps every call inside the request timeout. A truncated answer
+   * fails validation and is reported, never shown.
+   */
+  private async call<T extends z.ZodType>(system: string, user: string, schema: T, maxTokens: number): Promise<z.infer<T>> {
     let response: Response;
     try {
       response = await this.fetchImpl(new URL("/api/chat", this.options.baseUrl), {
@@ -77,7 +83,7 @@ export class OllamaLanguageAI implements LanguageAI {
           keep_alive: this.options.keepAlive,
           format: z.toJSONSchema(schema),
           // Low temperature: explanations should be stable, not creative.
-          options: { temperature: 0.2 },
+          options: { temperature: 0.2, num_predict: maxTokens },
           messages: [
             { role: "system", content: system },
             { role: "user", content: user },
@@ -100,9 +106,11 @@ export class OllamaLanguageAI implements LanguageAI {
 
     let content: unknown;
     try {
-      const body = (await response.json()) as { message?: { content?: string } };
+      const body = (await response.json()) as { message?: { content?: string }; done_reason?: string };
+      if (body.done_reason === "length") throw new AIProviderError("ollama output hit the token cap", "invalid_output");
       content = JSON.parse(body.message?.content ?? "");
-    } catch {
+    } catch (error) {
+      if (error instanceof AIProviderError) throw error;
       throw new AIProviderError("ollama returned invalid JSON", "invalid_output");
     }
     const parsed = schema.safeParse(content);

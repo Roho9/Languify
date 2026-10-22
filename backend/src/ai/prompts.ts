@@ -1,4 +1,4 @@
-import { LANGUAGE_NAMES, type ExplainRequest, type LessonRequest, type SuggestionsRequest, type TutorRequest } from "../schemas.js";
+import { LANGUAGE_NAMES, type ExplainInput, type ExplainRequest, type LessonRequest, type SuggestionsRequest, type TutorRequest } from "../schemas.js";
 
 // System prompts are static strings so they stay byte-identical across
 // requests and can be prompt-cached. Everything request-specific goes in the
@@ -40,7 +40,7 @@ Content rules:
 
 spoken_summary is read aloud through the learner's AirPods while the conversation continues. Make it one or two short English sentences, under 40 words, naturally spoken, no lists, no native script. Lead with the meaning, for example: "Madi means laziness. She was teasing that you're too lazy to come to dinner." In detailed mode, it can be up to 70 words, and the other fields should be fuller.`;
 
-export function explainUserTurn(req: ExplainRequest): string {
+export function explainUserTurn(req: ExplainInput): string {
   const lang = LANGUAGE_NAMES[req.language];
   const fmt = (segments: ExplainRequest["transcript"]["primary"]) =>
     segments.length === 0
@@ -71,6 +71,9 @@ export function explainUserTurn(req: ExplainRequest): string {
   );
   if (req.user_context) parts.push(`<user_context>${req.user_context}</user_context>`);
   if (req.sounds_like) parts.push(`The learner says the word sounded like: "${req.sounds_like}"`);
+  if (req.phonetic_match) {
+    parts.push(`Closest phonetic match in the transcript: "${req.phonetic_match.surface}" (utterance ${req.phonetic_match.utterance + 1}). Explain that word unless the question clearly asks about something else.`);
+  }
   if (req.clarification) {
     parts.push(`Earlier you asked: "${req.clarification.question}". The learner chose: "${req.clarification.chosen_option}". Answer about that choice.`);
   }

@@ -1,5 +1,7 @@
-// TypeScript port of Benchmarks/scripts/tamil_romanize.py (skeleton matching),
-// so AI evaluations score text the same way as the ASR benchmark.
+// Phonetic skeleton matching for romanised Tamil/Malayalam (TypeScript port of
+// Benchmarks/scripts/tamil_romanize.py). Used by the phonetic candidate
+// retrieval in src/rewind/candidates.ts and by the AI evaluations, so both
+// score text the same way as the ASR benchmark.
 
 const VOWELS: Record<string, string> = { "அ": "a", "ஆ": "aa", "இ": "i", "ஈ": "ee", "உ": "u", "ஊ": "oo", "எ": "e", "ஏ": "ae", "ஐ": "ai", "ஒ": "o", "ஓ": "oa", "ஔ": "au" };
 const SIGNS: Record<string, string> = { "ா": "aa", "ி": "i", "ீ": "ee", "ு": "u", "ூ": "oo", "ெ": "e", "ே": "ae", "ை": "ai", "ொ": "o", "ோ": "oa", "ௌ": "au" };

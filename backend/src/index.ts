@@ -1,4 +1,5 @@
 import { createLanguageAI } from "./ai/factory.js";
+import { ConcurrencyLimiter } from "./ai/limiter.js";
 import { buildApp } from "./app.js";
 import { AppleIdentityVerifier, TokenService } from "./auth/tokens.js";
 import { loadConfig } from "./config.js";
@@ -24,6 +25,7 @@ const app = await buildApp({
     appAppleId: config.APPLE_APP_ID,
   }),
   logLevel: config.LOG_LEVEL,
+  aiLimiter: config.AI_MAX_CONCURRENCY > 0 ? new ConcurrencyLimiter(config.AI_MAX_CONCURRENCY, config.AI_MAX_QUEUE, config.AI_MAX_QUEUE_WAIT_MS) : undefined,
 });
 
 await app.listen({ port: config.PORT, host: config.HOST });

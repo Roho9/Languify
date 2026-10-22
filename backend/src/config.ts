@@ -12,8 +12,14 @@ const Env = z.object({
   OLLAMA_MODEL: z.string().default("gemma3:27b"),
   // Local models are slower than hosted ones, especially on the first request
   // while the model loads into memory.
-  OLLAMA_TIMEOUT_MS: z.coerce.number().int().default(90_000),
+  // Must stay below the app's 60 s request timeout, or the server keeps
+  // generating answers the phone has already abandoned.
+  OLLAMA_TIMEOUT_MS: z.coerce.number().int().default(55_000),
   OLLAMA_KEEP_ALIVE: z.string().default("30m"),
+  // Backpressure for AI calls. 0 disables the limiter.
+  AI_MAX_CONCURRENCY: z.coerce.number().int().min(0).default(0),
+  AI_MAX_QUEUE: z.coerce.number().int().min(0).default(8),
+  AI_MAX_QUEUE_WAIT_MS: z.coerce.number().int().default(20_000),
   ANTHROPIC_MODEL: z.string().default("claude-opus-5-5"),
   REWIND_EFFORT: z.enum(["low", "medium", "high", "xhigh", "max"]).default("low"),
   TUTOR_EFFORT: z.enum(["low", "medium", "high", "xhigh", "max"]).default("low"),

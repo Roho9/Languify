@@ -1,0 +1,22 @@
+{
+  "_comment": "Derived from measured baselines (docs/benchmarks/PerformanceBaselines.md). Performance limits leave ~10x headroom over the M5 Pro medians so slower CI machines do not flap; they still catch a return to per-sample loops (6.5 us append, 8.2 ms extraction).",
+  "buffer": {
+    "boundary_pass_rate": 1.0,
+    "append_p50_ns_max": 2000,
+    "snapshot_120s_p50_ms_max": 1.5,
+    "steady_memory_120s_mb_max": 4.2,
+    "peak_memory_120s_mb_max": 12.5,
+    "sustained_growth_kb_max": 1024
+  },
+  "asr": {
+    "_comment": "Clean/normal Tamil synthetic baseline: target hit 91.1% (51/56), CER 0.108. Thresholds sit at the lower/upper 95% CI bounds.",
+    "clean_normal_target_hit_min": 0.807,
+    "clean_normal_cer_max": 0.148
+  },
+  "context": {
+    "schema_valid_min": 0.95
+  },
+  "privacy": {
+    "all_checks_pass": true
+  }
+}

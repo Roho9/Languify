@@ -186,6 +186,29 @@ describe("Languify API", () => {
     expect(usage.json().used.rewind_question ?? 0).toBe(0);
   });
 
+  it("returns a fast, retryable 503 when the AI is at capacity", async () => {
+    const { ConcurrencyLimiter } = await import("../src/ai/limiter.js");
+    const busy = await buildApp({
+      ai: { ...ai, explain: () => new Promise((r) => setTimeout(() => r(ai.explain(explainBody() as never)), 200)) } as never,
+      tokens: new TokenService(SECRET),
+      apple: new AppleIdentityVerifier("app.languify.Languify", async () => { throw new Error("no network"); }),
+      store,
+      catalog: DEFAULT_CATALOG,
+      transactions: new FakeTransactions(),
+      logLevel: "silent",
+      aiLimiter: new ConcurrencyLimiter(1, 0, 1_000),
+    });
+    const send = () => busy.inject({ method: "POST", url: "/v1/rewind/explain", headers: auth(), payload: explainBody() });
+    const [first, second] = await Promise.all([send(), send()]);
+    const statuses = [first.statusCode, second.statusCode].sort();
+    expect(statuses).toEqual([200, 503]);
+    const rejected = first.statusCode === 503 ? first : second;
+    expect(rejected.headers["retry-after"]).toBe("1");
+    // A rejected request does not use up quota.
+    const usage = await busy.inject({ method: "GET", url: "/v1/usage", headers: auth() });
+    expect(usage.json().used.rewind_question).toBe(1);
+  });
+
   it("rejects Apple identity tokens it cannot verify", async () => {
     const res = await app.inject({ method: "POST", url: "/v1/auth/apple", headers: auth(), payload: { identity_token: "not.a.real.token" } });
     expect(res.statusCode).toBe(401);

@@ -48,6 +48,10 @@ export const ExplainRequest = z.object({
 });
 export type ExplainRequest = z.infer<typeof ExplainRequest>;
 
+/** Server-side input to the model. `phonetic_match` is set only by the
+ * server's retrieval step; clients cannot send it (Zod strips unknown keys). */
+export type ExplainInput = ExplainRequest & { phonetic_match?: { surface: string; utterance: number } };
+
 // ---- Model output (structured outputs). Optional fields are nullable rather
 // than omitted so every key is present for the constrained decoder.
 

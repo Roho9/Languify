@@ -1,4 +1,4 @@
-import type { Explanation, ExplainRequest, Lesson, LessonRequest, SuggestionsRequest, TutorRequest, TutorResponse } from "../schemas.js";
+import type { Explanation, ExplainInput, Lesson, LessonRequest, SuggestionsRequest, TutorRequest, TutorResponse } from "../schemas.js";
 import type { z } from "zod";
 import type { SuggestionsResponse } from "../schemas.js";
 
@@ -8,7 +8,7 @@ import type { SuggestionsResponse } from "../schemas.js";
  * another class against this interface, nothing else changes.
  */
 export interface LanguageAI {
-  explain(req: ExplainRequest): Promise<Explanation>;
+  explain(req: ExplainInput): Promise<Explanation>;
   tutorTurn(req: TutorRequest): Promise<TutorResponse>;
   suggestions(req: SuggestionsRequest): Promise<z.infer<typeof SuggestionsResponse>>;
   lesson(req: LessonRequest): Promise<Lesson>;

@@ -7,7 +7,7 @@ import {
   SuggestionsResponse,
   TutorResponse,
   checkExplanation,
-  type ExplainRequest,
+  type ExplainInput,
   type LessonRequest,
   type SuggestionsRequest,
   type TutorRequest,
@@ -46,7 +46,7 @@ export class ClaudeLanguageAI implements LanguageAI {
     private readonly options: ClaudeOptions,
   ) {}
 
-  async explain(req: ExplainRequest): Promise<Explanation> {
+  async explain(req: ExplainInput): Promise<Explanation> {
     const result = await this.call(EXPLAIN_SYSTEM, explainUserTurn(req), Explanation, this.options.rewindEffort, req.detail_level === "detailed" ? 4_000 : 2_500);
     const problem = checkExplanation(result);
     if (problem) throw new AIProviderError(`explanation failed validation: ${problem}`, "invalid_output");

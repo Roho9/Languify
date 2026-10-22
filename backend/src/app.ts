@@ -1,11 +1,13 @@
 import Fastify, { type FastifyReply, type FastifyRequest } from "fastify";
 import rateLimit from "@fastify/rate-limit";
 import { z } from "zod";
+import { ConcurrencyLimiter, Overloaded } from "./ai/limiter.js";
 import { AIProviderError, type LanguageAI } from "./ai/provider.js";
 import { AppleIdentityVerifier, TokenService, type Subject } from "./auth/tokens.js";
 import type { TransactionVerifier } from "./entitlements.js";
 import type { Feature, MeteredAction, PlanCatalog, Tier } from "./quota/plans.js";
 import { nextUtcMidnight, utcDay, type UsageStore } from "./quota/store.js";
+import { explainWithRetrieval, retrieve } from "./rewind/pipeline.js";
 import { ExplainRequest, LessonRequest, SuggestionsRequest, TutorRequest } from "./schemas.js";
 
 export interface AppDeps {
@@ -16,6 +18,14 @@ export interface AppDeps {
   catalog: PlanCatalog;
   transactions: TransactionVerifier;
   logLevel?: string;
+  /** Bounds concurrent AI calls; omit for no limit. */
+  aiLimiter?: ConcurrencyLimiter;
+  /** Where logs go (defaults to stdout). Lets tests inspect real log output. */
+  logStream?: NodeJS.WritableStream;
+  /** Phonetic candidate retrieval before the model (default on). */
+  phoneticRetrieval?: boolean;
+  /** Requests per minute per token. Default 60. Raised only by load tests. */
+  rateLimitPerMinute?: number;
   now?: () => Date;
 }
 
@@ -37,13 +47,13 @@ declare module "fastify" {
 export async function buildApp(deps: AppDeps) {
   const now = deps.now ?? (() => new Date());
   const app = Fastify({
-    logger: deps.logLevel === "silent" ? false : { level: deps.logLevel ?? "info", redact: ["req.headers.authorization"] },
+    logger: deps.logLevel === "silent" ? false : { level: deps.logLevel ?? "info", redact: ["req.headers.authorization"], ...(deps.logStream ? { stream: deps.logStream } : {}) },
     bodyLimit: 256 * 1024,
   });
 
   await app.register(rateLimit, {
     global: true,
-    max: 60,
+    max: deps.rateLimitPerMinute ?? 60,
     timeWindow: "1 minute",
     // Keyed by bearer token when present so one device cannot exhaust a shared IP.
     keyGenerator: (req) => req.headers.authorization ?? req.ip,
@@ -100,7 +110,14 @@ export async function buildApp(deps: AppDeps) {
     return result.data;
   }
 
+  /** Runs an AI call through the concurrency limiter when one is configured. */
+  const limited = <T>(task: () => Promise<T>): Promise<T> => (deps.aiLimiter ? deps.aiLimiter.run(task) : task());
+
   function aiFailure(error: unknown, reply: FastifyReply, req: FastifyRequest) {
+    if (error instanceof Overloaded) {
+      req.log.warn("ai at capacity; rejected fast");
+      return reply.code(503).header("retry-after", String(error.retryAfterSeconds)).send({ error: "busy" });
+    }
     if (error instanceof AIProviderError) {
       req.log.warn({ kind: error.kind }, "ai provider failure");
       if (error.kind === "rate_limited") return reply.code(429).header("retry-after", "5").send({ error: "rate_limited" });
@@ -156,13 +173,21 @@ export async function buildApp(deps: AppDeps) {
         const plan = deps.catalog.plans[await tierOf(req.subject!)];
         if (!plan.features.includes("detailed_explanations")) body.detail_level = "concise";
       }
-      if (!(await meter(req, reply, "rewind_question", "live_rewind"))) return;
       const started = Date.now();
+      const retrieval = retrieve(body, deps.phoneticRetrieval ?? true);
+      // Ambiguous "sounded like" questions are answered with a clarification
+      // before any model call, so they cost no quota and no model time.
+      if (retrieval?.kind === "ambiguous") {
+        const { explanation, path } = await explainWithRetrieval(deps.ai, body, retrieval);
+        req.log.info({ ms: Date.now() - started, status: explanation.status, path, lang: body.language }, "explain");
+        return explanation;
+      }
+      if (!(await meter(req, reply, "rewind_question", "live_rewind"))) return;
       try {
-        const explanation = await deps.ai.explain(body);
+        const { explanation, path } = await limited(() => explainWithRetrieval(deps.ai, body, retrieval));
         await consume(req, "rewind_question");
         // Latency only. Never log transcript or answer content.
-        req.log.info({ ms: Date.now() - started, status: explanation.status, lang: body.language }, "explain");
+        req.log.info({ ms: Date.now() - started, status: explanation.status, path, lang: body.language }, "explain");
         return explanation;
       } catch (error) {
         return aiFailure(error, reply, req);
@@ -174,7 +199,7 @@ export async function buildApp(deps: AppDeps) {
       if (!body) return;
       if (!(await meter(req, reply, "tutor_turn", "conversation_practice"))) return;
       try {
-        const turn = await deps.ai.tutorTurn(body);
+        const turn = await limited(() => deps.ai.tutorTurn(body));
         await consume(req, "tutor_turn");
         return turn;
       } catch (error) {
@@ -187,7 +212,7 @@ export async function buildApp(deps: AppDeps) {
       if (!body) return;
       if (!(await meter(req, reply, "lesson_generation", "proactive_suggestions"))) return;
       try {
-        const suggestions = await deps.ai.suggestions(body);
+        const suggestions = await limited(() => deps.ai.suggestions(body));
         await consume(req, "lesson_generation");
         return suggestions;
       } catch (error) {
@@ -200,7 +225,7 @@ export async function buildApp(deps: AppDeps) {
       if (!body) return;
       if (!(await meter(req, reply, "lesson_generation", "personalized_lessons"))) return;
       try {
-        const lesson = await deps.ai.lesson(body);
+        const lesson = await limited(() => deps.ai.lesson(body));
         await consume(req, "lesson_generation");
         return lesson;
       } catch (error) {

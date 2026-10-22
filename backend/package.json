@@ -9,7 +9,8 @@
     "start": "node dist/index.js",
     "dev": "tsx watch --env-file=.env src/index.ts",
     "typecheck": "tsc -p . --noEmit",
-    "smoke": "tsx scripts/smoke-explain.ts"
+    "smoke": "tsx scripts/smoke-explain.ts",
+    "typecheck:bench": "tsc -p tsconfig.bench.json"
   },
   "keywords": [],
   "author": "",
