@@ -7,7 +7,7 @@
 - Node 22 for the backend
 - An iPhone on iOS 26 for anything involving the microphone, speech models, Siri or AirPods. The Simulator has no Tamil/Malayalam speech models.
 - An Apple Developer Program membership for Sign in with Apple, iCloud sync and in-app purchase on device. A free team can still build and run the core app (see below).
-- An Anthropic API key for AI explanations, tutor and lessons.
+- For AI features, either Ollama with a local model (free, the default) or an Anthropic API key.
 
 ## 1. Generate and open the project
 
@@ -48,7 +48,8 @@ cd backend
 npm install
 cp .env.example .env
 # LANGUIFY_TOKEN_SECRET: openssl rand -base64 48
-# ANTHROPIC_API_KEY: from console.anthropic.com (server only, never in the app)
+# Free local AI (default): brew install ollama && brew services start ollama && ollama pull gemma3:27b
+# Or paid: AI_PROVIDER=claude and ANTHROPIC_API_KEY from console.anthropic.com (server only, never in the app)
 npm run dev
 ```
 
@@ -85,7 +86,7 @@ Record results in `docs/TESTING_CHECKLIST.md`.
 
 ```bash
 (cd Packages/LanguifyKit && swift test)        # core logic, 64 tests
-(cd backend && npm test)                       # API, 13 tests
+(cd backend && npm test)                       # API, 20 tests
 xcodebuild test -project Languify.xcodeproj -scheme Languify \
   -destination 'platform=iOS Simulator,name=iPhone 17 Pro'   # 22 unit + 4 UI tests
 ```

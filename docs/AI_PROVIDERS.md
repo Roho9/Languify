@@ -21,7 +21,21 @@ The explanation step needs contextual translation, native-script rendering from 
 - The static system prompts are marked for prompt caching.
 - Provider swap: everything goes through the `LanguageAI` interface in `backend/src/ai/provider.ts`.
 
+A free alternative, **Gemma 3 served locally by Ollama** (`AI_PROVIDER=ollama`, the default for development), uses the same prompts, schemas and validation. Ollama enforces the JSON schema during generation, so answers are always well-formed; quality on Tamil and Malayalam should be compared with Claude in the benchmark below. Apple's on-device Foundation Models were checked on 2026-10-21 and support 24 languages, not including Tamil, Malayalam or Hindi, so they cannot do this job.
+
 Privacy and retention: Anthropic's API does not train on customer inputs under its commercial terms. Request zero data retention for the production organisation before launch.
+
+### Local model measurements (2026-10-22, Apple M5 Pro, 48 GB)
+
+Same three questions on a real on-device Tamil transcript (`npm run smoke`):
+
+| Model | Time per answer | Quality |
+|---|---|---|
+| `gemma3:12b` | 17 to 22 s | Not acceptable: often left native script empty, one wrong meaning ("because I finished" for mudinjathum), and suggested replies that aren't real Tamil |
+| `gemma3:27b`, first prompt | 24 to 38 s | Good meanings, but verbose and assumed the speaker's gender |
+| `gemma3:27b`, current prompt | 16 to 19 s | Correct meanings, natural replies (நேரா வர்றீங்களா?, "Are you coming straight home?"), no gender assumption. Pronunciation hints are sometimes off (for example "vaa-NUM" for வேணும்) |
+
+Generation runs at about 16 tokens per second, so answer length drives latency. Conclusion: `gemma3:27b` is good enough to develop and test with; 16 to 19 s is too slow for comfortable Siri use. Malayalam has not been tested yet with either model.
 
 ## Text to speech
 

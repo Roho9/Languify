@@ -241,20 +241,22 @@ public final class LanguifyAPIClient: Sendable {
         try await send("POST", "/v1/auth/apple", body: body)
     }
 
-    public func explain(_ body: RewindExplainRequest, timeout: TimeInterval = 25) async throws -> RewindExplanation {
+    /// Generous timeouts: a local open-weight model (Ollama) takes about
+    /// 15 to 20 s per explanation on Apple silicon, longer on a cold start.
+    public func explain(_ body: RewindExplainRequest, timeout: TimeInterval = 60) async throws -> RewindExplanation {
         try await send("POST", "/v1/rewind/explain", body: body, timeout: timeout)
     }
 
     public func tutorTurn(_ body: TutorTurnRequest) async throws -> TutorTurnResponse {
-        try await send("POST", "/v1/tutor/turn", body: body)
+        try await send("POST", "/v1/tutor/turn", body: body, timeout: 60)
     }
 
     public func suggestions(_ body: SuggestionsRequest) async throws -> SuggestionsResponse {
-        try await send("POST", "/v1/suggestions", body: body)
+        try await send("POST", "/v1/suggestions", body: body, timeout: 90)
     }
 
     public func lesson(_ body: LessonRequest) async throws -> Lesson {
-        try await send("POST", "/v1/lessons", body: body, timeout: 45)
+        try await send("POST", "/v1/lessons", body: body, timeout: 90)
     }
 
     public func verifyEntitlements(_ body: EntitlementRequest) async throws -> EntitlementResponse {

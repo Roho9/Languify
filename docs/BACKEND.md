@@ -2,6 +2,27 @@
 
 TypeScript, Node 22, Fastify 5, Zod 4, `@anthropic-ai/sdk`, `jose`, `@apple/app-store-server-library`. Source in `backend/src`.
 
+## AI providers
+
+Set `AI_PROVIDER`:
+
+| Value | Model | Cost | Data leaves your machine? |
+|---|---|---|---|
+| `ollama` (default) | Any Ollama model, default `gemma3:27b` | Free | No, runs on the host running Ollama |
+| `claude` | `claude-opus-5-5` (configurable) | Paid per token | Text goes to Anthropic's API |
+
+Both implement `LanguageAI` (`src/ai/provider.ts`), share the same prompts and Zod schemas, and go through the same validation, so the app cannot tell them apart except by answer quality and speed.
+
+Ollama setup:
+
+```bash
+brew install ollama
+brew services start ollama
+ollama pull gemma3:27b      # about 17 GB; needs ~20 GB free memory. On 16 GB Macs use gemma3:12b
+```
+
+Ollama only needs to be reachable from the backend (default `http://127.0.0.1:11434`). The first request after a while loads the model into memory and is slower; `OLLAMA_KEEP_ALIVE` (default 30 minutes) keeps it loaded.
+
 ## Endpoints
 
 | Method and path | Auth | Purpose |
@@ -36,10 +57,10 @@ Errors: `400 invalid_request`, `401 unauthorized`, `402 quota_exceeded` (with `r
 ```bash
 cd backend
 npm install
-cp .env.example .env    # set LANGUIFY_TOKEN_SECRET and ANTHROPIC_API_KEY
+cp .env.example .env    # set LANGUIFY_TOKEN_SECRET; ANTHROPIC_API_KEY only for AI_PROVIDER=claude
 npm run dev             # http://0.0.0.0:8787
-npm test                # 13 tests, no network needed
-npm run smoke           # live Claude call on a real on-device Tamil transcript
+npm test                # 20 tests, no network or model needed
+npm run smoke           # live call to the configured provider on a real on-device Tamil transcript
 ```
 
 ## Deploying
@@ -50,6 +71,6 @@ Any Node 22 host works (Fly.io, Render, AWS App Runner, Cloud Run):
 npm ci && npm run build && npm start
 ```
 
-Set the variables from `.env.example` as secrets. Put TLS in front (the platform's default is fine). Use `APP_STORE_ENVIRONMENT=Sandbox` for TestFlight and `Production` with `APPLE_APP_ID` and `APPLE_ROOT_CERTS_DIR` (Apple Root CA G3 from apple.com/certificateauthority) for release. Run more than one instance only after moving to a shared `UsageStore`.
+Set the variables from `.env.example` as secrets. For `AI_PROVIDER=ollama` in production, run Ollama on a GPU host next to the backend and point `OLLAMA_URL` at it over a private network (Ollama has no authentication, so never expose it publicly). Put TLS in front (the platform's default is fine). Use `APP_STORE_ENVIRONMENT=Sandbox` for TestFlight and `Production` with `APPLE_APP_ID` and `APPLE_ROOT_CERTS_DIR` (Apple Root CA G3 from apple.com/certificateauthority) for release. Run more than one instance only after moving to a shared `UsageStore`.
 
 Plan limits can be changed without a deploy by setting `LANGUIFY_PLAN_CATALOG_JSON`.
