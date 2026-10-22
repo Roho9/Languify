@@ -235,7 +235,8 @@ else:
     section("Tamil speech recognition", NM, "<p>Not measured</p>")
 
 # Context and prompt
-ctx = [r for r in load_all("context") if r["summary"]["n_cases"] >= 50]
+# Full-suite runs only (the retrieval-off arm covers a subset).
+ctx = [r for r in load_all("context") if r["summary"]["n_cases"] >= 90]
 if ctx:
     c = ctx[-1]
     s = c["summary"]
@@ -250,11 +251,36 @@ if ctx:
 else:
     section("Contextual retrieval and explanation", NM, "<p>Not measured</p>")
 
+# Experiment G: phonetic retrieval on vs off (same cases, same model)
+ab_off = [r for r in load_all("context") if r["metadata"].get("retrieval") is False]
+ab_on = [r for r in load_all("context") if r["metadata"].get("retrieval") is True]
+if ab_off and ab_on:
+    off, on = ab_off[-1], ab_on[-1]
+    def subset_rate(run, kind, key):
+        xs = [o for o in run["outcomes"] if o["kind"] == kind and o.get(key) is not None]
+        k = sum(1 for o in xs if o[key])
+        return k, len(xs)
+    def lat(run, kind):
+        xs = [o["latencyMs"] for o in run["outcomes"] if o["kind"] == kind]
+        return percentile(xs, 50) / 1000 if xs else float("nan")
+    from stats import wilson
+    rows = []
+    for label, kind, key in [("Target identified (rough spelling)", "sounds_like", "targetIdentified"), ("Unnecessary clarification", "sounds_like", "clarified"), ("Clarifies when ambiguous (8)", "ambiguous", "clarified"), ("Abstains when word absent", "unanswerable", "abstained"), ("Confident wrong answer when absent", "unanswerable", "confidentWrong")]:
+        a, b = subset_rate(off, kind, key), subset_rate(on, kind, key)
+        ca, cb = wilson(*a), wilson(*b)
+        rows.append([label, f"{a[0]}/{a[1]} [{ca[0] * 100:.0f}, {ca[1] * 100:.0f}]", f"{b[0]}/{b[1]} [{cb[0] * 100:.0f}, {cb[1] * 100:.0f}]"])
+    genuine = lambda run: sum(1 for o in run["outcomes"] if o["kind"] == "ambiguous" and o["id"] != "amb-5" and o.get("clarified"))
+    rows.append(["Clarifies when genuinely ambiguous (7, excl. same-word case)", f"{genuine(off)}/7", f"{genuine(on)}/7"])
+    for kind in ["sounds_like", "ambiguous", "unanswerable"]:
+        rows.append([f"P50 latency, {kind.replace('_', ' ')} (s)", f"{lat(off, kind):.1f}", f"{lat(on, kind):.1f}"])
+    section("Experiment G: phonetic candidate retrieval before the model", f"{MAC} {REAL} same cases and model, retrieval off vs on", table(["Metric", "Retrieval off", "Retrieval on"], rows))
+    summary["sections"]["retrieval_ab"] = rows
+
 prompt = load_all("prompt")
 if prompt:
     p = prompt[-1]["result"]
-    rows = [[v, p[v]["n"], f"{p[v]['wall_ms']['p50'] / 1000:.1f} / {p[v]['wall_ms']['p95'] / 1000:.1f}", f"{p[v]['output_tokens']['mean']:.0f}", f"{p[v]['prompt_tokens_mean']:.0f}", f"{p[v]['decode_tokens_per_s']:.1f}", p[v]["correct"], f"{p[v]['valid_rate'] * 100:.0f}%"] for v in ("v1", "v2")]
-    body = table(["Prompt", "Calls", "Latency p50/p95 s", "Output tokens", "Prompt tokens", "Decode tok/s", "Correct", "Valid"], rows)
+    rows = [[v, p[v]["n"], f"{p[v]['wall_ms']['p50'] / 1000:.1f} / {p[v]['wall_ms']['p95'] / 1000:.1f}", f"{p[v]['output_tokens']['mean']:.0f}", f"{p[v]['prompt_tokens_mean']:.0f}", f"{p[v]['decode_tokens_per_s']:.1f}" if p[v]["decode_tokens_per_s"] else "n/a", f"{sum(1 for c in prompt[-1]['calls'] if c.get('version') == v and c.get('valid') and c.get('correct'))}/{p[v]['n']}", f"{p[v]['valid_rate'] * 100:.0f}%"] for v in ("v1", "v2")]
+    body = table(["Prompt", "Calls", "Latency p50/p95 s", "Output tokens", "Prompt tokens", "Decode tok/s", "Valid and correct (all calls)", "Valid"], rows)
     body += f"<p>Paired mean change v1 → v2: <b>{p['paired_wall_diff_ms']['mean'] / 1000:+.1f} s</b> [{p['paired_wall_diff_ms']['ci95'][0] / 1000:+.1f}, {p['paired_wall_diff_ms']['ci95'][1] / 1000:+.1f}] ({p['relative_change'] * 100:+.1f}%). Cold start (model unloaded): mean {p['cold_start']['wall_ms_mean'] / 1000:.1f} s including {p['cold_start']['load_ms_mean'] / 1000:.1f} s load.</p>"
     section("Experiment C: explanation prompt length", f"{MAC} {REAL}", body)
     summary["sections"]["prompt"] = p
@@ -271,11 +297,13 @@ if mock:
     body += line_chart([x["concurrency"] for x in s], [("Requests/s", [x["throughput_rps"] for x in s], None)], unit=" req/s", xlabels=[str(x["concurrency"]) for x in s])
     section("Backend capacity (mock AI)", f"{MAC} {MOCK}", body)
 if real:
+    # Missing or NaN (no requests in that class) renders as n/a.
+    secs = lambda ms: f"{ms / 1000:.1f}" if ms is not None and ms == ms else "n/a"
     rows = []
     for l in real:
         lim = l["metadata"]["limiter"]
         for x in l["summary"]:
-            rows.append(["limiter " + (f"{lim['maxConcurrent']}/{lim['maxQueue']}/{lim['maxWaitMs'] // 1000}s" if lim else "off"), x["concurrency"], x["requests"], f"{x['goodput_rps'] * 60:.2f}", f"{x['success_rate'] * 100:.0f}%", f"{x['latency_ok_ms']['p50'] / 1000:.1f}" if x["latency_ok_ms"]["p50"] == x["latency_ok_ms"]["p50"] else "n/a", f"{x['latency_ok_ms']['p95'] / 1000:.1f}" if x["latency_ok_ms"]["p95"] == x["latency_ok_ms"]["p95"] else "n/a", f"{x['failed_request_ms_p50'] / 1000:.1f}" if x["failed_request_ms_p50"] == x["failed_request_ms_p50"] else "n/a", json.dumps(x["statuses"])])
+            rows.append(["limiter " + (f"{lim['maxConcurrent']}/{lim['maxQueue']}/{lim['maxWaitMs'] // 1000}s" if lim else "off"), x["concurrency"], x["requests"], f"{x['goodput_rps'] * 60:.2f}", f"{x['success_rate'] * 100:.0f}%", secs(x["latency_ok_ms"]["p50"]), secs(x["latency_ok_ms"]["p95"]), secs(x["failed_request_ms_p50"]), json.dumps(x["statuses"])])
     section("Experiment F: backend under real local-model load", f"{MAC} {REAL}", table(["Config", "Concurrency", "Requests", "Successful/min", "Success", "P50 s", "P95 s", "Failure latency p50 s", "Statuses"], rows))
 
 # Privacy

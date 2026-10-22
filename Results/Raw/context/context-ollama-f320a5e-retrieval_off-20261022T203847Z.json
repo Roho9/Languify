@@ -1,0 +1,3118 @@
+{
+ "metadata": {
+  "benchmark": "context",
+  "runID": "context-ollama-f320a5e-retrieval_off-20261022T203847Z",
+  "timestamp": "2026-10-22T20:38:47.490Z",
+  "gitCommit": "f320a5e",
+  "retrieval": false,
+  "kinds": [
+   "sounds_like",
+   "ambiguous",
+   "unanswerable"
+  ],
+  "provider": "ollama",
+  "model": "gemma3:27b",
+  "promptVersion": "f320a5e",
+  "environment": "macOS host; transcripts are real Apple ta-IN outputs on SYNTHETIC speech; ambiguous/unanswerable cases hand-written",
+  "wallSeconds": 1429.422
+ },
+ "summary": {
+  "n_cases": 72,
+  "errors": 0,
+  "schema_and_semantic_valid": {
+   "k": 72,
+   "n": 72,
+   "rate": 1,
+   "ci95": [
+    0.9493470601886036,
+    1
+   ]
+  },
+  "native_script_valid": {
+   "k": 66,
+   "n": 66,
+   "rate": 1,
+   "ci95": [
+    0.9449955327483907,
+    1
+   ]
+  },
+  "target_identification": {
+   "k": 50,
+   "n": 56,
+   "rate": 0.8928571428571429,
+   "ci95": [
+    0.7853131324833861,
+    0.9499613254188092
+   ]
+  },
+  "sentence_localisation": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "clarification_when_ambiguous": {
+   "k": 1,
+   "n": 8,
+   "rate": 0.125,
+   "ci95": [
+    0.02241690886329617,
+    0.4708948057698615
+   ]
+  },
+  "abstention_when_unanswerable": {
+   "k": 8,
+   "n": 8,
+   "rate": 1,
+   "ci95": [
+    0.6755843804891231,
+    1
+   ]
+  },
+  "confident_wrong_when_unanswerable": {
+   "k": 0,
+   "n": 8,
+   "rate": 0,
+   "ci95": [
+    0,
+    0.3244156195108769
+   ]
+  },
+  "unnecessary_clarification_on_clear_lookups": {
+   "k": 0,
+   "n": 56,
+   "rate": 0,
+   "ci95": [
+    0,
+    0.06419614448811528
+   ]
+  },
+  "respond_has_replies": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "latency_ms": {
+   "sounds_like": {
+    "n": 56,
+    "p50": 19608.5,
+    "p90": 22068,
+    "p95": 23658,
+    "max": 30710
+   },
+   "sentence_before": {
+    "n": 0,
+    "p50": null,
+    "p90": null,
+    "p95": null,
+    "max": null
+   },
+   "ambiguous": {
+    "n": 8,
+    "p50": 18562.5,
+    "p90": 21095.2,
+    "p95": 21712.6,
+    "max": 22330
+   },
+   "unanswerable": {
+    "n": 8,
+    "p50": 26686,
+    "p90": 27920.8,
+    "p95": 28087.4,
+    "max": 28254
+   },
+   "respond": {
+    "n": 0,
+    "p50": null,
+    "p90": null,
+    "p95": null,
+    "max": null
+   }
+  },
+  "latency_all_ms": {
+   "p50": 19595.5,
+   "p90": 25360.999999999996,
+   "p95": 27064,
+   "mean": 19852.069444444445
+  }
+ },
+ "outcomes": [
+  {
+   "id": "sl-ta-001",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"sapadu\" mean?",
+   "latencyMs": 16425,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Saappaadu means food or a meal. They said the food is really good today.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "சாப்பாடு",
+      "transliteration": "saappaadu",
+      "english_meaning": "food, meal",
+      "contextual_meaning": "in this case, 'the meal today'",
+      "pronunciation_hint": "saap-PAA-du",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-002",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"siggiram\" mean?",
+   "latencyMs": 16241,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She said 'seekiram', which means 'quickly' or 'early'. She's saying you need to wake up early tomorrow.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "சீக்கிரம்",
+      "transliteration": "seekiram",
+      "english_meaning": "quickly, early",
+      "contextual_meaning": "in this context, 'early'",
+      "pronunciation_hint": "SEE-ki-ram",
+      "part_of_speech": "adverb",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-003",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"thambi\" mean?",
+   "latencyMs": 19354,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Thambi means 'younger brother', but it's often used as a friendly way to address a younger male cousin or close friend. They were asking where your younger brother is.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "தம்பி",
+      "transliteration": "thambi",
+      "english_meaning": "younger brother",
+      "contextual_meaning": "younger brother, or a friendly term for a younger male cousin/friend",
+      "pronunciation_hint": "THAM-bee. The 'th' is like the 'th' in 'thin'.",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": "Commonly used as a term of endearment or familiarity.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-004",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"gadaiggu\" mean?",
+   "latencyMs": 23003,
+   "path": "model",
+   "status": "uncertain",
+   "schemaValid": true,
+   "output": {
+    "status": "uncertain",
+    "kind": "word",
+    "spoken_summary": "It sounds like you're asking about 'kadaiku'. It means 'to the shop', and she said her mother went to the shop and will be back.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "கடைக்கு",
+      "transliteration": "kadaiku",
+      "english_meaning": "to the shop",
+      "contextual_meaning": "indicates direction, 'to the shop'",
+      "pronunciation_hint": "ka-DAI-ku",
+      "part_of_speech": "postposition",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [
+     {
+      "transliteration": "gadaiggu",
+      "english_meaning": "possibly a misrecognition of 'kadaiku' or another word"
+     },
+     {
+      "transliteration": "kaḍaikku",
+      "english_meaning": "to the shop (alternative romanisation)"
+     }
+    ],
+    "uncertainty_note": "The recogniser output is not very clear, and 'gadaiggu' doesn't match any common Tamil word. It's likely a misrecognition of 'kadaiku' (கடைக்கு), meaning 'to the shop', which was said in the previous segment."
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": true,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-005",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"kudai\" mean?",
+   "latencyMs": 16615,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That word, 'kudai', means umbrella. They said it's likely to rain, so you should take an umbrella with you.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "குடை",
+      "transliteration": "kudai",
+      "english_meaning": "umbrella",
+      "contextual_meaning": "umbrella",
+      "pronunciation_hint": "KU-dai",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-006",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"saappittiyaa\" mean?",
+   "latencyMs": 14555,
+   "path": "model",
+   "status": "uncertain",
+   "schemaValid": true,
+   "output": {
+    "status": "uncertain",
+    "kind": "word",
+    "spoken_summary": "It sounds like they said 'saappittiyaa' but the recogniser isn't confident. It might be 'vetkam' meaning sadness, or 'Neelam' meaning blue.",
+    "heard": null,
+    "items": [],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [
+     {
+      "transliteration": "vetkam",
+      "english_meaning": "sadness, distress"
+     },
+     {
+      "transliteration": "Neelam",
+      "english_meaning": "blue"
+     }
+    ],
+    "uncertainty_note": "The recogniser confidence is low, and 'saappittiyaa' doesn't clearly match anything in the transcript. It's likely a mishearing of 'vetkam' or 'Neelam', but it's hard to be sure."
+   },
+   "targetIdentified": false,
+   "clarified": false,
+   "abstained": true,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-007",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"adigam\" mean?",
+   "latencyMs": 19578,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like they said 'adhigam', which means 'too much' or 'excessive'. They were saying something is costing too much.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "அதிகம்",
+      "transliteration": "adhigam",
+      "english_meaning": "too much, excessive",
+      "contextual_meaning": "in this context, it means 'too much' in terms of price or cost",
+      "pronunciation_hint": "a-DHIG-um (the 'dh' is a retroflex 'd' sound, like touching the roof of your mouth)",
+      "part_of_speech": "adverb",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-008",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"tanni\" mean?",
+   "latencyMs": 15786,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That was 'tanni', which means water. They were asking if you wanted some water.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "தண்ணீர்",
+      "transliteration": "tanni",
+      "english_meaning": "water",
+      "contextual_meaning": "water",
+      "pronunciation_hint": "TAN-nee",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-009",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"somberi\" mean?",
+   "latencyMs": 18963,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like they said 'somberi'. It means lazy or good-for-nothing, and they're saying he doesn't do any work.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "சோம்பேறி",
+      "transliteration": "somberi",
+      "english_meaning": "lazy, good-for-nothing",
+      "contextual_meaning": "Describes someone who avoids work or is generally inactive. It's often used playfully or as a gentle tease.",
+      "pronunciation_hint": "som-BE-ree",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-010",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"valiggudhu\" mean?",
+   "latencyMs": 18616,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like you're asking about 'valikkuthu'. It means 'it hurts' or 'I have pain', usually a headache or body ache.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "வலிக்குது",
+      "transliteration": "valikkuthu",
+      "english_meaning": "it hurts, I have pain",
+      "contextual_meaning": "expresses physical pain, often a headache or body ache",
+      "pronunciation_hint": "va-LIK-ku-thu",
+      "part_of_speech": "verb",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-011",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"padam\" mean?",
+   "latencyMs": 16314,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She asked if you'd seen the movie. 'Padam' just means 'movie' or 'film' in Tamil.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "படம்",
+      "transliteration": "padam",
+      "english_meaning": "movie, film, picture",
+      "contextual_meaning": "movie or film",
+      "pronunciation_hint": "PA-dum",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-012",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"eppo\" mean?",
+   "latencyMs": 15383,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That's 'ippo', meaning 'now'. They said your dad will be arriving now.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "இப்போ",
+      "transliteration": "ippo",
+      "english_meaning": "now",
+      "contextual_meaning": "in this moment, soon",
+      "pronunciation_hint": "ip-PO",
+      "part_of_speech": "adverb",
+      "register": "informal",
+      "usage_note": "Very common in everyday speech.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-013",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"yarum\" mean?",
+   "latencyMs": 19730,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Yarum means 'nobody' or 'no one'. They said there's nobody at home, so it's a way of saying the house is empty right now.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "யாரும்",
+      "transliteration": "yaarum",
+      "english_meaning": "nobody, no one",
+      "contextual_meaning": "used to indicate the absence of people",
+      "pronunciation_hint": "YAA-rum (the 'aa' is a long vowel sound)",
+      "part_of_speech": "pronoun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-014",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"gurumbu\" mean?",
+   "latencyMs": 18781,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That word is 'kurumbu', and it means mischief or playfulness. They said someone is very mischievous!",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "குறும்பு",
+      "transliteration": "kurumbu",
+      "english_meaning": "mischief, playfulness, prank",
+      "contextual_meaning": "In this context, it means someone is being playfully naughty or mischievous.",
+      "pronunciation_hint": "ku-RUM-bu",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-015",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"kalyanaththuku\" mean?",
+   "latencyMs": 21962,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That's 'kalyanaththuku', meaning 'for the wedding'. It's a dative case, showing who or what something is *for*.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "கல்யாணத்துக்கு",
+      "transliteration": "kalyanaththuku",
+      "english_meaning": "for the wedding",
+      "contextual_meaning": "indicates purpose or destination – in this case, attending the wedding",
+      "pronunciation_hint": "kal-ya-naath-thu-ku",
+      "part_of_speech": "postpositional phrase",
+      "register": "neutral",
+      "usage_note": "This is a common phrase used when talking about events *for* someone or something.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-016",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"saayangaalam\" mean?",
+   "latencyMs": 18545,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Saayangaalam means evening. They were suggesting going to the temple in the evening.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "சாயங்காலம்",
+      "transliteration": "saayangaalam",
+      "english_meaning": "evening",
+      "contextual_meaning": "refers to the time of day, specifically late afternoon or early evening",
+      "pronunciation_hint": "saa-yaan-gaa-lam",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-017",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"vetkam\" mean?",
+   "latencyMs": 18914,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Vetkam means heat or hotness. She said she was feeling very hot.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "வெட்கம்",
+      "transliteration": "vetkam",
+      "english_meaning": "heat, hotness, or sometimes shyness/embarrassment (depending on context)",
+      "contextual_meaning": "In this conversation, it means she is feeling hot.",
+      "pronunciation_hint": "VET-kum",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-018",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"avasarappadura\" mean?",
+   "latencyMs": 21184,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like they said 'avasarappadugal', which means 'worries' or 'anxieties'. They were asking why you seem so worried.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "அவசரப்படுபவள்",
+      "transliteration": "avasarappadugal",
+      "english_meaning": "worries, anxieties",
+      "contextual_meaning": "In this context, it refers to things the speaker is concerned about.",
+      "pronunciation_hint": "a-va-sa-rap-pa-du-gal, stress on 'sa'",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-019",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"karama\" mean?",
+   "latencyMs": 19813,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "The speaker said 'kaaramaa', meaning 'spicy'. They were commenting that the kuzhambu, a type of stew, is quite spicy.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "காரமா",
+      "transliteration": "kaaramaa",
+      "english_meaning": "spicy",
+      "contextual_meaning": "spicy, pungent (referring to food)",
+      "pronunciation_hint": "kaa-RA-maa",
+      "part_of_speech": "adjective",
+      "register": "informal",
+      "usage_note": "Commonly used when describing the taste of food.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-020",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"maamaa\" mean?",
+   "latencyMs": 17956,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Maamaa means maternal uncle. They said your maternal uncle has gone to the village.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "மாமா",
+      "transliteration": "maamaa",
+      "english_meaning": "maternal uncle",
+      "contextual_meaning": "refers to the speaker's maternal uncle",
+      "pronunciation_hint": "maa-MAA",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-021",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"nambade\" mean?",
+   "latencyMs": 21449,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She said 'nambaathe', which means 'don't believe it' or 'I don't believe what he's saying'. It's a way of expressing disbelief.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "நம்பாதே",
+      "transliteration": "nambaathe",
+      "english_meaning": "don't believe",
+      "contextual_meaning": "expressing disbelief or skepticism",
+      "pronunciation_hint": "nam-BAA-the",
+      "part_of_speech": "verb, negative imperative",
+      "register": "informal",
+      "usage_note": "This is a colloquial way of saying you don't trust someone or something. The full form is 'nambathe'",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-022",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"paritchaiggu\" mean?",
+   "latencyMs": 26893,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She asked if you studied well for the exam. It's a friendly way of checking how your preparations went.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "பரிட்சைக்கு",
+      "transliteration": "parichchaikku",
+      "english_meaning": "for the exam",
+      "contextual_meaning": "'For the exam' - it's a dative case, meaning 'in preparation for' or 'with regard to' the exam.",
+      "pronunciation_hint": "pa-RITCH-chai-koo",
+      "part_of_speech": "dative case marker",
+      "register": "informal",
+      "usage_note": "This is very common in spoken Tamil. You'd use it when talking *about* preparing for something.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [
+     {
+      "native_script": "சரி, நல்லா படிச்சேன்",
+      "transliteration": "Sari, nallaa padichchen",
+      "english": "Okay, I studied well."
+     },
+     {
+      "native_script": "பரவாயில்லை",
+      "transliteration": "Parava illai",
+      "english": "It's okay."
+     }
+    ],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 2
+  },
+  {
+   "id": "sl-ta-023",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"saththitu\" mean?",
+   "latencyMs": 19411,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That's 'saththittu', which means 'having eaten'. They're inviting you to come after you've finished eating.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "சாப்பிட்டு",
+      "transliteration": "saapittu",
+      "english_meaning": "having eaten",
+      "contextual_meaning": "used when inviting someone to come after they've finished a meal",
+      "pronunciation_hint": "saa-PIT-tu",
+      "part_of_speech": "participle",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-024",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"alagaa\" mean?",
+   "latencyMs": 17013,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She said 'azhagaa' which means 'beautifully' or 'nicely'. She was saying you do this thing beautifully.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "அழகாக",
+      "transliteration": "azhagaa",
+      "english_meaning": "beautifully, nicely",
+      "contextual_meaning": "in a beautiful or pleasing way",
+      "pronunciation_hint": "a-ZHAA-gaa",
+      "part_of_speech": "adverb",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-025",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"thuni\" mean?",
+   "latencyMs": 16480,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That word is 'thuni', which means 'clothes'. They were talking about buying new clothes for Pongal, the harvest festival.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "துணி",
+      "transliteration": "thuni",
+      "english_meaning": "clothes",
+      "contextual_meaning": "clothes, garments",
+      "pronunciation_hint": "THU-nee",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-026",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"ganjam\" mean?",
+   "latencyMs": 20579,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like you're asking about 'kandiyam'. It means stinginess or being very careful with money. They said someone won't spend even a penny!",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "கஞ்சன்",
+      "transliteration": "kanjiyam",
+      "english_meaning": "stinginess, miserliness",
+      "contextual_meaning": "refers to someone who is very careful with money and doesn't like to spend it",
+      "pronunciation_hint": "KAN-jee-yum",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-027",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"otrumaiya\" mean?",
+   "latencyMs": 18720,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That word is 'ootrumaiya'. It means 'together' or 'in unity', like everyone agreeing on something.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "ஒற்றுமையா",
+      "transliteration": "ootrumaiyaa",
+      "english_meaning": "together, in unity",
+      "contextual_meaning": "in agreement, all being of one mind",
+      "pronunciation_hint": "oo-TRU-mai-yaa",
+      "part_of_speech": "adverb",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-028",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"gannum garuttumaa\" mean?",
+   "latencyMs": 30710,
+   "path": "model",
+   "status": "uncertain",
+   "schemaValid": true,
+   "output": {
+    "status": "uncertain",
+    "kind": "word",
+    "spoken_summary": "It sounds like you heard 'karuththumaa', which is a way of saying 'did you think about it?' or 'did you consider it?' It's part of a longer sentence about someone seeing their mother.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "கருத்துமா",
+      "transliteration": "karuththumaa",
+      "english_meaning": "did you think/consider?",
+      "contextual_meaning": "a question tag asking if someone considered something",
+      "pronunciation_hint": "ka-ruth-thoo-maa",
+      "part_of_speech": "verb",
+      "register": "informal",
+      "usage_note": "often used as a question tag",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [
+     {
+      "transliteration": "garuththumaa",
+      "english_meaning": "did you swallow?"
+     },
+     {
+      "transliteration": "karuththum",
+      "english_meaning": "thinking"
+     },
+     {
+      "transliteration": "garuththum",
+      "english_meaning": "swallowing"
+     }
+    ],
+    "uncertainty_note": "The recogniser is not very confident, and 'gannum' is not a recognised Tamil word. 'Karuththumaa' is the closest match given the sound and the context of a question being asked after someone mentions their mother. Other possibilities include 'garuththumaa' (did you swallow?) or the root forms 'karuththum' (thinking) and 'garuththum' (swallowing), but they don't fit the question structure as well."
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": true,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-029",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"nelam\" mean?",
+   "latencyMs": 18285,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She said 'neelam', which means dark blue. She was commenting on someone's mouth being a dark blue colour, maybe they ate something that stained it!",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "நீலம்",
+      "transliteration": "neelam",
+      "english_meaning": "dark blue",
+      "contextual_meaning": "dark blue (colour)",
+      "pronunciation_hint": "NEE-lum",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-030",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"aalam\" mean?",
+   "latencyMs": 21531,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "The speaker said 'aazham', which means 'greed' or 'desire'. They were saying you shouldn't go to the doctor's appointment without a strong reason.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "ஆழம்",
+      "transliteration": "aazham",
+      "english_meaning": "greed, desire, depth",
+      "contextual_meaning": "In this context, it means a strong desire or reason. The speaker is suggesting the person shouldn't go to the doctor's appointment without a good reason.",
+      "pronunciation_hint": "AAZ-ham (zh as in measure)",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-031",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"thalaikanama\" mean?",
+   "latencyMs": 21489,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She said 'thalaikkanamaa', which means someone talks a lot or is very chatty. It's often used playfully, like she's saying they're a big talker.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "தலைக்கணமா",
+      "transliteration": "thalaikkanamaa",
+      "english_meaning": "talkative, chatty",
+      "contextual_meaning": "Someone who talks a lot; often used playfully.",
+      "pronunciation_hint": "tha-lai-KKA-na-maa",
+      "part_of_speech": "adjective",
+      "register": "informal",
+      "usage_note": "Often used as a lighthearted observation about someone's talkativeness.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-032",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"tayaggam\" mean?",
+   "latencyMs": 18266,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Thayakkam means hesitation or reluctance. She noticed a slight hesitation on her face, like she wasn't sure about something.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "தயக்கம்",
+      "transliteration": "thayakkam",
+      "english_meaning": "hesitation, reluctance",
+      "contextual_meaning": "a feeling of doubt or uncertainty",
+      "pronunciation_hint": "thay-YAHK-kam",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-033",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"viseshaththuku\" mean?",
+   "latencyMs": 21622,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That's 'visheshaththukku', meaning 'for the special occasion'. They're saying we need to invite everyone to the family's special event.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "விசேஷத்துக்கு",
+      "transliteration": "visheshaththukku",
+      "english_meaning": "for the special occasion",
+      "contextual_meaning": "This refers to a special event or celebration happening within the family. It implies an invitation or preparation for something important.",
+      "pronunciation_hint": "vi-SHE-sha-ththuk-ku",
+      "part_of_speech": "postpositional phrase",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-034",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"saamarttiyamaa\" mean?",
+   "latencyMs": 21411,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That word, 'saamarththiyamaa', means 'skillfully' or 'competently'. They said he speaks very skillfully.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "சாமர்த்தியமாக",
+      "transliteration": "saamarththiyamaa",
+      "english_meaning": "skillfully, competently, cleverly",
+      "contextual_meaning": "describes someone who speaks well or is good at getting their point across",
+      "pronunciation_hint": "saa-MARTH-thi-yaa-maa",
+      "part_of_speech": "adverb",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-035",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"pazhamozhi\" mean?",
+   "latencyMs": 18957,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Pazhamozhi means proverb or a wise saying. They said they didn't understand the proverb someone told them.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": " பழமொழி",
+      "transliteration": "pazhamozhi",
+      "english_meaning": "proverb, wise saying",
+      "contextual_meaning": "a traditional proverb or saying, often used to convey wisdom or a moral lesson.",
+      "pronunciation_hint": "pazha-MO-zhi (zh as in measure)",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-ta-036",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"aggaraiye\" mean?",
+   "latencyMs": 20219,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It's 'akkaraiye', meaning 'no interest' or 'doesn't care'. They said he has no interest in that topic.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "அக்கறையே",
+      "transliteration": "akkaraiye",
+      "english_meaning": "no interest, doesn't care",
+      "contextual_meaning": "expresses a lack of concern or involvement",
+      "pronunciation_hint": "ak-ka-rai-ye",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-001",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"mudinjathum\" mean?",
+   "latencyMs": 21453,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That's 'mudinjathum', which means 'as soon as it finished'. They said they're coming home as soon as their office meeting is over.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "முடிந்ததும்",
+      "transliteration": "mudinjathum",
+      "english_meaning": "as soon as it finished",
+      "contextual_meaning": "indicates doing something immediately after another event",
+      "pronunciation_hint": "mu-DIN-ja-thum",
+      "part_of_speech": "conjunction/adverbial phrase",
+      "register": "neutral",
+      "usage_note": "Commonly used to link two actions in sequence.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-002",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"polaamaa\" mean?",
+   "latencyMs": 19503,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She said 'polama', meaning 'let's go'. It's a friendly suggestion to go to the beach together.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "போலாமா",
+      "transliteration": "polamaa",
+      "english_meaning": "Let's go?",
+      "contextual_meaning": "A friendly suggestion or invitation to go somewhere together.",
+      "pronunciation_hint": "po-LAA-maa",
+      "part_of_speech": "interrogative",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-003",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"ilaiya\" mean?",
+   "latencyMs": 21024,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She asked if you had any complaints. 'Illaiya' is just a way of saying 'or not?' at the end of a question.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "இல்லையா?",
+      "transliteration": "illaiya",
+      "english_meaning": "or not?",
+      "contextual_meaning": "a tag question used to confirm something or ask if there are any objections",
+      "pronunciation_hint": "il-LAY-yah",
+      "part_of_speech": "question tag",
+      "register": "informal",
+      "usage_note": "Commonly added to the end of questions or statements to seek confirmation or agreement.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-004",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"romba\" mean?",
+   "latencyMs": 19643,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That word is 'romba', and it means 'very' or 'too'. They said this line is 'very' wide.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "ரொம்ப",
+      "transliteration": "romba",
+      "english_meaning": "very, too, a lot",
+      "contextual_meaning": "intensifier, used before an adjective or adverb",
+      "pronunciation_hint": "ROM-bah",
+      "part_of_speech": "adverb",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-005",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"poganum\" mean?",
+   "latencyMs": 21926,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Poganum means 'must go' or 'have to go'. They're saying you need to go to the doctor's appointment tomorrow.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "போகணும்",
+      "transliteration": "poganum",
+      "english_meaning": "must go, have to go",
+      "contextual_meaning": "expresses obligation or necessity",
+      "pronunciation_hint": "po-GA-num (the 'ga' is a soft 'g' as in 'garden')",
+      "part_of_speech": "verb",
+      "register": "informal",
+      "usage_note": "formed from the verb 'po' (to go) with the auxiliary 'venum' (to need/want) to indicate obligation.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-006",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"vaangittaan\" mean?",
+   "latencyMs": 20042,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Vaangittaan means 'got'. They said he got marks, likely on an exam or in school.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "வாங்கிட்டான்",
+      "transliteration": "vaangittaan",
+      "english_meaning": "got, received",
+      "contextual_meaning": "past tense of 'vaangu' (to get, to receive). Here, it means 'he got' or 'he received'.",
+      "pronunciation_hint": "vaa-NGIT-taan",
+      "part_of_speech": "verb",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-007",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"matikiten\" mean?",
+   "latencyMs": 22174,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like you're asking about 'maattikkittaen'. It means 'I changed' or 'I adjusted', likely referring to changing something about the traffic situation.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "மாற்றிக்கிட்டேன்",
+      "transliteration": "maattikkittaen",
+      "english_meaning": "I changed / I adjusted",
+      "contextual_meaning": "First person singular past tense of 'maattikitten', meaning 'I changed' or 'I adjusted'. In this context, it likely refers to the speaker having made some adjustment to the traffic situation.",
+      "pronunciation_hint": "maat-ti-KITT-ten",
+      "part_of_speech": "verb",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-008",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"saappida\" mean?",
+   "latencyMs": 17974,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Saappida means 'to eat'. They asked you what you're planning to eat.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "சாப்பிட",
+      "transliteration": "saappida",
+      "english_meaning": "to eat",
+      "contextual_meaning": "in this context, 'what are you going to eat?'",
+      "pronunciation_hint": "saap-pi-da",
+      "part_of_speech": "verb",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-009",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"pal\" mean?",
+   "latencyMs": 25623,
+   "path": "model",
+   "status": "uncertain",
+   "schemaValid": true,
+   "output": {
+    "status": "uncertain",
+    "kind": "word",
+    "spoken_summary": "It sounds like you're asking about 'pol'. It means 'time' or 'occasion', and here it's part of a phrase about going shopping at the right time.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "போது",
+      "transliteration": "podhu",
+      "english_meaning": "time, occasion",
+      "contextual_meaning": "in this context, 'at the right time' or 'when the time comes'",
+      "pronunciation_hint": "PO-dhu",
+      "part_of_speech": "adverb",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [
+     {
+      "transliteration": "pal",
+      "english_meaning": "teeth"
+     }
+    ],
+    "uncertainty_note": "The recogniser is not very confident, and 'pal' could be a mishearing of 'pol' (போது) meaning 'time', or it could be the word 'pal' (பல்) meaning 'teeth'. Given the context of shopping, 'pol' is more likely."
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": false,
+   "clarified": false,
+   "abstained": true,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-010",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"irundhuchu\" mean?",
+   "latencyMs": 18497,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That's a past tense form of 'aagira', meaning 'to become'. She said the movie *became* boring, or *was* boring.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "ஆகிறது",
+      "transliteration": "aagira",
+      "english_meaning": "to become, to be",
+      "contextual_meaning": "to become, to be (in this case, describing a state)",
+      "pronunciation_hint": "aa-GEE-rah",
+      "part_of_speech": "verb",
+      "register": "neutral",
+      "usage_note": "Commonly used to describe how something is, or how it changed.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": false,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-011",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"sapituten\" mean?",
+   "latencyMs": 20789,
+   "path": "model",
+   "status": "uncertain",
+   "schemaValid": true,
+   "output": {
+    "status": "uncertain",
+    "kind": "word",
+    "spoken_summary": "It sounds like you're asking about 'sapituten', but the recogniser isn't very confident. It might be 'jaapi to ten', which means 'I've already eaten'.",
+    "heard": null,
+    "items": [],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [
+     {
+      "transliteration": "sapituten",
+      "english_meaning": "unclear, possibly a misrecognition"
+     },
+     {
+      "transliteration": "jaapi to ten",
+      "english_meaning": "I've already eaten"
+     },
+     {
+      "transliteration": "jaapitten",
+      "english_meaning": "I ate"
+     }
+    ],
+    "uncertainty_note": "The Tamil recogniser has low confidence in that segment. 'sapituten' doesn't seem to be a valid Tamil word. It's likely a misrecognition of 'jaapi to ten', which is code-switched English meaning 'I've already eaten', or 'jaapitten' which means 'I ate'. The speaker was responding to something about food, so that makes sense."
+   },
+   "targetIdentified": false,
+   "clarified": false,
+   "abstained": true,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-012",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"gidaiggum\" mean?",
+   "latencyMs": 19639,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She asked when you'll have free time. 'Kidaikkum' means 'will get' or 'will be available', so she's asking about your schedule.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "கிடைக்கும்",
+      "transliteration": "kidaikkum",
+      "english_meaning": "will get, will be available, will be free",
+      "contextual_meaning": "refers to having free time or availability",
+      "pronunciation_hint": "ki-DAI-kkum",
+      "part_of_speech": "verb",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-013",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"katanum\" mean?",
+   "latencyMs": 20501,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "They said you need to sew something after getting your salary. It's about getting new clothes made!",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "கட்டணும்",
+      "transliteration": "kaṭṭaṇum",
+      "english_meaning": "need to sew / make",
+      "contextual_meaning": "In this context, it means they need to get new clothes made, likely after receiving a salary. It implies getting something tailored or custom-made.",
+      "pronunciation_hint": "kaT-tah-num (the 'ṭ' is a retroflex 't' sound, made with the tongue curled back)",
+      "part_of_speech": "verb (derived from kaṭṭu, 'to sew')",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-014",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"irundhuchu\" mean?",
+   "latencyMs": 21040,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That's from the phrase 'irundhuchchu', meaning 'was there' or 'it was'. They were saying the reception was very grand.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "இருந்தது",
+      "transliteration": "irundhuchchu",
+      "english_meaning": "was there, it was",
+      "contextual_meaning": "past tense of 'irukku' (to be/exist), used to describe a state or condition that existed in the past.",
+      "pronunciation_hint": "i-RUN-thuch-chu",
+      "part_of_speech": "verb",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-015",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"enakaga\" mean?",
+   "latencyMs": 19662,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "That's 'enakaga', which means 'for me'. It's a common way to say something is intended for you, like a gift or a favour.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "எனக்காக",
+      "transliteration": "enakaga",
+      "english_meaning": "for me",
+      "contextual_meaning": "used to indicate something is done or given for the speaker's benefit",
+      "pronunciation_hint": "e-na-KAA-ga",
+      "part_of_speech": "prepositional phrase",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-016",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"ellaam\" mean?",
+   "latencyMs": 17770,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Ellaam means 'all' or 'everything'. They were asking if you packed everything for the family trip.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "எல்லாம்",
+      "transliteration": "ellaam",
+      "english_meaning": "all, everything",
+      "contextual_meaning": "in this case, 'everything'",
+      "pronunciation_hint": "el-LAAM",
+      "part_of_speech": "pronoun/adverb",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-017",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"pati\" mean?",
+   "latencyMs": 17716,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like they said 'party', but then switched to Tamil. 'Pandraanga' means 'are missing'. They're saying someone is missing the party.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "பண்டராங்க",
+      "transliteration": "pandraanga",
+      "english_meaning": "are missing",
+      "contextual_meaning": "are missing (someone)",
+      "pronunciation_hint": "pan-DRAAN-gaa",
+      "part_of_speech": "verb",
+      "register": "informal",
+      "usage_note": "This is a polite form, used when talking about someone older or respected.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": false,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-018",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"gilambu\" mean?",
+   "latencyMs": 19173,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It's 'kilambu', meaning 'to be anxious or worried'. She said if you delay, you'll get anxious!",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "கிளம்பு",
+      "transliteration": "kilambu",
+      "english_meaning": "to leave, to go (informal)",
+      "contextual_meaning": "in this context, it means to become anxious or worried, to get worked up",
+      "pronunciation_hint": "ki-LAM-bu",
+      "part_of_speech": "verb",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-019",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"pasikudu\" mean?",
+   "latencyMs": 22777,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like they said 'pasikkuthu', which means 'I'm getting angry' or 'it's irritating me'. They're saying they're annoyed about something, maybe the food.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "பசிக்கிறது",
+      "transliteration": "pasikkirathu",
+      "english_meaning": "to feel hungry, to be irritated",
+      "contextual_meaning": "In this context, it means 'I'm getting irritated' or 'it's bothering me'. It can also mean 'I'm hungry', but the context of food suggests annoyance.",
+      "pronunciation_hint": "pa-SIK-ki-rathu",
+      "part_of_speech": "verb (pasikka - to irritate)",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": false,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "sl-cs-020",
+   "kind": "sounds_like",
+   "question": "What does the word that sounded like \"edugganum\" mean?",
+   "latencyMs": 20112,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like they said 'edukkanum', which means 'to take' or 'to get'. They're saying your cousin needs to request leave for the wedding.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "எடுக்கணும்",
+      "transliteration": "edukkanum",
+      "english_meaning": "to take, to get (request)",
+      "contextual_meaning": "request leave",
+      "pronunciation_hint": "e-DUK-ka-num",
+      "part_of_speech": "verb",
+      "register": "informal",
+      "usage_note": "This is a common colloquial form of 'eduththu vaa' (எடுத்து வா), meaning 'take and come'. Here it means 'to request' or 'to obtain' something, specifically leave from work.",
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "targetIdentified": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "amb-1",
+   "kind": "ambiguous",
+   "question": "What did that word mean, the one that sounded like \"kaa\"?",
+   "latencyMs": 18306,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She said 'kaaram', which means spice or flavour. She was saying your mom added too much spice when she cooked.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "காரம்",
+      "transliteration": "kaaram",
+      "english_meaning": "spice, flavour, pungency",
+      "contextual_meaning": "in this context, refers to the spiciness of food",
+      "pronunciation_hint": "KAA-ram",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "amb-2",
+   "kind": "ambiguous",
+   "question": "What did that word mean, the one that sounded like \"paa\"?",
+   "latencyMs": 17447,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "The speaker said 'paal', which means 'milk'. They were asking you to come get milk, and then commented that the bridge is very old.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "பால்",
+      "transliteration": "paal",
+      "english_meaning": "milk",
+      "contextual_meaning": "milk",
+      "pronunciation_hint": "PAAL",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "amb-3",
+   "kind": "ambiguous",
+   "question": "What did that word mean, the one that sounded like \"vaa\"?",
+   "latencyMs": 16783,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "The speaker said 'vaali', meaning talkative or someone who chats a lot. They were saying he's very talkative.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "வாளி",
+      "transliteration": "vaali",
+      "english_meaning": "talkative, chatty",
+      "contextual_meaning": "Someone who talks a lot.",
+      "pronunciation_hint": "VAA-lee",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "amb-4",
+   "kind": "ambiguous",
+   "question": "What did that word mean, the one that sounded like \"kadha\"?",
+   "latencyMs": 18819,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "She said 'kadai', which means 'shop'. It sounds similar to 'kadha', which means 'story', but in this case she was saying the shop is closed.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "கடை",
+      "transliteration": "kadai",
+      "english_meaning": "shop",
+      "contextual_meaning": "shop",
+      "pronunciation_hint": "ka-DAI",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "amb-5",
+   "kind": "ambiguous",
+   "question": "What did that word mean, the one that sounded like \"veedu\"?",
+   "latencyMs": 19613,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "Veedu means 'house' or 'home'. They were talking about the house next door and whether this house is big or not.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "வீடு",
+      "transliteration": "veedu",
+      "english_meaning": "house, home",
+      "contextual_meaning": "refers to a building where someone lives",
+      "pronunciation_hint": "VEE-doo",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "amb-6",
+   "kind": "ambiguous",
+   "question": "What did that word mean, the one that sounded like \"thinni or thanni\"?",
+   "latencyMs": 12103,
+   "path": "model",
+   "status": "needs_clarification",
+   "schemaValid": true,
+   "output": {
+    "status": "needs_clarification",
+    "kind": "word",
+    "spoken_summary": "It sounds like you're asking about either 'thanni' or 'thinni'. Do you mean the one about water, or the one about finishing eating?",
+    "heard": null,
+    "items": [],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": {
+     "question": "Do you mean 'thanni' or 'thinni'?",
+     "options": [
+      "thanni",
+      "thinni"
+     ]
+    },
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "clarified": true,
+   "abstained": true,
+   "replies": 0
+  },
+  {
+   "id": "amb-7",
+   "kind": "ambiguous",
+   "question": "What did that word mean, the one that sounded like \"pasa\"?",
+   "latencyMs": 22330,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like you're asking about 'pasikkuthu'. It means 'they're seeing' or 'they're visiting', like someone is coming to your house.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "பார்க்குது",
+      "transliteration": "paarkuthu",
+      "english_meaning": "is seeing, is visiting",
+      "contextual_meaning": "In this context, it means someone is coming to visit or check on things.",
+      "pronunciation_hint": "PAAR-koothu (the 'r' is lightly rolled)",
+      "part_of_speech": "verb",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "amb-8",
+   "kind": "ambiguous",
+   "question": "What did that word mean, the one that sounded like \"kuru\"?",
+   "latencyMs": 20566,
+   "path": "model",
+   "status": "answered",
+   "schemaValid": true,
+   "output": {
+    "status": "answered",
+    "kind": "word",
+    "spoken_summary": "It sounds like you're asking about 'kuru'. It means 'mischief' or 'prank', and it's often used for kids being playful.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "குறும்பு",
+      "transliteration": "kurumbu",
+      "english_meaning": "mischief, prank",
+      "contextual_meaning": "playful wrongdoing, often by children",
+      "pronunciation_hint": "ku-RUM-bu",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": false,
+   "replies": 0
+  },
+  {
+   "id": "un-ta-001",
+   "kind": "unanswerable",
+   "question": "What does the word that sounded like \"kuzhappam\" mean?",
+   "latencyMs": 26610,
+   "path": "model",
+   "status": "uncertain",
+   "schemaValid": true,
+   "output": {
+    "status": "uncertain",
+    "kind": "word",
+    "spoken_summary": "It sounds like you heard 'kuzhappam', but the speaker actually said 'saappaadu', which means 'food'. It's a common word, like when you say 'delicious food'!",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "சாப்பாடு",
+      "transliteration": "saappaadu",
+      "english_meaning": "food",
+      "contextual_meaning": "food, a meal",
+      "pronunciation_hint": "saap-PAA-du",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [
+     {
+      "transliteration": "kuzhappam",
+      "english_meaning": "happiness, joy"
+     },
+     {
+      "transliteration": "kuzhu",
+      "english_meaning": "a group, gathering"
+     }
+    ],
+    "uncertainty_note": "The recogniser is very confident about 'saappaadu' (food), but the learner heard something similar to 'kuzhappam'. It's possible there was a misrecognition, or the speaker's pronunciation was unclear. 'Kuzhappam' means happiness, but doesn't fit the context of a meal."
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": true,
+   "confidentWrong": false,
+   "replies": 0
+  },
+  {
+   "id": "un-ta-002",
+   "kind": "unanswerable",
+   "question": "What does the word that sounded like \"samaiyal\" mean?",
+   "latencyMs": 13307,
+   "path": "model",
+   "status": "needs_clarification",
+   "schemaValid": true,
+   "output": {
+    "status": "needs_clarification",
+    "kind": "word",
+    "spoken_summary": "Did you hear 'seekiram' or 'samaiyal'? It sounds like you might be asking about the word for 'cooking', or something else that was said just now.",
+    "heard": null,
+    "items": [],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": {
+     "question": "Were you thinking of 'seekiram' or 'samaiyal'?",
+     "options": [
+      "seekiram",
+      "samaiyal",
+      "kaalaiyila"
+     ]
+    },
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "clarified": true,
+   "abstained": true,
+   "confidentWrong": false,
+   "replies": 0
+  },
+  {
+   "id": "un-ta-003",
+   "kind": "unanswerable",
+   "question": "What does the word that sounded like \"thiruvizha\" mean?",
+   "latencyMs": 28254,
+   "path": "model",
+   "status": "uncertain",
+   "schemaValid": true,
+   "output": {
+    "status": "uncertain",
+    "kind": "word",
+    "spoken_summary": "It sounds like they said 'thambi', meaning younger brother or close male friend. It's similar to 'thiruvizha', but a different word altogether. Could you repeat the last few words so I can be sure?",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "தம்பி",
+      "transliteration": "thambi",
+      "english_meaning": "younger brother, close male friend",
+      "contextual_meaning": "addressing a younger male relative or friend",
+      "pronunciation_hint": "TAM-bee",
+      "part_of_speech": "noun",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [
+     {
+      "transliteration": "thiruvizha",
+      "english_meaning": "festival"
+     },
+     {
+      "transliteration": "thambi",
+      "english_meaning": "younger brother"
+     }
+    ],
+    "uncertainty_note": "The audio is unclear, and the recogniser is not confident. 'Thambi' and 'thiruvizha' sound similar, but have very different meanings. The speaker likely said 'thambi', but it's possible they said something else."
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": true,
+   "confidentWrong": false,
+   "replies": 0
+  },
+  {
+   "id": "un-ta-004",
+   "kind": "unanswerable",
+   "question": "What does the word that sounded like \"kovam\" mean?",
+   "latencyMs": 27778,
+   "path": "model",
+   "status": "uncertain",
+   "schemaValid": true,
+   "output": {
+    "status": "uncertain",
+    "kind": "word",
+    "spoken_summary": "It sounds like you heard something close to 'kovam', but the speaker actually said 'kovaam'. It means 'anger' or 'wrath', and they used it playfully just now.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "கோபம்",
+      "transliteration": "kovaam",
+      "english_meaning": "anger, wrath",
+      "contextual_meaning": "The speaker used this word playfully, likely teasing someone.",
+      "pronunciation_hint": "ko-VAAM",
+      "part_of_speech": "noun",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [
+     {
+      "transliteration": "kovaam",
+      "english_meaning": "anger"
+     },
+     {
+      "transliteration": "kovam",
+      "english_meaning": "a possible misspelling of kovaam"
+     }
+    ],
+    "uncertainty_note": "The recogniser output is 'kovaam', but the learner heard 'kovam'. The difference is slight, and 'kovam' could be a mishearing. I'm proceeding with 'kovaam' as the likely word, but providing 'kovam' as an alternative."
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": true,
+   "confidentWrong": false,
+   "replies": 0
+  },
+  {
+   "id": "un-ta-005",
+   "kind": "unanswerable",
+   "question": "What does the word that sounded like \"parisu\" mean?",
+   "latencyMs": 15189,
+   "path": "model",
+   "status": "needs_clarification",
+   "schemaValid": true,
+   "output": {
+    "status": "needs_clarification",
+    "kind": "word",
+    "spoken_summary": "Did you hear 'parisu' or something similar? Was it right after they talked about the rain? Here are a few options from what was said: 'mazhai', 'vara', or 'kudai'?",
+    "heard": null,
+    "items": [],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": {
+     "question": "Did you hear 'parisu' or something similar?",
+     "options": [
+      "mazhai",
+      "vara",
+      "kudai"
+     ]
+    },
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "clarified": true,
+   "abstained": true,
+   "confidentWrong": false,
+   "replies": 0
+  },
+  {
+   "id": "un-ta-006",
+   "kind": "unanswerable",
+   "question": "What does the word that sounded like \"nilaa\" mean?",
+   "latencyMs": 10418,
+   "path": "model",
+   "status": "no_relevant_speech",
+   "schemaValid": true,
+   "output": {
+    "status": "no_relevant_speech",
+    "kind": "word",
+    "spoken_summary": "I don't see any Tamil speech matching 'nilaa' in the last minute. It's possible I missed it, or it was said before this recording started.",
+    "heard": null,
+    "items": [],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [],
+    "uncertainty_note": null
+   },
+   "clarified": false,
+   "abstained": true,
+   "confidentWrong": false,
+   "replies": 0
+  },
+  {
+   "id": "un-ta-007",
+   "kind": "unanswerable",
+   "question": "What does the word that sounded like \"kanavu\" mean?",
+   "latencyMs": 26762,
+   "path": "model",
+   "status": "uncertain",
+   "schemaValid": true,
+   "output": {
+    "status": "uncertain",
+    "kind": "word",
+    "spoken_summary": "It sounds like they said 'indha thorum', not 'kanavu'. It means 'every time' or 'each time', and it's part of a longer sentence about something costing a lot.",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "இந்தத் தோறும்",
+      "transliteration": "indha thorum",
+      "english_meaning": "every time, each time",
+      "contextual_meaning": "in this context, it suggests something happens frequently and is expensive",
+      "pronunciation_hint": "IN-dha tho-rum",
+      "part_of_speech": "adverbial phrase",
+      "register": "neutral",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [
+     {
+      "transliteration": "kanavu",
+      "english_meaning": "dream"
+     }
+    ],
+    "uncertainty_note": "The recogniser output doesn't match 'kanavu' at all. The closest phonetic match is 'indha thorum', but it's possible the recogniser made errors. The speaker may have said something else entirely."
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": true,
+   "confidentWrong": false,
+   "replies": 0
+  },
+  {
+   "id": "un-ta-008",
+   "kind": "unanswerable",
+   "question": "What does the word that sounded like \"vilakku\" mean?",
+   "latencyMs": 27273,
+   "path": "model",
+   "status": "uncertain",
+   "schemaValid": true,
+   "output": {
+    "status": "uncertain",
+    "kind": "word",
+    "spoken_summary": "It sounds like you heard 'vilakku', but the speaker actually said 'konjam tanni kodu', which means 'give me some water'. It's easy to mix up sounds!",
+    "heard": null,
+    "items": [
+     {
+      "native_script": "கொஞ்சம் தண்ணீர் கொடு",
+      "transliteration": "konjam tanni kodu",
+      "english_meaning": "give me some water",
+      "contextual_meaning": "a polite request for water",
+      "pronunciation_hint": "KON-jam TAN-nee KO-du",
+      "part_of_speech": "imperative",
+      "register": "informal",
+      "usage_note": null,
+      "cultural_note": null,
+      "regional_note": null,
+      "example": null,
+      "related": []
+     }
+    ],
+    "suggested_replies": [],
+    "grammar_note": null,
+    "clarification": null,
+    "alternatives": [
+     {
+      "transliteration": "vilakku",
+      "english_meaning": "lamp, light"
+     },
+     {
+      "transliteration": "velakku",
+      "english_meaning": "brightness"
+     }
+    ],
+    "uncertainty_note": "The recogniser is not very confident, and 'vilakku' (lamp) is phonetically plausible. However, the English recogniser didn't pick up any English words, which is unusual if the speaker was code-switching, and 'konjam tanni kodu' is a very common phrase."
+   },
+   "nativeScriptValid": true,
+   "clarified": false,
+   "abstained": true,
+   "confidentWrong": false,
+   "replies": 0
+  }
+ ]
+}

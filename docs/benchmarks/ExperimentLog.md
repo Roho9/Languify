@@ -41,9 +41,32 @@ Only Apple's on-device `SpeechTranscriber` supports Tamil and Malayalam on this 
 
 ---
 
-## C. Explanation prompt length
+## C. Explanation prompt length and output cap (ADOPTED)
 
-See the result appended below once `prompt-experiment.ts` completes.
+**Hypothesis.** With a local model decoding at about 12 to 16 tokens/s, latency is dominated by output length, not prompt length. The original prompt (v1) let the model fill every optional field (usage, cultural and regional notes, examples, related words). A prompt that asks for only what the learner needs to hear, plus a hard `num_predict` cap, should roughly halve latency without losing correctness.
+
+**Baseline.** v1 = `backend/src/ai/prompts.ts` at git `efb50fe` (copied to `backend/bench/prompts/v1.ts`). v2 = current prompts.
+
+**Configuration.** Gemma 3 27B via Ollama on the M5 Pro, 20 cases (sounds-like and sentence-before), real Apple ta-IN transcripts of synthetic speech, ABAB order alternating per case to cancel drift, model kept warm, 180 s client abort, `num_predict` 1500 for both arms. Run `prompt-20261022T213328Z`, commit `f320a5e`.
+
+**Result (Measured (Mac), real local model).**
+
+| | v1 | v2 |
+|---|---|---|
+| Latency P50 / P95 | 37.4 s / 59.0 s | **19.4 s / 28.2 s** |
+| Output tokens, mean | 461 | **242** |
+| Prompt tokens, mean | 993 | 1,272 |
+| Valid output | 17/20 (1 hit the token cap) | **20/20** |
+| Valid and correct (all calls) | 13/20 | 14/20 |
+
+- Paired mean change on the 17 cases where both arms were valid: **-17.2 s** (95% bootstrap CI -22.0 to -13.1 s), **-45.8%**.
+- Prompt processing is about 1.7 s for both arms, so the extra 280 prompt tokens in v2 cost almost nothing; output length is what matters.
+- Correctness: 5 cases changed (3 gained by v2, 2 lost); n = 20 cannot show a difference in either direction. Claim is "no measured accuracy loss", not "more accurate".
+- Cold start (model not loaded): mean 24.3 s, of which 3.2 s is model load.
+
+**Bug found.** The first run of this experiment hung indefinitely: v1 sometimes generated without end inside the JSON schema, and Node's fetch headers timeout fired only after 5 minutes. Fixed with a 180 s abort in the harness and, in the product, `num_predict` caps per task (explain 800/1400, tutor 600, suggestions 1500, lesson 2000) plus rejecting `done_reason: "length"` as invalid output rather than parsing a truncated answer.
+
+**Decision.** Adopted v2 and the output caps (already the shipping prompts at `f320a5e`).
 
 ---
 
@@ -82,6 +105,60 @@ The app runs the Tamil and English recognisers concurrently. Paired comparison o
 
 ---
 
-## F. Backend backpressure for the local model
+## F. Backend backpressure for the local model (ADOPTED)
 
-See the result appended below once the load tests complete.
+**Hypothesis.** A local model serves roughly one generation at a time. Without admission control, concurrent requests all wait in Ollama's queue and most of them hit the 55 s server timeout, so users wait nearly a minute for an error while the machine still spends compute on answers nobody will read. A concurrency limiter with a short queue should turn those into fast, retryable 503s and keep accepted requests' latency bounded, at no cost to successful throughput.
+
+**Change.** `ConcurrencyLimiter` (`backend/src/ai/limiter.ts`) in front of every AI call: `AI_MAX_CONCURRENCY`, `AI_MAX_QUEUE`, `AI_MAX_QUEUE_WAIT_MS`. Overflow returns 503 with `Retry-After`; quota is only consumed after a successful answer. The app already treats 503 as retryable and keeps the transcript (`AppTests/ReliabilityTests.swift`).
+
+**Configuration.** Single Node server and a load client in separate processes on the same Mac, loopback, real Gemma 3 27B, explain requests, concurrency 1/2/4/8 with 2 requests per worker. Limiter arm: 1 concurrent, queue 2, 20 s wait. Runs `load-real-20261022T214010Z` (off) and `load-real-20261022T214434Z` (on). Plus a mock-AI capacity run (`load-mock-20261022T213437Z`, 300 ms lognormal mock latency, 10 s per stage) to measure the server itself.
+
+**Result (Measured (Mac), real local model).**
+
+| Concurrency | Limiter | Succeeded | Success P50 / max | Failures | Failure latency P50 |
+|---|---|---|---|---|---|
+| 4 | off | 4/8 | 39.8 s / 54.6 s | 4 × 504 timeout | 55.0 s |
+| 4 | on | 4/8 | 32.8 s / 36.0 s | 4 × 503 busy | 10.0 s |
+| 8 | off | 4/16 | 43.4 s / 54.6 s | 12 × 504 timeout | 55.0 s |
+| 8 | on | 3/16 | **29.5 s / 35.7 s** | 13 × 503 busy | **6 ms** |
+
+- At 8 concurrent users, failed requests are rejected in **6 ms instead of hanging 55 s**, and the slowest successful answer drops from 54.6 s to 35.7 s.
+- Successful throughput is unchanged (4 vs 3 answers in the window; one local model is the bottleneck either way). The limiter does not add capacity; it makes overload fast and honest.
+- At concurrency 1 the limiter arm was slower (P50 26.1 s vs 15.7 s, n = 2 each); with one request in flight the limiter does nothing, so this is case-to-case output length variation. Small samples: these are behaviour checks, not capacity figures.
+- Mock AI: the Fastify server sustained **631 req/s at 200 concurrent with 100% success**, P50 285 ms against a mock with 300 ms mean latency (server overhead is not distinguishable from the mock's spread), server CPU 36%, RSS at most 154 MB. Server overhead is negligible next to model time.
+
+**Not done, by design.** No load test against any third-party AI provider. Claude-backed capacity is bounded by account rate limits and is not measured.
+
+**Decision.** Adopted. Defaults for a single local model: concurrency 1, short queue.
+
+---
+
+## G. Phonetic candidate retrieval before the model (ADOPTED)
+
+**Hypothesis.** For "what did the word that sounded like X mean", the model saw the whole transcript and had to find the word itself. In the baseline it rarely asked for clarification when two different words matched (1/8), and it sometimes picked the wrong word. A deterministic step that finds candidate words by phonetic skeleton distance before the model is called should (a) decide ambiguity itself and return a clarification without any model call, and (b) pass the single best match to the model as a hint.
+
+**Change.** `backend/src/rewind/candidates.ts` and `pipeline.ts`. Skeleton matching (`MATCH_THRESHOLD` 0.34, short-prefix rule 0.25, tie margin 0.1), candidates distinct by spelling, "X or Y" handled. Paths: `phonetic_clarification` (no model call), `model_with_phonetic_hint`, `model`. Server-only `phonetic_match` field, so a client cannot inject a hint.
+
+**Configuration.** Same 72 cases (56 sounds-like, 8 ambiguous, 8 unanswerable), same model and prompts, same commit `f320a5e`; only `--retrieval off|on` differs. Runs `context-ollama-f320a5e-retrieval_off-20261022T203847Z` and `..._retrieval_on-20261022T211117Z` (the on-run also covers the other 26 cases of the full suite).
+
+**Result (Measured (Mac), real recogniser transcripts of synthetic speech, real local model).**
+
+| Metric | Off | On |
+|---|---|---|
+| Target word identified | 50/56 (89.3%) [79, 95] | **53/56 (94.6%)** [85, 98] |
+| Clarifies when ambiguous | 1/8 | **6/8** (6/7 excluding amb-5, where both "candidates" are the same word) |
+| Unnecessary clarification on clear lookups | 0/56 | 0/56 |
+| Abstains when the word is absent | 8/8 | 8/8 |
+| Confident wrong answer when absent | 0/8 | 0/8 |
+| Schema-valid output | 72/72 | 98/98 (full suite) |
+| P50 latency, ambiguous | 18.6 s | **under 1 ms** for the 6 answered by retrieval |
+| P50 latency, sounds-like | 19.6 s | 20.7 s |
+
+- Paired: target identification 3 gained, 0 lost (exact McNemar p = 0.25); clarification 5 gained, 0 lost (p = 0.06). Direction is consistent and nothing regressed, but n is small, so the improvement is not statistically established.
+- 3 sounds-like answers moved from "uncertain" to "answered" with the hint, all with the right word.
+- Remaining misses: 2 where retrieval found no candidate (long inflected forms "saappittiyaa", "sapituten"), and 1 where the right word was found but the model gave the wrong meaning (pasikkuthu glossed as "nauseous"; it means "hungry"). Retrieval cannot fix meaning errors; that needs a stronger model or a lexicon check.
+- Sounds-like latency is about 1 s higher (hint adds tokens); within run-to-run spread of earlier runs (20.3 s at `ddebcc0`).
+
+**Bugs found while building it** (all fixed before the measured run, each with a unit test in `backend/test/candidates.test.ts`): the short query "pal" matched too many words (prefix rule added); the skeleton merged kadai "shop" and kathai "story" into one candidate (candidates now distinct by spelling); "paal" vs "paalam" was de-duplicated as one word (containment de-duplication limited to two-word spans).
+
+**Decision.** Adopted.

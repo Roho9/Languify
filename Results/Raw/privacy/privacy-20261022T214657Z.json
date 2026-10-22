@@ -1,0 +1,158 @@
+{
+ "metadata": {
+  "benchmark": "privacy",
+  "runID": "privacy-20261022T214657Z",
+  "gitCommit": "f320a5e"
+ },
+ "passed": 21,
+ "total": 21,
+ "checks": [
+  {
+   "id": "P01",
+   "requirement": "No AI provider credentials or server secrets in the app binary",
+   "passed": true,
+   "evidence": "scanned .build/DerivedData/Build/Products/Debug-iphonesimulator/Languify.app/Languify (+debug dylib); matches: none",
+   "kind": "static"
+  },
+  {
+   "id": "P02",
+   "requirement": "No .env files bundled in the app",
+   "passed": true,
+   "evidence": "bundle files matching .env: none",
+   "kind": "static"
+  },
+  {
+   "id": "P03",
+   "requirement": "App never writes audio files (no AVAudioFile writing, AVAudioRecorder or AVAssetWriter)",
+   "passed": true,
+   "evidence": "matches: none",
+   "kind": "static"
+  },
+  {
+   "id": "P04",
+   "requirement": "Only disk write in the app is the user-initiated JSON data export",
+   "passed": true,
+   "evidence": "writes: ['App/Sources/App/AppServices.swift:97: try export.encoded().write(to: url, options: [.atomic, .completeFileProtection])']",
+   "kind": "static"
+  },
+  {
+   "id": "P05",
+   "requirement": "Persisted (and iCloud-synced) models contain no audio-capable fields",
+   "passed": true,
+   "evidence": "Data/sample-array fields: none",
+   "kind": "static"
+  },
+  {
+   "id": "P06",
+   "requirement": "Stopping a session clears the audio buffer and ends the Live Activity",
+   "passed": true,
+   "evidence": "ListeningSessionManager.stop() calls capture.stop(), buffer.clear(), liveActivity.end()",
+   "kind": "static"
+  },
+  {
+   "id": "P07",
+   "requirement": "A failed capture start clears the buffer and stops the microphone",
+   "passed": true,
+   "evidence": "beginCapture catch path calls capture.stop() and buffer.clear()",
+   "kind": "static"
+  },
+  {
+   "id": "P08",
+   "requirement": "Practice recordings are discarded after on-device transcription",
+   "passed": true,
+   "evidence": "UtteranceRecorder.stopAndTranscribe clears its buffer in defer",
+   "kind": "static"
+  },
+  {
+   "id": "P09",
+   "requirement": "Microphone capture only starts from an explicit session or practice action",
+   "passed": true,
+   "evidence": "capture.start call sites: ['App/Sources/Learning/UtteranceRecorder.swift:47: try capture.start(into: buffer) { [weak self] level in', 'App/Sources/Audio/ListeningSessionManager.swift:145: try capture.start(into: buffer) { [weak self] level in']",
+   "kind": "static"
+  },
+  {
+   "id": "P10",
+   "requirement": "App logs never interpolate transcript, question or answer text",
+   "passed": true,
+   "evidence": "suspicious log lines: none",
+   "kind": "static"
+  },
+  {
+   "id": "P11",
+   "requirement": "Server log calls never include request bodies or answers",
+   "passed": true,
+   "evidence": "6 log calls reviewed; suspicious: none",
+   "kind": "static"
+  },
+  {
+   "id": "P12",
+   "requirement": "Tokens are stored in the Keychain as device-only items",
+   "passed": true,
+   "evidence": "KeychainStore uses AfterFirstUnlockThisDeviceOnly",
+   "kind": "static"
+  },
+  {
+   "id": "P13",
+   "requirement": "App Transport Security not disabled (no arbitrary loads)",
+   "passed": true,
+   "evidence": "NSAppTransportSecurity: {'NSAllowsLocalNetworking': True}",
+   "kind": "static"
+  },
+  {
+   "id": "P14",
+   "requirement": "Microphone purpose string explains buffering and no saving",
+   "passed": true,
+   "evidence": "Languify listens only while you've started a session, keeping the last few seconds of audio on your iPhone so it can explain what was just said. Audio is never saved or uploaded.",
+   "kind": "static"
+  },
+  {
+   "id": "P15",
+   "requirement": "Privacy manifest declares no tracking and no tracking domains",
+   "passed": true,
+   "evidence": "PrivacyInfo.xcprivacy",
+   "kind": "static"
+  },
+  {
+   "id": "P16",
+   "requirement": "Cloud consent is checked before any explanation request",
+   "passed": true,
+   "evidence": "LiveRewindService: consent guard precedes api.explain",
+   "kind": "static"
+  },
+  {
+   "id": "R01",
+   "requirement": "Buffer is zeroed on clear, never leaks across sessions, and excludes audio after the question",
+   "passed": true,
+   "evidence": "\u2714 Test run with 3 tests in 1 suite passed after 0.001 seconds.",
+   "kind": "runtime"
+  },
+  {
+   "id": "R02",
+   "requirement": "Server logs contain no transcript or answer text, at trace level, on success and failure",
+   "passed": true,
+   "evidence": "Tests  2 passed (2)",
+   "kind": "runtime"
+  },
+  {
+   "id": "R03",
+   "requirement": "Usage limits and Premium features are enforced server-side, not by client state",
+   "passed": true,
+   "evidence": "Tests  3 passed | 35 skipped (38)",
+   "kind": "runtime"
+  },
+  {
+   "id": "R04",
+   "requirement": "Account deletion removes all server-side records",
+   "passed": true,
+   "evidence": "Tests  1 passed | 37 skipped (38)",
+   "kind": "runtime"
+  },
+  {
+   "id": "R05",
+   "requirement": "Without consent no request is sent; silence never reaches the cloud; only text (no samples) is sent",
+   "passed": true,
+   "evidence": "\u2714 Test run with 13 tests in 1 suite passed after 0.131 seconds. | ** TEST SUCCEEDED **",
+   "kind": "runtime"
+  }
+ ]
+}

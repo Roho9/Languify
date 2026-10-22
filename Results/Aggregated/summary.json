@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T19:21:10.689682+00:00",
+ "generated": "2026-10-22T21:47:56.209376+00:00",
  "sections": {
   "buffer": {
    "rows": [
@@ -350,9 +350,252 @@
     "miss_rate_when_min_conf_at_least_0_5": 0.03424657534246575
    }
   },
+  "context": {
+   "n_cases": 98,
+   "errors": 0,
+   "schema_and_semantic_valid": {
+    "k": 98,
+    "n": 98,
+    "rate": 1,
+    "ci95": [
+     0.9622786759045421,
+     1
+    ]
+   },
+   "native_script_valid": {
+    "k": 80,
+    "n": 84,
+    "rate": 0.9523809523809523,
+    "ci95": [
+     0.8838651569729798,
+     0.9813285553455571
+    ]
+   },
+   "target_identification": {
+    "k": 53,
+    "n": 56,
+    "rate": 0.9464285714285714,
+    "ci95": [
+     0.8539246046357077,
+     0.9816145520713321
+    ]
+   },
+   "sentence_localisation": {
+    "k": 3,
+    "n": 16,
+    "rate": 0.1875,
+    "ci95": [
+     0.06591478773586765,
+     0.4300935986845823
+    ]
+   },
+   "clarification_when_ambiguous": {
+    "k": 6,
+    "n": 8,
+    "rate": 0.75,
+    "ci95": [
+     0.40926987910258916,
+     0.9285223111419724
+    ]
+   },
+   "abstention_when_unanswerable": {
+    "k": 8,
+    "n": 8,
+    "rate": 1,
+    "ci95": [
+     0.6755843804891231,
+     1
+    ]
+   },
+   "confident_wrong_when_unanswerable": {
+    "k": 0,
+    "n": 8,
+    "rate": 0,
+    "ci95": [
+     0,
+     0.3244156195108769
+    ]
+   },
+   "unnecessary_clarification_on_clear_lookups": {
+    "k": 0,
+    "n": 56,
+    "rate": 0,
+    "ci95": [
+     0,
+     0.06419614448811528
+    ]
+   },
+   "respond_has_replies": {
+    "k": 9,
+    "n": 10,
+    "rate": 0.9,
+    "ci95": [
+     0.5958436145024278,
+     0.9821242504842788
+    ]
+   },
+   "latency_ms": {
+    "sounds_like": {
+     "n": 56,
+     "p50": 20658.5,
+     "p90": 25001,
+     "p95": 27681.75,
+     "max": 36508
+    },
+    "sentence_before": {
+     "n": 16,
+     "p50": 19060,
+     "p90": 27820,
+     "p95": 30403.5,
+     "max": 33468
+    },
+    "ambiguous": {
+     "n": 8,
+     "p50": 1,
+     "p90": 18180.5,
+     "p95": 18325.75,
+     "max": 18471
+    },
+    "unanswerable": {
+     "n": 8,
+     "p50": 21939.5,
+     "p90": 25043.1,
+     "p95": 25913.55,
+     "max": 26784
+    },
+    "respond": {
+     "n": 10,
+     "p50": 23798.5,
+     "p90": 28119.1,
+     "p95": 29195.049999999996,
+     "max": 30271
+    }
+   },
+   "latency_all_ms": {
+    "p50": 20602.5,
+    "p90": 26415.8,
+    "p95": 28879.5,
+    "mean": 19888.591836734693
+   }
+  },
+  "retrieval_ab": [
+   [
+    "Target identified (rough spelling)",
+    "50/56 [79, 95]",
+    "53/56 [85, 98]"
+   ],
+   [
+    "Unnecessary clarification",
+    "0/56 [0, 6]",
+    "0/56 [0, 6]"
+   ],
+   [
+    "Clarifies when ambiguous (8)",
+    "1/8 [2, 47]",
+    "6/8 [41, 93]"
+   ],
+   [
+    "Abstains when word absent",
+    "8/8 [68, 100]",
+    "8/8 [68, 100]"
+   ],
+   [
+    "Confident wrong answer when absent",
+    "0/8 [0, 32]",
+    "0/8 [0, 32]"
+   ],
+   [
+    "Clarifies when genuinely ambiguous (7, excl. same-word case)",
+    "1/7",
+    "6/7"
+   ],
+   [
+    "P50 latency, sounds like (s)",
+    "19.6",
+    "20.7"
+   ],
+   [
+    "P50 latency, ambiguous (s)",
+    "18.6",
+    "0.0"
+   ],
+   [
+    "P50 latency, unanswerable (s)",
+    "26.7",
+    "21.9"
+   ]
+  ],
+  "prompt": {
+   "v1": {
+    "n": 20,
+    "wall_ms": {
+     "mean": 41323,
+     "p50": 37362,
+     "p95": 58953.450000000055
+    },
+    "output_tokens": {
+     "mean": 461.35,
+     "p50": 436.5
+    },
+    "prompt_tokens_mean": 992.9,
+    "decode_tokens_per_s": null,
+    "prompt_eval_ms_mean": 1717.49499995,
+    "valid_rate": 0.85,
+    "correct_rate": 0.7647058823529411,
+    "correct": "13/17",
+    "hit_token_cap": 1,
+    "client_timeouts": 0
+   },
+   "v2": {
+    "n": 20,
+    "wall_ms": {
+     "mean": 21090,
+     "p50": 19432.5,
+     "p95": 28152.5
+    },
+    "output_tokens": {
+     "mean": 241.65,
+     "p50": 229.5
+    },
+    "prompt_tokens_mean": 1272.1,
+    "decode_tokens_per_s": 12.555206145273372,
+    "prompt_eval_ms_mean": 1733.0146499999998,
+    "valid_rate": 1,
+    "correct_rate": 0.7,
+    "correct": "14/20",
+    "hit_token_cap": 0,
+    "client_timeouts": 0
+   },
+   "paired_wall_diff_ms": {
+    "mean": -17225.235294117647,
+    "ci95": [
+     -22030.29411764706,
+     -13062.058823529413
+    ]
+   },
+   "relative_change": -0.45793455687334234,
+   "cold_start": {
+    "runs": [
+     {
+      "wallMs": 24446,
+      "loadMs": 4367.561042
+     },
+     {
+      "wallMs": 25045,
+      "loadMs": 3344.134125
+     },
+     {
+      "wallMs": 23483,
+      "loadMs": 1831.555
+     }
+    ],
+    "wall_ms_mean": 24324.666666666668,
+    "load_ms_mean": 3181.083389
+   }
+  },
   "privacy": {
-   "passed": 16,
-   "total": 16
+   "passed": 21,
+   "total": 21
   }
  }
 }

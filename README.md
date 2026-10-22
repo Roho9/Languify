@@ -47,6 +47,7 @@ Full instructions: [docs/SETUP.md](docs/SETUP.md).
 - [Real-device checklist](docs/TESTING_CHECKLIST.md)
 - [Release checklist](docs/RELEASE_CHECKLIST.md)
 - [Roadmap and status](docs/ROADMAP.md)
+- [Benchmarks](docs/benchmarks/PerformanceBaselines.md): measured baselines, [experiment log](docs/benchmarks/ExperimentLog.md), [methodology](docs/benchmarks/BenchmarkMethodology.md), [reproduction](docs/benchmarks/Reproduction.md), [resume metrics](docs/benchmarks/ResumeMetrics.md)
 
 ## Stack
 
