@@ -1,0 +1,5054 @@
+{
+ "dataset": "asr_tamil_synthetic_v1",
+ "annotations": "BenchmarkData/Annotations/tamil_pilot_v1.json",
+ "source_label": "SYNTHETIC: macOS TTS voice Vani (single speaker); noise artificially mixed",
+ "sample_rate": 16000,
+ "voice": "Vani",
+ "rates_wpm": {
+  "slow": 130,
+  "normal": 185,
+  "fast": 250
+ },
+ "clips": [
+  {
+   "clip_id": "ta-001/slow",
+   "sentence_id": "ta-001",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_slow.wav"
+  },
+  {
+   "clip_id": "ta-001/normal",
+   "sentence_id": "ta-001",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_normal.wav"
+  },
+  {
+   "clip_id": "ta-001/fast",
+   "sentence_id": "ta-001",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_fast.wav"
+  },
+  {
+   "clip_id": "ta-001/pink+20",
+   "sentence_id": "ta-001",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-001/pink+10",
+   "sentence_id": "ta-001",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-001/pink+0",
+   "sentence_id": "ta-001",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-001/pink-5",
+   "sentence_id": "ta-001",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-001/babble+10",
+   "sentence_id": "ta-001",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-001/babble+0",
+   "sentence_id": "ta-001",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-001/overlap",
+   "sentence_id": "ta-001",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-008 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_overlap.wav"
+  },
+  {
+   "clip_id": "ta-002/slow",
+   "sentence_id": "ta-002",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_slow.wav"
+  },
+  {
+   "clip_id": "ta-002/normal",
+   "sentence_id": "ta-002",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_normal.wav"
+  },
+  {
+   "clip_id": "ta-002/fast",
+   "sentence_id": "ta-002",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_fast.wav"
+  },
+  {
+   "clip_id": "ta-002/pink+20",
+   "sentence_id": "ta-002",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-002/pink+10",
+   "sentence_id": "ta-002",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-002/pink+0",
+   "sentence_id": "ta-002",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-002/pink-5",
+   "sentence_id": "ta-002",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-002/babble+10",
+   "sentence_id": "ta-002",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-002/babble+0",
+   "sentence_id": "ta-002",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-002/overlap",
+   "sentence_id": "ta-002",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-009 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_overlap.wav"
+  },
+  {
+   "clip_id": "ta-003/slow",
+   "sentence_id": "ta-003",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_slow.wav"
+  },
+  {
+   "clip_id": "ta-003/normal",
+   "sentence_id": "ta-003",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_normal.wav"
+  },
+  {
+   "clip_id": "ta-003/fast",
+   "sentence_id": "ta-003",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_fast.wav"
+  },
+  {
+   "clip_id": "ta-003/pink+20",
+   "sentence_id": "ta-003",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-003/pink+10",
+   "sentence_id": "ta-003",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-003/pink+0",
+   "sentence_id": "ta-003",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-003/pink-5",
+   "sentence_id": "ta-003",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-003/babble+10",
+   "sentence_id": "ta-003",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-003/babble+0",
+   "sentence_id": "ta-003",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-003/overlap",
+   "sentence_id": "ta-003",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-010 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_overlap.wav"
+  },
+  {
+   "clip_id": "ta-004/slow",
+   "sentence_id": "ta-004",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_slow.wav"
+  },
+  {
+   "clip_id": "ta-004/normal",
+   "sentence_id": "ta-004",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_normal.wav"
+  },
+  {
+   "clip_id": "ta-004/fast",
+   "sentence_id": "ta-004",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_fast.wav"
+  },
+  {
+   "clip_id": "ta-004/pink+20",
+   "sentence_id": "ta-004",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-004/pink+10",
+   "sentence_id": "ta-004",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-004/pink+0",
+   "sentence_id": "ta-004",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-004/pink-5",
+   "sentence_id": "ta-004",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-004/babble+10",
+   "sentence_id": "ta-004",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-004/babble+0",
+   "sentence_id": "ta-004",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-004/overlap",
+   "sentence_id": "ta-004",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-011 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_overlap.wav"
+  },
+  {
+   "clip_id": "ta-005/slow",
+   "sentence_id": "ta-005",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_slow.wav"
+  },
+  {
+   "clip_id": "ta-005/normal",
+   "sentence_id": "ta-005",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_normal.wav"
+  },
+  {
+   "clip_id": "ta-005/fast",
+   "sentence_id": "ta-005",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_fast.wav"
+  },
+  {
+   "clip_id": "ta-005/pink+20",
+   "sentence_id": "ta-005",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-005/pink+10",
+   "sentence_id": "ta-005",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-005/pink+0",
+   "sentence_id": "ta-005",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-005/pink-5",
+   "sentence_id": "ta-005",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-005/babble+10",
+   "sentence_id": "ta-005",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-005/babble+0",
+   "sentence_id": "ta-005",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-005/overlap",
+   "sentence_id": "ta-005",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-012 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_overlap.wav"
+  },
+  {
+   "clip_id": "ta-006/slow",
+   "sentence_id": "ta-006",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_slow.wav"
+  },
+  {
+   "clip_id": "ta-006/normal",
+   "sentence_id": "ta-006",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_normal.wav"
+  },
+  {
+   "clip_id": "ta-006/fast",
+   "sentence_id": "ta-006",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_fast.wav"
+  },
+  {
+   "clip_id": "ta-006/pink+20",
+   "sentence_id": "ta-006",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-006/pink+10",
+   "sentence_id": "ta-006",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-006/pink+0",
+   "sentence_id": "ta-006",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-006/pink-5",
+   "sentence_id": "ta-006",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-006/babble+10",
+   "sentence_id": "ta-006",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-006/babble+0",
+   "sentence_id": "ta-006",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-006/overlap",
+   "sentence_id": "ta-006",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-013 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_overlap.wav"
+  },
+  {
+   "clip_id": "ta-007/slow",
+   "sentence_id": "ta-007",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_slow.wav"
+  },
+  {
+   "clip_id": "ta-007/normal",
+   "sentence_id": "ta-007",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_normal.wav"
+  },
+  {
+   "clip_id": "ta-007/fast",
+   "sentence_id": "ta-007",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_fast.wav"
+  },
+  {
+   "clip_id": "ta-007/pink+20",
+   "sentence_id": "ta-007",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-007/pink+10",
+   "sentence_id": "ta-007",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-007/pink+0",
+   "sentence_id": "ta-007",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-007/pink-5",
+   "sentence_id": "ta-007",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-007/babble+10",
+   "sentence_id": "ta-007",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-007/babble+0",
+   "sentence_id": "ta-007",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-007/overlap",
+   "sentence_id": "ta-007",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-014 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_overlap.wav"
+  },
+  {
+   "clip_id": "ta-008/slow",
+   "sentence_id": "ta-008",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_slow.wav"
+  },
+  {
+   "clip_id": "ta-008/normal",
+   "sentence_id": "ta-008",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_normal.wav"
+  },
+  {
+   "clip_id": "ta-008/fast",
+   "sentence_id": "ta-008",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_fast.wav"
+  },
+  {
+   "clip_id": "ta-008/pink+20",
+   "sentence_id": "ta-008",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-008/pink+10",
+   "sentence_id": "ta-008",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-008/pink+0",
+   "sentence_id": "ta-008",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-008/pink-5",
+   "sentence_id": "ta-008",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-008/babble+10",
+   "sentence_id": "ta-008",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-008/babble+0",
+   "sentence_id": "ta-008",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-008/overlap",
+   "sentence_id": "ta-008",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-015 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_overlap.wav"
+  },
+  {
+   "clip_id": "ta-009/slow",
+   "sentence_id": "ta-009",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_slow.wav"
+  },
+  {
+   "clip_id": "ta-009/normal",
+   "sentence_id": "ta-009",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_normal.wav"
+  },
+  {
+   "clip_id": "ta-009/fast",
+   "sentence_id": "ta-009",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_fast.wav"
+  },
+  {
+   "clip_id": "ta-009/pink+20",
+   "sentence_id": "ta-009",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-009/pink+10",
+   "sentence_id": "ta-009",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-009/pink+0",
+   "sentence_id": "ta-009",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-009/pink-5",
+   "sentence_id": "ta-009",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-009/babble+10",
+   "sentence_id": "ta-009",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-009/babble+0",
+   "sentence_id": "ta-009",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-009/overlap",
+   "sentence_id": "ta-009",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-016 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_overlap.wav"
+  },
+  {
+   "clip_id": "ta-010/slow",
+   "sentence_id": "ta-010",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_slow.wav"
+  },
+  {
+   "clip_id": "ta-010/normal",
+   "sentence_id": "ta-010",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_normal.wav"
+  },
+  {
+   "clip_id": "ta-010/fast",
+   "sentence_id": "ta-010",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_fast.wav"
+  },
+  {
+   "clip_id": "ta-010/pink+20",
+   "sentence_id": "ta-010",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-010/pink+10",
+   "sentence_id": "ta-010",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-010/pink+0",
+   "sentence_id": "ta-010",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-010/pink-5",
+   "sentence_id": "ta-010",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-010/babble+10",
+   "sentence_id": "ta-010",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-010/babble+0",
+   "sentence_id": "ta-010",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-010/overlap",
+   "sentence_id": "ta-010",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-017 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_overlap.wav"
+  },
+  {
+   "clip_id": "ta-011/slow",
+   "sentence_id": "ta-011",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_slow.wav"
+  },
+  {
+   "clip_id": "ta-011/normal",
+   "sentence_id": "ta-011",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_normal.wav"
+  },
+  {
+   "clip_id": "ta-011/fast",
+   "sentence_id": "ta-011",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_fast.wav"
+  },
+  {
+   "clip_id": "ta-011/pink+20",
+   "sentence_id": "ta-011",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-011/pink+10",
+   "sentence_id": "ta-011",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-011/pink+0",
+   "sentence_id": "ta-011",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-011/pink-5",
+   "sentence_id": "ta-011",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-011/babble+10",
+   "sentence_id": "ta-011",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-011/babble+0",
+   "sentence_id": "ta-011",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-011/overlap",
+   "sentence_id": "ta-011",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-018 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_overlap.wav"
+  },
+  {
+   "clip_id": "ta-012/slow",
+   "sentence_id": "ta-012",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_slow.wav"
+  },
+  {
+   "clip_id": "ta-012/normal",
+   "sentence_id": "ta-012",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_normal.wav"
+  },
+  {
+   "clip_id": "ta-012/fast",
+   "sentence_id": "ta-012",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_fast.wav"
+  },
+  {
+   "clip_id": "ta-012/pink+20",
+   "sentence_id": "ta-012",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-012/pink+10",
+   "sentence_id": "ta-012",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-012/pink+0",
+   "sentence_id": "ta-012",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-012/pink-5",
+   "sentence_id": "ta-012",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-012/babble+10",
+   "sentence_id": "ta-012",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-012/babble+0",
+   "sentence_id": "ta-012",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-012/overlap",
+   "sentence_id": "ta-012",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-019 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_overlap.wav"
+  },
+  {
+   "clip_id": "ta-013/slow",
+   "sentence_id": "ta-013",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_slow.wav"
+  },
+  {
+   "clip_id": "ta-013/normal",
+   "sentence_id": "ta-013",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_normal.wav"
+  },
+  {
+   "clip_id": "ta-013/fast",
+   "sentence_id": "ta-013",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_fast.wav"
+  },
+  {
+   "clip_id": "ta-013/pink+20",
+   "sentence_id": "ta-013",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-013/pink+10",
+   "sentence_id": "ta-013",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-013/pink+0",
+   "sentence_id": "ta-013",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-013/pink-5",
+   "sentence_id": "ta-013",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-013/babble+10",
+   "sentence_id": "ta-013",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-013/babble+0",
+   "sentence_id": "ta-013",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-013/overlap",
+   "sentence_id": "ta-013",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-020 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_overlap.wav"
+  },
+  {
+   "clip_id": "ta-014/slow",
+   "sentence_id": "ta-014",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_slow.wav"
+  },
+  {
+   "clip_id": "ta-014/normal",
+   "sentence_id": "ta-014",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_normal.wav"
+  },
+  {
+   "clip_id": "ta-014/fast",
+   "sentence_id": "ta-014",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_fast.wav"
+  },
+  {
+   "clip_id": "ta-014/pink+20",
+   "sentence_id": "ta-014",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-014/pink+10",
+   "sentence_id": "ta-014",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-014/pink+0",
+   "sentence_id": "ta-014",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-014/pink-5",
+   "sentence_id": "ta-014",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-014/babble+10",
+   "sentence_id": "ta-014",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-014/babble+0",
+   "sentence_id": "ta-014",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-014/overlap",
+   "sentence_id": "ta-014",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-021 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_overlap.wav"
+  },
+  {
+   "clip_id": "ta-015/slow",
+   "sentence_id": "ta-015",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_slow.wav"
+  },
+  {
+   "clip_id": "ta-015/normal",
+   "sentence_id": "ta-015",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_normal.wav"
+  },
+  {
+   "clip_id": "ta-015/fast",
+   "sentence_id": "ta-015",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_fast.wav"
+  },
+  {
+   "clip_id": "ta-015/pink+20",
+   "sentence_id": "ta-015",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-015/pink+10",
+   "sentence_id": "ta-015",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-015/pink+0",
+   "sentence_id": "ta-015",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-015/pink-5",
+   "sentence_id": "ta-015",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-015/babble+10",
+   "sentence_id": "ta-015",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-015/babble+0",
+   "sentence_id": "ta-015",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-015/overlap",
+   "sentence_id": "ta-015",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-022 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_overlap.wav"
+  },
+  {
+   "clip_id": "ta-016/slow",
+   "sentence_id": "ta-016",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_slow.wav"
+  },
+  {
+   "clip_id": "ta-016/normal",
+   "sentence_id": "ta-016",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_normal.wav"
+  },
+  {
+   "clip_id": "ta-016/fast",
+   "sentence_id": "ta-016",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_fast.wav"
+  },
+  {
+   "clip_id": "ta-016/pink+20",
+   "sentence_id": "ta-016",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-016/pink+10",
+   "sentence_id": "ta-016",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-016/pink+0",
+   "sentence_id": "ta-016",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-016/pink-5",
+   "sentence_id": "ta-016",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-016/babble+10",
+   "sentence_id": "ta-016",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-016/babble+0",
+   "sentence_id": "ta-016",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-016/overlap",
+   "sentence_id": "ta-016",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-023 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_overlap.wav"
+  },
+  {
+   "clip_id": "ta-017/slow",
+   "sentence_id": "ta-017",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_slow.wav"
+  },
+  {
+   "clip_id": "ta-017/normal",
+   "sentence_id": "ta-017",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_normal.wav"
+  },
+  {
+   "clip_id": "ta-017/fast",
+   "sentence_id": "ta-017",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_fast.wav"
+  },
+  {
+   "clip_id": "ta-017/pink+20",
+   "sentence_id": "ta-017",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-017/pink+10",
+   "sentence_id": "ta-017",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-017/pink+0",
+   "sentence_id": "ta-017",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-017/pink-5",
+   "sentence_id": "ta-017",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-017/babble+10",
+   "sentence_id": "ta-017",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-017/babble+0",
+   "sentence_id": "ta-017",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-017/overlap",
+   "sentence_id": "ta-017",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-024 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_overlap.wav"
+  },
+  {
+   "clip_id": "ta-018/slow",
+   "sentence_id": "ta-018",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_slow.wav"
+  },
+  {
+   "clip_id": "ta-018/normal",
+   "sentence_id": "ta-018",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_normal.wav"
+  },
+  {
+   "clip_id": "ta-018/fast",
+   "sentence_id": "ta-018",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_fast.wav"
+  },
+  {
+   "clip_id": "ta-018/pink+20",
+   "sentence_id": "ta-018",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-018/pink+10",
+   "sentence_id": "ta-018",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-018/pink+0",
+   "sentence_id": "ta-018",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-018/pink-5",
+   "sentence_id": "ta-018",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-018/babble+10",
+   "sentence_id": "ta-018",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-018/babble+0",
+   "sentence_id": "ta-018",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-018/overlap",
+   "sentence_id": "ta-018",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-025 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_overlap.wav"
+  },
+  {
+   "clip_id": "ta-019/slow",
+   "sentence_id": "ta-019",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_slow.wav"
+  },
+  {
+   "clip_id": "ta-019/normal",
+   "sentence_id": "ta-019",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_normal.wav"
+  },
+  {
+   "clip_id": "ta-019/fast",
+   "sentence_id": "ta-019",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_fast.wav"
+  },
+  {
+   "clip_id": "ta-019/pink+20",
+   "sentence_id": "ta-019",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-019/pink+10",
+   "sentence_id": "ta-019",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-019/pink+0",
+   "sentence_id": "ta-019",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-019/pink-5",
+   "sentence_id": "ta-019",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-019/babble+10",
+   "sentence_id": "ta-019",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-019/babble+0",
+   "sentence_id": "ta-019",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-019/overlap",
+   "sentence_id": "ta-019",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-026 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_overlap.wav"
+  },
+  {
+   "clip_id": "ta-020/slow",
+   "sentence_id": "ta-020",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_slow.wav"
+  },
+  {
+   "clip_id": "ta-020/normal",
+   "sentence_id": "ta-020",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_normal.wav"
+  },
+  {
+   "clip_id": "ta-020/fast",
+   "sentence_id": "ta-020",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_fast.wav"
+  },
+  {
+   "clip_id": "ta-020/pink+20",
+   "sentence_id": "ta-020",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-020/pink+10",
+   "sentence_id": "ta-020",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-020/pink+0",
+   "sentence_id": "ta-020",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-020/pink-5",
+   "sentence_id": "ta-020",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-020/babble+10",
+   "sentence_id": "ta-020",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-020/babble+0",
+   "sentence_id": "ta-020",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-020/overlap",
+   "sentence_id": "ta-020",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-027 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_overlap.wav"
+  },
+  {
+   "clip_id": "ta-021/slow",
+   "sentence_id": "ta-021",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_slow.wav"
+  },
+  {
+   "clip_id": "ta-021/normal",
+   "sentence_id": "ta-021",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_normal.wav"
+  },
+  {
+   "clip_id": "ta-021/fast",
+   "sentence_id": "ta-021",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_fast.wav"
+  },
+  {
+   "clip_id": "ta-021/pink+20",
+   "sentence_id": "ta-021",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-021/pink+10",
+   "sentence_id": "ta-021",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-021/pink+0",
+   "sentence_id": "ta-021",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-021/pink-5",
+   "sentence_id": "ta-021",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-021/babble+10",
+   "sentence_id": "ta-021",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-021/babble+0",
+   "sentence_id": "ta-021",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-021/overlap",
+   "sentence_id": "ta-021",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-028 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_overlap.wav"
+  },
+  {
+   "clip_id": "ta-022/slow",
+   "sentence_id": "ta-022",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_slow.wav"
+  },
+  {
+   "clip_id": "ta-022/normal",
+   "sentence_id": "ta-022",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_normal.wav"
+  },
+  {
+   "clip_id": "ta-022/fast",
+   "sentence_id": "ta-022",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_fast.wav"
+  },
+  {
+   "clip_id": "ta-022/pink+20",
+   "sentence_id": "ta-022",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-022/pink+10",
+   "sentence_id": "ta-022",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-022/pink+0",
+   "sentence_id": "ta-022",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-022/pink-5",
+   "sentence_id": "ta-022",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-022/babble+10",
+   "sentence_id": "ta-022",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-022/babble+0",
+   "sentence_id": "ta-022",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-022/overlap",
+   "sentence_id": "ta-022",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-029 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_overlap.wav"
+  },
+  {
+   "clip_id": "ta-023/slow",
+   "sentence_id": "ta-023",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_slow.wav"
+  },
+  {
+   "clip_id": "ta-023/normal",
+   "sentence_id": "ta-023",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_normal.wav"
+  },
+  {
+   "clip_id": "ta-023/fast",
+   "sentence_id": "ta-023",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_fast.wav"
+  },
+  {
+   "clip_id": "ta-023/pink+20",
+   "sentence_id": "ta-023",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-023/pink+10",
+   "sentence_id": "ta-023",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-023/pink+0",
+   "sentence_id": "ta-023",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-023/pink-5",
+   "sentence_id": "ta-023",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-023/babble+10",
+   "sentence_id": "ta-023",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-023/babble+0",
+   "sentence_id": "ta-023",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-023/overlap",
+   "sentence_id": "ta-023",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-030 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_overlap.wav"
+  },
+  {
+   "clip_id": "ta-024/slow",
+   "sentence_id": "ta-024",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_slow.wav"
+  },
+  {
+   "clip_id": "ta-024/normal",
+   "sentence_id": "ta-024",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_normal.wav"
+  },
+  {
+   "clip_id": "ta-024/fast",
+   "sentence_id": "ta-024",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_fast.wav"
+  },
+  {
+   "clip_id": "ta-024/pink+20",
+   "sentence_id": "ta-024",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-024/pink+10",
+   "sentence_id": "ta-024",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-024/pink+0",
+   "sentence_id": "ta-024",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-024/pink-5",
+   "sentence_id": "ta-024",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-024/babble+10",
+   "sentence_id": "ta-024",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-024/babble+0",
+   "sentence_id": "ta-024",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-024/overlap",
+   "sentence_id": "ta-024",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-031 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_overlap.wav"
+  },
+  {
+   "clip_id": "ta-025/slow",
+   "sentence_id": "ta-025",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_slow.wav"
+  },
+  {
+   "clip_id": "ta-025/normal",
+   "sentence_id": "ta-025",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_normal.wav"
+  },
+  {
+   "clip_id": "ta-025/fast",
+   "sentence_id": "ta-025",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_fast.wav"
+  },
+  {
+   "clip_id": "ta-025/pink+20",
+   "sentence_id": "ta-025",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-025/pink+10",
+   "sentence_id": "ta-025",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-025/pink+0",
+   "sentence_id": "ta-025",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-025/pink-5",
+   "sentence_id": "ta-025",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-025/babble+10",
+   "sentence_id": "ta-025",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-025/babble+0",
+   "sentence_id": "ta-025",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-025/overlap",
+   "sentence_id": "ta-025",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-032 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_overlap.wav"
+  },
+  {
+   "clip_id": "ta-026/slow",
+   "sentence_id": "ta-026",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_slow.wav"
+  },
+  {
+   "clip_id": "ta-026/normal",
+   "sentence_id": "ta-026",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_normal.wav"
+  },
+  {
+   "clip_id": "ta-026/fast",
+   "sentence_id": "ta-026",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_fast.wav"
+  },
+  {
+   "clip_id": "ta-026/pink+20",
+   "sentence_id": "ta-026",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-026/pink+10",
+   "sentence_id": "ta-026",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-026/pink+0",
+   "sentence_id": "ta-026",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-026/pink-5",
+   "sentence_id": "ta-026",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-026/babble+10",
+   "sentence_id": "ta-026",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-026/babble+0",
+   "sentence_id": "ta-026",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-026/overlap",
+   "sentence_id": "ta-026",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-033 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_overlap.wav"
+  },
+  {
+   "clip_id": "ta-027/slow",
+   "sentence_id": "ta-027",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_slow.wav"
+  },
+  {
+   "clip_id": "ta-027/normal",
+   "sentence_id": "ta-027",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_normal.wav"
+  },
+  {
+   "clip_id": "ta-027/fast",
+   "sentence_id": "ta-027",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_fast.wav"
+  },
+  {
+   "clip_id": "ta-027/pink+20",
+   "sentence_id": "ta-027",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-027/pink+10",
+   "sentence_id": "ta-027",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-027/pink+0",
+   "sentence_id": "ta-027",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-027/pink-5",
+   "sentence_id": "ta-027",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-027/babble+10",
+   "sentence_id": "ta-027",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-027/babble+0",
+   "sentence_id": "ta-027",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-027/overlap",
+   "sentence_id": "ta-027",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-034 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_overlap.wav"
+  },
+  {
+   "clip_id": "ta-028/slow",
+   "sentence_id": "ta-028",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_slow.wav"
+  },
+  {
+   "clip_id": "ta-028/normal",
+   "sentence_id": "ta-028",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_normal.wav"
+  },
+  {
+   "clip_id": "ta-028/fast",
+   "sentence_id": "ta-028",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_fast.wav"
+  },
+  {
+   "clip_id": "ta-028/pink+20",
+   "sentence_id": "ta-028",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-028/pink+10",
+   "sentence_id": "ta-028",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-028/pink+0",
+   "sentence_id": "ta-028",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-028/pink-5",
+   "sentence_id": "ta-028",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-028/babble+10",
+   "sentence_id": "ta-028",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-028/babble+0",
+   "sentence_id": "ta-028",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-028/overlap",
+   "sentence_id": "ta-028",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-035 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_overlap.wav"
+  },
+  {
+   "clip_id": "ta-029/slow",
+   "sentence_id": "ta-029",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_slow.wav"
+  },
+  {
+   "clip_id": "ta-029/normal",
+   "sentence_id": "ta-029",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_normal.wav"
+  },
+  {
+   "clip_id": "ta-029/fast",
+   "sentence_id": "ta-029",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_fast.wav"
+  },
+  {
+   "clip_id": "ta-029/pink+20",
+   "sentence_id": "ta-029",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-029/pink+10",
+   "sentence_id": "ta-029",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-029/pink+0",
+   "sentence_id": "ta-029",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-029/pink-5",
+   "sentence_id": "ta-029",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-029/babble+10",
+   "sentence_id": "ta-029",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-029/babble+0",
+   "sentence_id": "ta-029",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-029/overlap",
+   "sentence_id": "ta-029",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-036 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_overlap.wav"
+  },
+  {
+   "clip_id": "ta-030/slow",
+   "sentence_id": "ta-030",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_slow.wav"
+  },
+  {
+   "clip_id": "ta-030/normal",
+   "sentence_id": "ta-030",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_normal.wav"
+  },
+  {
+   "clip_id": "ta-030/fast",
+   "sentence_id": "ta-030",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_fast.wav"
+  },
+  {
+   "clip_id": "ta-030/pink+20",
+   "sentence_id": "ta-030",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-030/pink+10",
+   "sentence_id": "ta-030",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-030/pink+0",
+   "sentence_id": "ta-030",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-030/pink-5",
+   "sentence_id": "ta-030",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-030/babble+10",
+   "sentence_id": "ta-030",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-030/babble+0",
+   "sentence_id": "ta-030",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-030/overlap",
+   "sentence_id": "ta-030",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-001 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_overlap.wav"
+  },
+  {
+   "clip_id": "ta-031/slow",
+   "sentence_id": "ta-031",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_slow.wav"
+  },
+  {
+   "clip_id": "ta-031/normal",
+   "sentence_id": "ta-031",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_normal.wav"
+  },
+  {
+   "clip_id": "ta-031/fast",
+   "sentence_id": "ta-031",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_fast.wav"
+  },
+  {
+   "clip_id": "ta-031/pink+20",
+   "sentence_id": "ta-031",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-031/pink+10",
+   "sentence_id": "ta-031",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-031/pink+0",
+   "sentence_id": "ta-031",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-031/pink-5",
+   "sentence_id": "ta-031",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-031/babble+10",
+   "sentence_id": "ta-031",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-031/babble+0",
+   "sentence_id": "ta-031",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-031/overlap",
+   "sentence_id": "ta-031",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-002 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_overlap.wav"
+  },
+  {
+   "clip_id": "ta-032/slow",
+   "sentence_id": "ta-032",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_slow.wav"
+  },
+  {
+   "clip_id": "ta-032/normal",
+   "sentence_id": "ta-032",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_normal.wav"
+  },
+  {
+   "clip_id": "ta-032/fast",
+   "sentence_id": "ta-032",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_fast.wav"
+  },
+  {
+   "clip_id": "ta-032/pink+20",
+   "sentence_id": "ta-032",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-032/pink+10",
+   "sentence_id": "ta-032",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-032/pink+0",
+   "sentence_id": "ta-032",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-032/pink-5",
+   "sentence_id": "ta-032",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-032/babble+10",
+   "sentence_id": "ta-032",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-032/babble+0",
+   "sentence_id": "ta-032",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-032/overlap",
+   "sentence_id": "ta-032",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-003 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_overlap.wav"
+  },
+  {
+   "clip_id": "ta-033/slow",
+   "sentence_id": "ta-033",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_slow.wav"
+  },
+  {
+   "clip_id": "ta-033/normal",
+   "sentence_id": "ta-033",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_normal.wav"
+  },
+  {
+   "clip_id": "ta-033/fast",
+   "sentence_id": "ta-033",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_fast.wav"
+  },
+  {
+   "clip_id": "ta-033/pink+20",
+   "sentence_id": "ta-033",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-033/pink+10",
+   "sentence_id": "ta-033",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-033/pink+0",
+   "sentence_id": "ta-033",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-033/pink-5",
+   "sentence_id": "ta-033",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-033/babble+10",
+   "sentence_id": "ta-033",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-033/babble+0",
+   "sentence_id": "ta-033",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-033/overlap",
+   "sentence_id": "ta-033",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-004 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_overlap.wav"
+  },
+  {
+   "clip_id": "ta-034/slow",
+   "sentence_id": "ta-034",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_slow.wav"
+  },
+  {
+   "clip_id": "ta-034/normal",
+   "sentence_id": "ta-034",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_normal.wav"
+  },
+  {
+   "clip_id": "ta-034/fast",
+   "sentence_id": "ta-034",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_fast.wav"
+  },
+  {
+   "clip_id": "ta-034/pink+20",
+   "sentence_id": "ta-034",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-034/pink+10",
+   "sentence_id": "ta-034",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-034/pink+0",
+   "sentence_id": "ta-034",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-034/pink-5",
+   "sentence_id": "ta-034",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-034/babble+10",
+   "sentence_id": "ta-034",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-034/babble+0",
+   "sentence_id": "ta-034",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-034/overlap",
+   "sentence_id": "ta-034",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-005 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_overlap.wav"
+  },
+  {
+   "clip_id": "ta-035/slow",
+   "sentence_id": "ta-035",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_slow.wav"
+  },
+  {
+   "clip_id": "ta-035/normal",
+   "sentence_id": "ta-035",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_normal.wav"
+  },
+  {
+   "clip_id": "ta-035/fast",
+   "sentence_id": "ta-035",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_fast.wav"
+  },
+  {
+   "clip_id": "ta-035/pink+20",
+   "sentence_id": "ta-035",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-035/pink+10",
+   "sentence_id": "ta-035",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-035/pink+0",
+   "sentence_id": "ta-035",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-035/pink-5",
+   "sentence_id": "ta-035",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-035/babble+10",
+   "sentence_id": "ta-035",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-035/babble+0",
+   "sentence_id": "ta-035",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-035/overlap",
+   "sentence_id": "ta-035",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-006 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_overlap.wav"
+  },
+  {
+   "clip_id": "ta-036/slow",
+   "sentence_id": "ta-036",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_slow.wav"
+  },
+  {
+   "clip_id": "ta-036/normal",
+   "sentence_id": "ta-036",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_normal.wav"
+  },
+  {
+   "clip_id": "ta-036/fast",
+   "sentence_id": "ta-036",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_fast.wav"
+  },
+  {
+   "clip_id": "ta-036/pink+20",
+   "sentence_id": "ta-036",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_pink+20.wav"
+  },
+  {
+   "clip_id": "ta-036/pink+10",
+   "sentence_id": "ta-036",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_pink+10.wav"
+  },
+  {
+   "clip_id": "ta-036/pink+0",
+   "sentence_id": "ta-036",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_pink+0.wav"
+  },
+  {
+   "clip_id": "ta-036/pink-5",
+   "sentence_id": "ta-036",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_pink-5.wav"
+  },
+  {
+   "clip_id": "ta-036/babble+10",
+   "sentence_id": "ta-036",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_babble+10.wav"
+  },
+  {
+   "clip_id": "ta-036/babble+0",
+   "sentence_id": "ta-036",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_babble+0.wav"
+  },
+  {
+   "clip_id": "ta-036/overlap",
+   "sentence_id": "ta-036",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-007 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_overlap.wav"
+  },
+  {
+   "clip_id": "cs-001/slow",
+   "sentence_id": "cs-001",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_slow.wav"
+  },
+  {
+   "clip_id": "cs-001/normal",
+   "sentence_id": "cs-001",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_normal.wav"
+  },
+  {
+   "clip_id": "cs-001/fast",
+   "sentence_id": "cs-001",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_fast.wav"
+  },
+  {
+   "clip_id": "cs-001/pink+20",
+   "sentence_id": "cs-001",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-001/pink+10",
+   "sentence_id": "cs-001",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-001/pink+0",
+   "sentence_id": "cs-001",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-001/pink-5",
+   "sentence_id": "cs-001",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-001/babble+10",
+   "sentence_id": "cs-001",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-001/babble+0",
+   "sentence_id": "cs-001",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-001/overlap",
+   "sentence_id": "cs-001",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-008 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_overlap.wav"
+  },
+  {
+   "clip_id": "cs-002/slow",
+   "sentence_id": "cs-002",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_slow.wav"
+  },
+  {
+   "clip_id": "cs-002/normal",
+   "sentence_id": "cs-002",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_normal.wav"
+  },
+  {
+   "clip_id": "cs-002/fast",
+   "sentence_id": "cs-002",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_fast.wav"
+  },
+  {
+   "clip_id": "cs-002/pink+20",
+   "sentence_id": "cs-002",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-002/pink+10",
+   "sentence_id": "cs-002",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-002/pink+0",
+   "sentence_id": "cs-002",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-002/pink-5",
+   "sentence_id": "cs-002",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-002/babble+10",
+   "sentence_id": "cs-002",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-002/babble+0",
+   "sentence_id": "cs-002",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-002/overlap",
+   "sentence_id": "cs-002",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-009 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_overlap.wav"
+  },
+  {
+   "clip_id": "cs-003/slow",
+   "sentence_id": "cs-003",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_slow.wav"
+  },
+  {
+   "clip_id": "cs-003/normal",
+   "sentence_id": "cs-003",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_normal.wav"
+  },
+  {
+   "clip_id": "cs-003/fast",
+   "sentence_id": "cs-003",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_fast.wav"
+  },
+  {
+   "clip_id": "cs-003/pink+20",
+   "sentence_id": "cs-003",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-003/pink+10",
+   "sentence_id": "cs-003",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-003/pink+0",
+   "sentence_id": "cs-003",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-003/pink-5",
+   "sentence_id": "cs-003",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-003/babble+10",
+   "sentence_id": "cs-003",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-003/babble+0",
+   "sentence_id": "cs-003",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-003/overlap",
+   "sentence_id": "cs-003",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-010 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_overlap.wav"
+  },
+  {
+   "clip_id": "cs-004/slow",
+   "sentence_id": "cs-004",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_slow.wav"
+  },
+  {
+   "clip_id": "cs-004/normal",
+   "sentence_id": "cs-004",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_normal.wav"
+  },
+  {
+   "clip_id": "cs-004/fast",
+   "sentence_id": "cs-004",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_fast.wav"
+  },
+  {
+   "clip_id": "cs-004/pink+20",
+   "sentence_id": "cs-004",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-004/pink+10",
+   "sentence_id": "cs-004",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-004/pink+0",
+   "sentence_id": "cs-004",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-004/pink-5",
+   "sentence_id": "cs-004",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-004/babble+10",
+   "sentence_id": "cs-004",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-004/babble+0",
+   "sentence_id": "cs-004",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-004/overlap",
+   "sentence_id": "cs-004",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-011 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_overlap.wav"
+  },
+  {
+   "clip_id": "cs-005/slow",
+   "sentence_id": "cs-005",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_slow.wav"
+  },
+  {
+   "clip_id": "cs-005/normal",
+   "sentence_id": "cs-005",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_normal.wav"
+  },
+  {
+   "clip_id": "cs-005/fast",
+   "sentence_id": "cs-005",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_fast.wav"
+  },
+  {
+   "clip_id": "cs-005/pink+20",
+   "sentence_id": "cs-005",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-005/pink+10",
+   "sentence_id": "cs-005",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-005/pink+0",
+   "sentence_id": "cs-005",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-005/pink-5",
+   "sentence_id": "cs-005",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-005/babble+10",
+   "sentence_id": "cs-005",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-005/babble+0",
+   "sentence_id": "cs-005",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-005/overlap",
+   "sentence_id": "cs-005",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-012 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_overlap.wav"
+  },
+  {
+   "clip_id": "cs-006/slow",
+   "sentence_id": "cs-006",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_slow.wav"
+  },
+  {
+   "clip_id": "cs-006/normal",
+   "sentence_id": "cs-006",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_normal.wav"
+  },
+  {
+   "clip_id": "cs-006/fast",
+   "sentence_id": "cs-006",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_fast.wav"
+  },
+  {
+   "clip_id": "cs-006/pink+20",
+   "sentence_id": "cs-006",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-006/pink+10",
+   "sentence_id": "cs-006",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-006/pink+0",
+   "sentence_id": "cs-006",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-006/pink-5",
+   "sentence_id": "cs-006",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-006/babble+10",
+   "sentence_id": "cs-006",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-006/babble+0",
+   "sentence_id": "cs-006",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-006/overlap",
+   "sentence_id": "cs-006",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-013 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_overlap.wav"
+  },
+  {
+   "clip_id": "cs-007/slow",
+   "sentence_id": "cs-007",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_slow.wav"
+  },
+  {
+   "clip_id": "cs-007/normal",
+   "sentence_id": "cs-007",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_normal.wav"
+  },
+  {
+   "clip_id": "cs-007/fast",
+   "sentence_id": "cs-007",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_fast.wav"
+  },
+  {
+   "clip_id": "cs-007/pink+20",
+   "sentence_id": "cs-007",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-007/pink+10",
+   "sentence_id": "cs-007",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-007/pink+0",
+   "sentence_id": "cs-007",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-007/pink-5",
+   "sentence_id": "cs-007",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-007/babble+10",
+   "sentence_id": "cs-007",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-007/babble+0",
+   "sentence_id": "cs-007",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-007/overlap",
+   "sentence_id": "cs-007",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-014 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_overlap.wav"
+  },
+  {
+   "clip_id": "cs-008/slow",
+   "sentence_id": "cs-008",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_slow.wav"
+  },
+  {
+   "clip_id": "cs-008/normal",
+   "sentence_id": "cs-008",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_normal.wav"
+  },
+  {
+   "clip_id": "cs-008/fast",
+   "sentence_id": "cs-008",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_fast.wav"
+  },
+  {
+   "clip_id": "cs-008/pink+20",
+   "sentence_id": "cs-008",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-008/pink+10",
+   "sentence_id": "cs-008",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-008/pink+0",
+   "sentence_id": "cs-008",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-008/pink-5",
+   "sentence_id": "cs-008",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-008/babble+10",
+   "sentence_id": "cs-008",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-008/babble+0",
+   "sentence_id": "cs-008",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-008/overlap",
+   "sentence_id": "cs-008",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-015 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_overlap.wav"
+  },
+  {
+   "clip_id": "cs-009/slow",
+   "sentence_id": "cs-009",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_slow.wav"
+  },
+  {
+   "clip_id": "cs-009/normal",
+   "sentence_id": "cs-009",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_normal.wav"
+  },
+  {
+   "clip_id": "cs-009/fast",
+   "sentence_id": "cs-009",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_fast.wav"
+  },
+  {
+   "clip_id": "cs-009/pink+20",
+   "sentence_id": "cs-009",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-009/pink+10",
+   "sentence_id": "cs-009",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-009/pink+0",
+   "sentence_id": "cs-009",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-009/pink-5",
+   "sentence_id": "cs-009",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-009/babble+10",
+   "sentence_id": "cs-009",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-009/babble+0",
+   "sentence_id": "cs-009",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-009/overlap",
+   "sentence_id": "cs-009",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-016 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_overlap.wav"
+  },
+  {
+   "clip_id": "cs-010/slow",
+   "sentence_id": "cs-010",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_slow.wav"
+  },
+  {
+   "clip_id": "cs-010/normal",
+   "sentence_id": "cs-010",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_normal.wav"
+  },
+  {
+   "clip_id": "cs-010/fast",
+   "sentence_id": "cs-010",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_fast.wav"
+  },
+  {
+   "clip_id": "cs-010/pink+20",
+   "sentence_id": "cs-010",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-010/pink+10",
+   "sentence_id": "cs-010",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-010/pink+0",
+   "sentence_id": "cs-010",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-010/pink-5",
+   "sentence_id": "cs-010",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-010/babble+10",
+   "sentence_id": "cs-010",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-010/babble+0",
+   "sentence_id": "cs-010",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-010/overlap",
+   "sentence_id": "cs-010",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-017 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_overlap.wav"
+  },
+  {
+   "clip_id": "cs-011/slow",
+   "sentence_id": "cs-011",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_slow.wav"
+  },
+  {
+   "clip_id": "cs-011/normal",
+   "sentence_id": "cs-011",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_normal.wav"
+  },
+  {
+   "clip_id": "cs-011/fast",
+   "sentence_id": "cs-011",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_fast.wav"
+  },
+  {
+   "clip_id": "cs-011/pink+20",
+   "sentence_id": "cs-011",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-011/pink+10",
+   "sentence_id": "cs-011",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-011/pink+0",
+   "sentence_id": "cs-011",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-011/pink-5",
+   "sentence_id": "cs-011",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-011/babble+10",
+   "sentence_id": "cs-011",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-011/babble+0",
+   "sentence_id": "cs-011",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-011/overlap",
+   "sentence_id": "cs-011",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-018 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_overlap.wav"
+  },
+  {
+   "clip_id": "cs-012/slow",
+   "sentence_id": "cs-012",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_slow.wav"
+  },
+  {
+   "clip_id": "cs-012/normal",
+   "sentence_id": "cs-012",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_normal.wav"
+  },
+  {
+   "clip_id": "cs-012/fast",
+   "sentence_id": "cs-012",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_fast.wav"
+  },
+  {
+   "clip_id": "cs-012/pink+20",
+   "sentence_id": "cs-012",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-012/pink+10",
+   "sentence_id": "cs-012",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-012/pink+0",
+   "sentence_id": "cs-012",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-012/pink-5",
+   "sentence_id": "cs-012",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-012/babble+10",
+   "sentence_id": "cs-012",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-012/babble+0",
+   "sentence_id": "cs-012",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-012/overlap",
+   "sentence_id": "cs-012",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-019 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_overlap.wav"
+  },
+  {
+   "clip_id": "cs-013/slow",
+   "sentence_id": "cs-013",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_slow.wav"
+  },
+  {
+   "clip_id": "cs-013/normal",
+   "sentence_id": "cs-013",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_normal.wav"
+  },
+  {
+   "clip_id": "cs-013/fast",
+   "sentence_id": "cs-013",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_fast.wav"
+  },
+  {
+   "clip_id": "cs-013/pink+20",
+   "sentence_id": "cs-013",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-013/pink+10",
+   "sentence_id": "cs-013",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-013/pink+0",
+   "sentence_id": "cs-013",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-013/pink-5",
+   "sentence_id": "cs-013",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-013/babble+10",
+   "sentence_id": "cs-013",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-013/babble+0",
+   "sentence_id": "cs-013",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-013/overlap",
+   "sentence_id": "cs-013",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence cs-020 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_overlap.wav"
+  },
+  {
+   "clip_id": "cs-014/slow",
+   "sentence_id": "cs-014",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_slow.wav"
+  },
+  {
+   "clip_id": "cs-014/normal",
+   "sentence_id": "cs-014",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_normal.wav"
+  },
+  {
+   "clip_id": "cs-014/fast",
+   "sentence_id": "cs-014",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_fast.wav"
+  },
+  {
+   "clip_id": "cs-014/pink+20",
+   "sentence_id": "cs-014",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-014/pink+10",
+   "sentence_id": "cs-014",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-014/pink+0",
+   "sentence_id": "cs-014",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-014/pink-5",
+   "sentence_id": "cs-014",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-014/babble+10",
+   "sentence_id": "cs-014",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-014/babble+0",
+   "sentence_id": "cs-014",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-014/overlap",
+   "sentence_id": "cs-014",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-001 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_overlap.wav"
+  },
+  {
+   "clip_id": "cs-015/slow",
+   "sentence_id": "cs-015",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_slow.wav"
+  },
+  {
+   "clip_id": "cs-015/normal",
+   "sentence_id": "cs-015",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_normal.wav"
+  },
+  {
+   "clip_id": "cs-015/fast",
+   "sentence_id": "cs-015",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_fast.wav"
+  },
+  {
+   "clip_id": "cs-015/pink+20",
+   "sentence_id": "cs-015",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-015/pink+10",
+   "sentence_id": "cs-015",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-015/pink+0",
+   "sentence_id": "cs-015",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-015/pink-5",
+   "sentence_id": "cs-015",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-015/babble+10",
+   "sentence_id": "cs-015",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-015/babble+0",
+   "sentence_id": "cs-015",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-015/overlap",
+   "sentence_id": "cs-015",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-002 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_overlap.wav"
+  },
+  {
+   "clip_id": "cs-016/slow",
+   "sentence_id": "cs-016",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_slow.wav"
+  },
+  {
+   "clip_id": "cs-016/normal",
+   "sentence_id": "cs-016",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_normal.wav"
+  },
+  {
+   "clip_id": "cs-016/fast",
+   "sentence_id": "cs-016",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_fast.wav"
+  },
+  {
+   "clip_id": "cs-016/pink+20",
+   "sentence_id": "cs-016",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-016/pink+10",
+   "sentence_id": "cs-016",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-016/pink+0",
+   "sentence_id": "cs-016",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-016/pink-5",
+   "sentence_id": "cs-016",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-016/babble+10",
+   "sentence_id": "cs-016",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-016/babble+0",
+   "sentence_id": "cs-016",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-016/overlap",
+   "sentence_id": "cs-016",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-003 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_overlap.wav"
+  },
+  {
+   "clip_id": "cs-017/slow",
+   "sentence_id": "cs-017",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_slow.wav"
+  },
+  {
+   "clip_id": "cs-017/normal",
+   "sentence_id": "cs-017",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_normal.wav"
+  },
+  {
+   "clip_id": "cs-017/fast",
+   "sentence_id": "cs-017",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_fast.wav"
+  },
+  {
+   "clip_id": "cs-017/pink+20",
+   "sentence_id": "cs-017",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-017/pink+10",
+   "sentence_id": "cs-017",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-017/pink+0",
+   "sentence_id": "cs-017",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-017/pink-5",
+   "sentence_id": "cs-017",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-017/babble+10",
+   "sentence_id": "cs-017",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-017/babble+0",
+   "sentence_id": "cs-017",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-017/overlap",
+   "sentence_id": "cs-017",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-004 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_overlap.wav"
+  },
+  {
+   "clip_id": "cs-018/slow",
+   "sentence_id": "cs-018",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_slow.wav"
+  },
+  {
+   "clip_id": "cs-018/normal",
+   "sentence_id": "cs-018",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_normal.wav"
+  },
+  {
+   "clip_id": "cs-018/fast",
+   "sentence_id": "cs-018",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_fast.wav"
+  },
+  {
+   "clip_id": "cs-018/pink+20",
+   "sentence_id": "cs-018",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-018/pink+10",
+   "sentence_id": "cs-018",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-018/pink+0",
+   "sentence_id": "cs-018",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-018/pink-5",
+   "sentence_id": "cs-018",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-018/babble+10",
+   "sentence_id": "cs-018",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-018/babble+0",
+   "sentence_id": "cs-018",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-018/overlap",
+   "sentence_id": "cs-018",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-005 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_overlap.wav"
+  },
+  {
+   "clip_id": "cs-019/slow",
+   "sentence_id": "cs-019",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_slow.wav"
+  },
+  {
+   "clip_id": "cs-019/normal",
+   "sentence_id": "cs-019",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_normal.wav"
+  },
+  {
+   "clip_id": "cs-019/fast",
+   "sentence_id": "cs-019",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_fast.wav"
+  },
+  {
+   "clip_id": "cs-019/pink+20",
+   "sentence_id": "cs-019",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-019/pink+10",
+   "sentence_id": "cs-019",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-019/pink+0",
+   "sentence_id": "cs-019",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-019/pink-5",
+   "sentence_id": "cs-019",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-019/babble+10",
+   "sentence_id": "cs-019",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-019/babble+0",
+   "sentence_id": "cs-019",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-019/overlap",
+   "sentence_id": "cs-019",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-006 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_overlap.wav"
+  },
+  {
+   "clip_id": "cs-020/slow",
+   "sentence_id": "cs-020",
+   "condition": "clean",
+   "rate": "slow",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_slow.wav"
+  },
+  {
+   "clip_id": "cs-020/normal",
+   "sentence_id": "cs-020",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_normal.wav"
+  },
+  {
+   "clip_id": "cs-020/fast",
+   "sentence_id": "cs-020",
+   "condition": "clean",
+   "rate": "fast",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_fast.wav"
+  },
+  {
+   "clip_id": "cs-020/pink+20",
+   "sentence_id": "cs-020",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 20,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_pink+20.wav"
+  },
+  {
+   "clip_id": "cs-020/pink+10",
+   "sentence_id": "cs-020",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_pink+10.wav"
+  },
+  {
+   "clip_id": "cs-020/pink+0",
+   "sentence_id": "cs-020",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_pink+0.wav"
+  },
+  {
+   "clip_id": "cs-020/pink-5",
+   "sentence_id": "cs-020",
+   "condition": "pink_noise",
+   "rate": "normal",
+   "snr_db": -5,
+   "noise": "pink (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_pink-5.wav"
+  },
+  {
+   "clip_id": "cs-020/babble+10",
+   "sentence_id": "cs-020",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 10,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_babble+10.wav"
+  },
+  {
+   "clip_id": "cs-020/babble+0",
+   "sentence_id": "cs-020",
+   "condition": "english_babble",
+   "rate": "normal",
+   "snr_db": 0,
+   "noise": "5 English TTS voices (synthetic)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_babble+0.wav"
+  },
+  {
+   "clip_id": "cs-020/overlap",
+   "sentence_id": "cs-020",
+   "condition": "overlapping_speaker",
+   "rate": "normal",
+   "snr_db": 6,
+   "noise": "competing Tamil sentence ta-007 (same synthetic voice)",
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_overlap.wav"
+  }
+ ]
+}

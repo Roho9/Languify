@@ -1,0 +1,2078 @@
+{
+  "dataset" : "asr_windows_v1",
+  "inputMode" : "buffer",
+  "locales" : [
+    "ta-IN",
+    "en-IN"
+  ],
+  "metadata" : {
+    "benchmark" : "asr",
+    "buildConfiguration" : "release",
+    "chip" : "Apple M5 Pro",
+    "environment" : "macOS on-device SpeechTranscriber; SYNTHETIC: Tamil TTS sentences (voice Vani) with synthetic room tone at -50 dBFS; target is the last sentence",
+    "gitCommit" : "ddebcc0",
+    "gitDirty" : true,
+    "machine" : "Mac17,9",
+    "memoryGB" : 48,
+    "notes" : [
+      "locales: ta-IN,en-IN",
+      "mode: parallel",
+      "input: buffer",
+      "vad: false",
+      "First clip includes model load (cold start)"
+    ],
+    "osVersion" : "Version 27.0.1 (Build 26A434)",
+    "runID" : "asr-20261022T190038Z",
+    "timestamp" : "2026-10-22T19:00:38Z"
+  },
+  "mode" : "parallel",
+  "results" : [
+    {
+      "audioSeconds" : 15,
+      "clipID" : "window15\/00",
+      "combinedLatencyMs" : 550.433458,
+      "condition" : "window_15s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Oda Kalyanathuku,",
+            " leave Vedukanum.",
+            " leave edukanum."
+          ],
+          "latencyMs" : 259.017958,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.42644444444444446,
+          "minConfidence" : 0.228,
+          "text" : "Nanga Yellarum Gootrumaya irukkanum. Cousin Oda, Kalyanathu, leave, Vedukanum."
+        },
+        {
+          "alternatives" : [
+            " ottrumaiyaa",
+            " edukkanum."
+          ],
+          "latencyMs" : 549.513208,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7603333333333334,
+          "minConfidence" : 0.537,
+          "text" : "naangka ellaarum otrumaiyaa irukkanum cousin oodha kalyaanaththukku leave edukkanum"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-020"
+    },
+    {
+      "audioSeconds" : 15,
+      "clipID" : "window15\/01",
+      "combinedLatencyMs" : 488.397125,
+      "condition" : "window_15s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Yellarum,",
+            " Talaikanam,",
+            " Talaikanamma,",
+            " Varu"
+          ],
+          "latencyMs" : 290.4675,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.3023333333333333,
+          "minConfidence" : 0.067,
+          "text" : "Party, Unnai, Unba, Miss, Pandranga, Kalyanath, kku, Ellarum, Baruvanga, Avaru, Ye, Pagum, Talaikanama, Pesu, Varu."
+        },
+        {
+          "alternatives" : [
+            "thalaikkanamaa pesuvaaru",
+            "thalaikkanama paesuvaaru"
+          ],
+          "latencyMs" : 487.779292,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8929999999999999,
+          "minConfidence" : 0.74,
+          "text" : "party unnai romba Miss pandraanga kalyaanaththukku ellaarum varuvaanga avaru eppavum thalaikkanamaa paesuvaaru"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-031"
+    },
+    {
+      "audioSeconds" : 15,
+      "clipID" : "window15\/02",
+      "combinedLatencyMs" : 484.872666,
+      "condition" : "window_15s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Visay, Ethula,",
+            " Re,",
+            " Illai",
+            " Illai?"
+          ],
+          "latencyMs" : 272.162125,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.255,
+          "minConfidence" : 0.071,
+          "text" : "Avan, Roomba, Samarth, Theyama, Pesuban, Avaluku, Roomba, Vetkam, Anday, Visayatulla, Avanuku, Akka, Rege, Illai."
+        },
+        {
+          "alternatives" : [
+            " paesuvaan",
+            " vishayaththulla avanukku",
+            " illai."
+          ],
+          "latencyMs" : 484.367916,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.86925,
+          "minConfidence" : 0.659,
+          "text" : "avan romba saamarththiyamaa pesuvaan avalukku romba vetkam antha vishayaththula avanukku akkaraiyae illai"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-036"
+    },
+    {
+      "audioSeconds" : 15,
+      "clipID" : "window15\/03",
+      "combinedLatencyMs" : 489.536583,
+      "condition" : "window_15s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Nail,",
+            " Elaya,",
+            " Ye,",
+            " Pagum,",
+            " Talaikanama,",
+            " Pesu,",
+            " Varu.",
+            " saapritiya.",
+            " aapidiya."
+          ],
+          "latencyMs" : 233.055667,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.29600000000000004,
+          "minConfidence" : 0.093,
+          "text" : "Infu, Nayil, Chai, ilaya, Avaru, ye, pagum, talaikanama, pesu, varu. Nee, saapidiya."
+        },
+        {
+          "alternatives" : [
+            "inpo",
+            " aeppavum",
+            " yeppavum",
+            " pesuvaaru"
+          ],
+          "latencyMs" : 489.1915,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7313333333333334,
+          "minConfidence" : 0.302,
+          "text" : "info nayilchaayil illaiya avaru eppavum thalaikkanamaa paesuvaaru nee saappittiyaa"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-006"
+    },
+    {
+      "audioSeconds" : 15,
+      "clipID" : "window15\/04",
+      "combinedLatencyMs" : 487.657959,
+      "condition" : "window_15s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Pasikkudu,",
+            " Saap,",
+            " Vaayam."
+          ],
+          "latencyMs" : 284.137042,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.557,
+          "minConfidence" : 0.164,
+          "text" : "Parties, Onna, Padamuri, Enakku Puriyalai, doctor appointment, kku naalaikku poganum, Enakku pasikkudu, Saav, Paadu, Raidi, Vayam."
+        },
+        {
+          "alternatives" : [
+            "raidhi ",
+            "vaayaam",
+            "vaayam"
+          ],
+          "latencyMs" : 487.370625,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8407333333333333,
+          "minConfidence" : 0.329,
+          "text" : "paatti sonna pazhamozhi yenakku puriyalai Doctor appointment kku naalaikku poaganum yenakku pasikkuthu saappaadu reethi vayam"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-019"
+    },
+    {
+      "audioSeconds" : 15,
+      "clipID" : "window15\/05",
+      "combinedLatencyMs" : 481.524084,
+      "condition" : "window_15s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Saath, Tittu,",
+            " Saaththu,",
+            " Irukku"
+          ],
+          "latencyMs" : 263.401375,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4154285714285714,
+          "minConfidence" : 0.059,
+          "text" : "Bus stop, Il, Enakkaaga, vek, Pannu, Kadabai, sahtittu, Vaam, Inda, Seyla, Unakku, Araga, Irukku,"
+        },
+        {
+          "alternatives" : [
+            "yenakkaaga ",
+            "katavai ",
+            "kathavai ",
+            "unakku "
+          ],
+          "latencyMs" : 481.074875,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7381428571428571,
+          "minConfidence" : 0.412,
+          "text" : "bus stock rail enakkaaga wait Pannu kadhavai saaththittu vaa indha silai unnakku azhagaa irukku"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-024"
+    },
+    {
+      "audioSeconds" : 15,
+      "clipID" : "window15\/06",
+      "combinedLatencyMs" : 489.637,
+      "condition" : "window_15s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "Indakuram, Konjam, Kadamma, Irukku?",
+            "Indakurambu, Konjam Kadamma Irukku?",
+            "vaaiyunba nilam.",
+            "vaaiyuma Nilam."
+          ],
+          "latencyMs" : 241.486458,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.46083333333333326,
+          "minConfidence" : 0.247,
+          "text" : "Indakurambu Konjam Kadamma Irukku? Amma, kadaiku pohetu, Vareennu, Sonanga, avalukku vaaiyuma nilam."
+        },
+        {
+          "alternatives" : [
+            "indha",
+            " kuzhambu",
+            " kondram",
+            "konjam ",
+            "karama irukku ",
+            " kaaramaa irukku",
+            " amma",
+            " kadaikku",
+            " poayittu",
+            " varennu",
+            " sonnaanga",
+            " avalukku",
+            " vaa",
+            " romba",
+            " neellam"
+          ],
+          "latencyMs" : 489.285875,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7847857142857143,
+          "minConfidence" : 0.612,
+          "text" : "indha kuzhambu kondram kaaramaa irukku amma kadaikku poayittu varennu sonnaanga avalukku vaa romba Neelam"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-029"
+    },
+    {
+      "audioSeconds" : 15,
+      "clipID" : "window15\/07",
+      "combinedLatencyMs" : 484.79075,
+      "condition" : "window_15s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Mazhai,",
+            " Eduttupo.",
+            " Eduthuttupo?",
+            " Poongalukku Pudhu, Tuni, Vanganum",
+            " Poongalukku, Pudhu, Tuni, Vanganum"
+          ],
+          "latencyMs" : 253.396333,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.494,
+          "minConfidence" : 0.291,
+          "text" : "Konjam, Tanni, kudu. Marai, Vara, Madhiri, Irukku, Kudai, Eduthuttupo. Poongalukku Pudhu, Tuni, Vanganum."
+        },
+        {
+          "alternatives" : [
+            "koondram",
+            "konjam",
+            " tanni",
+            "kudu ",
+            " kodu",
+            " mazhai",
+            " vara",
+            " thaanea",
+            " irukku",
+            " kudai",
+            " eduththuttu",
+            " poagum",
+            " poongalukku ",
+            " poangalukku ",
+            "vaanganum."
+          ],
+          "latencyMs" : 484.492958,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7920714285714286,
+          "minConfidence" : 0.638,
+          "text" : "koondram tanni kodu mazhai vara thaanea irukku kudai eduththuttu Po pongalukku pudhu thuni vaanganum"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-025"
+    },
+    {
+      "audioSeconds" : 15,
+      "clipID" : "window15\/08",
+      "combinedLatencyMs" : 484.118083,
+      "condition" : "window_15s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Kali, Vedukanum.",
+            " Kali, Vedukkannum.",
+            "Saaktittuvaa.",
+            "Saaktittu, Va."
+          ],
+          "latencyMs" : 212.346833,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.36591666666666667,
+          "minConfidence" : 0.101,
+          "text" : "Cousin, Oda, Kalyanath, Kali, Vedukkanum. Patti, Unnai irunda, Miss Pandranga, Kadavai, saaktittuvaa."
+        },
+        {
+          "alternatives" : [
+            "kaatti ",
+            "romba ",
+            "katavai ",
+            "katuvai "
+          ],
+          "latencyMs" : 483.828709,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7125714285714287,
+          "minConfidence" : 0.142,
+          "text" : "cousin poatha kalyaanaththukku leave edukkanum paatti unnai itu romba Miss pandraanga kadhavai saaththittu vaa"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-023"
+    },
+    {
+      "audioSeconds" : 15,
+      "clipID" : "window15\/09",
+      "combinedLatencyMs" : 488.290708,
+      "condition" : "window_15s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " gootriumaya",
+            " irukanum?",
+            " irukanum",
+            "run by ",
+            "Kurumbi, ",
+            "Pandran.",
+            "panran."
+          ],
+          "latencyMs" : 269.140125,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.2831666666666666,
+          "minConfidence" : 0.027,
+          "text" : "Naangey, Narum gootriumeya irukanum. Avanga, wedding, reception, run by grand, oh, irunduchu, Inda, Payan, driven by Kurumbu, Panran."
+        },
+        {
+          "alternatives" : [
+            " ellarum",
+            " waiting",
+            " irundhuchchu"
+          ],
+          "latencyMs" : 487.999916,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7160000000000001,
+          "minConfidence" : 0.161,
+          "text" : "naanga ellaarum ottrumaiyaa irukkanum avanga wedding reception romba grand aa irunthuchchu indha paiyan romba kudumbu pandraan"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-014"
+    },
+    {
+      "audioSeconds" : 30,
+      "clipID" : "window30\/00",
+      "combinedLatencyMs" : 689.261375,
+      "condition" : "window_30s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Vai,",
+            " Pe Kuran.",
+            " Pe, Quran.",
+            "matan",
+            "matan,"
+          ],
+          "latencyMs" : 688.707458,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.36374193548387096,
+          "minConfidence" : 0.037,
+          "text" : "Avantan, Amma, Bai, Kandum, Karithuma, Parth, Pe, Kuran. Naangeya, Narum, gootrumeya, irukkanum, party, Sonna, Paramuri, Enakku, Puriyalai, traffic, aisle, mate, Kiten, Konjam, Lake, Aagum, aven, romba, somberi, Oru, velayum, seriya, matan."
+        },
+        {
+          "alternatives" : [
+            " karuththuma",
+            " kuraan",
+            " vaelaiyum",
+            ",",
+            "an"
+          ],
+          "latencyMs" : 612.356833,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7812068965517242,
+          "minConfidence" : 0.291,
+          "text" : "avan than ammaavai kandum karuththumaa paarttu kuran naangka ellaarum ottrumaiyaa irukkanum patti sonna pazhamozhi yenakku puriyalai traffic ayil maattikkittaen konjam lake aakum avan romba somberi oru velaiyum ceyya maattaan"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-009"
+    },
+    {
+      "audioSeconds" : 30,
+      "clipID" : "window30\/01",
+      "combinedLatencyMs" : 667.005875,
+      "condition" : "window_30s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Pohitu,",
+            " Vareennu,",
+            " Sonanga, Mama, Uruk, Pohitu, Caru, Party, Unnaidon, Pamis, Pandranga.",
+            " Sonanga, Mama, Uruk, Pohitu, Caru, Party, Unnaidon, Pamis, Pandanga."
+          ],
+          "latencyMs" : 666.469,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.35705555555555557,
+          "minConfidence" : 0.153,
+          "text" : "Kalyanathu, kku, Yellarum, Baruvanga, Unfu, Nail, Chai, Elaya, Unakku, Epo, free, time, kidaikum, Amma, kadaiku, pohitu, Varenu, Sonanga."
+        },
+        {
+          "alternatives" : [
+            "nayuchchaaya ",
+            "kadaiku ",
+            "pandraanga.",
+            "vaayil romba ",
+            "neellam",
+            "neelam."
+          ],
+          "latencyMs" : 653.680541,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7532499999999999,
+          "minConfidence" : 0.026,
+          "text" : "kalyaanaththukku ellaarum varuvaanga unpu nayuchchaai illaiya unakku eppo free time kidaikkum amma kadaikku poayittu varennu sonnaanga maamaa oorukku poayirukkaaru party unnai irunthaa Miss pandraanga avalukku vaai romba Neelam"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-029"
+    },
+    {
+      "audioSeconds" : 30,
+      "clipID" : "window30\/02",
+      "combinedLatencyMs" : 721.322,
+      "condition" : "window_30s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " akka Rei,",
+            " Illai?",
+            "Irukku ",
+            "Eduttuttippo.",
+            "Eduttuttippo?"
+          ],
+          "latencyMs" : 349.788167,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.5212105263157895,
+          "minConfidence" : 0.071,
+          "text" : "Naan innaikku office meeting, Mudindyadum, beat kku Varen. Anday, visayaththula, avanukku, akka, Rei, Illai. Mazai Vazhiri irukku kudai Eduttuttepo."
+        },
+        {
+          "alternatives" : [
+            " therinjuthu. indha",
+            " therinjathu indha",
+            " peyyan",
+            " pandraan",
+            ",",
+            "an"
+          ],
+          "latencyMs" : 720.851417,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.77296875,
+          "minConfidence" : 0.139,
+          "text" : "naan innaikku office meeting mudindiyathum veettukku varaen. antha vishayaththula avanukku akkaraiyae illai. mazhai vara thaanea irukku koodai eduththuttu poagum. unpoon nayuchchaai illaiya aval mugaththula oru thayakkam therinjathu. indha paiyan romba kudumbu pandraan."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-014"
+    },
+    {
+      "audioSeconds" : 30,
+      "clipID" : "window30\/03",
+      "combinedLatencyMs" : 526.039458,
+      "condition" : "window_30s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "Indaseyla,",
+            " Araga Irukku?",
+            " Araga, Irukku",
+            "Kruyalai, ",
+            "Irukkanum,",
+            "Irukkanum"
+          ],
+          "latencyMs" : 417.982834,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.26077777777777766,
+          "minConfidence" : 0.005,
+          "text" : "Inda, Seyla, Unakku, Araga, Irukku? Shopping, Pogumbodu, Pol, Bangitu, Baham, Parties, Unna, Paramuri, Enakku, Puriyalai, Inda, Puriyalai, Irukkanum."
+        },
+        {
+          "alternatives" : [
+            " Seelai",
+            " azhagaa",
+            "paatti ",
+            "oottrumaiyaa "
+          ],
+          "latencyMs" : 525.599875,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6913333333333332,
+          "minConfidence" : 0.053,
+          "text" : "Indha Selai Unakku Azhagaa Irukku shopping poagum potu pol vaangittu vaa patti sonna pazhamozhi yenakku puriyalai indha project deadline romba take aa irukku maamaa oorukku poayirukkaaru naangka ellaarum ottrumaiyaa irukkanum"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-027"
+    },
+    {
+      "audioSeconds" : 30,
+      "clipID" : "window30\/04",
+      "combinedLatencyMs" : 573.893417,
+      "condition" : "window_30s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " beat kku",
+            " Vandadum,",
+            " kattanum.",
+            "Epo, free ",
+            "Eppo, free ",
+            "time kidaikum.",
+            " Bus, stock, rail, gain a kag, wait, Pandu.",
+            " Bus, stockrail, gain a kagabait, Pandu."
+          ],
+          "latencyMs" : 514.186709,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.45512903225806445,
+          "minConfidence" : 0.12,
+          "text" : "Andai movie, don't be boring, ayirunduchu Naan, innaikku office meeting, Mood India, Dum, beat, kku Varen, salary, vandadum, rain, Kattanum. Indakurambu, konjam, karama, irukku. Unakku, Epo free time, kidaikum. Bus stop."
+        },
+        {
+          "alternatives" : [
+            "aayirunthuchchu ",
+            "varaen salary ",
+            "stock ",
+            ".",
+            ","
+          ],
+          "latencyMs" : 573.425542,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8070937499999998,
+          "minConfidence" : 0.08,
+          "text" : "anthaai movie romba boring aayirundhuchchu naan innaikku office meeting mudindiyathum veettukku varen salary vanthathum rain kattanum indha kuzhambu konjam kaaramaa irukku unnakku eppo free time kidaikkum bus stop kaiyil enakkaaga wait Pannu"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-015"
+    },
+    {
+      "audioSeconds" : 30,
+      "clipID" : "window30\/05",
+      "combinedLatencyMs" : 612.213834,
+      "condition" : "window_30s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Saak, Oda,",
+            " Panda mataru.",
+            " Panda, mataru",
+            "kudu, oven, run by Samarth, theyamma, Pesu, Van, Nanga, yellarum, gootru, Maya, irukkanum",
+            "kudu, oven, run by Samarth, theyamma, Pesu, Van, Nanga, yellarum, gootrumayya, irukkanum",
+            "Vandadum, ",
+            "vandatum, ",
+            "Kattanum.",
+            "Katanum."
+          ],
+          "latencyMs" : 480.914625,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.37788888888888894,
+          "minConfidence" : 0.104,
+          "text" : "Abari, don't by Kandiyam, Oru play, Saakuda, Selavu, Panda, mataru. Enakku, Talai, Vazhi, kudu. Salary, vandadum, rain, kattanum."
+        },
+        {
+          "alternatives" : [
+            "kanniyam ",
+            "pesuvaan ",
+            "ottrumaiyaa ",
+            "kathavai "
+          ],
+          "latencyMs" : 611.752084,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7913333333333334,
+          "minConfidence" : 0.182,
+          "text" : "avaru romba kandiyam oru paisaa kooda ceytu Panna maattaaru yenakku tholai valikkuthu avan romba saamarththiyamaa paesuvaan naangaiyil narum oottrumaiyaa irukkanum kadhavai saaththittu vaa salary vanthathum rain kattanum"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-013"
+    },
+    {
+      "audioSeconds" : 30,
+      "clipID" : "window30\/06",
+      "combinedLatencyMs" : 550.514417,
+      "condition" : "window_30s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Kalyanath, Kali,",
+            " Kalyan, Atukali,",
+            " Vedukanum?",
+            "kudai ",
+            "Eduthuttippo?",
+            "Eduthuttepo.",
+            "Lumba, Vitcam.",
+            "lumba, witcam.",
+            "Tandy Kudu.",
+            "Tandy."
+          ],
+          "latencyMs" : 350.914334,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.36191666666666666,
+          "minConfidence" : 0.065,
+          "text" : "Avantan, Amma, Bai, Kandum, Karithuma, Parth, Kuran, Kazen, Goda, Kalyan, Thukali, Vedukanum. Mazhai Varamadhiri Irukku Kudai Eduthuttippo. Avaluku, Rumba, Vitcam. Amma, Kadai, Konjam, Tandikudu."
+        },
+        {
+          "alternatives" : [
+            " poagum. avalukku",
+            " pom. avalukku",
+            " vetkam.",
+            "kadaiku ",
+            "kudu",
+            "kotu"
+          ],
+          "latencyMs" : 550.030625,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7133225806451612,
+          "minConfidence" : 0.134,
+          "text" : "avan than ammavai kandum kariththuma park the kuraan. cousin poatha kalyaanaththukku leave edukkanum. mazhai vara thaanea irukku koodai eduththuttu poam. avalukku romba vetkam amma kadaikku poayittu varennu sonnaanga konjam tanni kodu"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-008"
+    },
+    {
+      "audioSeconds" : 30,
+      "clipID" : "window30\/07",
+      "combinedLatencyMs" : 610.5075,
+      "condition" : "window_30s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Enakkaaga vek, Pannu",
+            " Enakkaaga, vek, Pannu",
+            "Koot pidanum?",
+            "Koot pidanum"
+          ],
+          "latencyMs" : 587.780083,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.3901724137931034,
+          "minConfidence" : 0.044,
+          "text" : "Bus stock rail, Enakkaaga vekk, Pannu seekiram, Kilambu, Leh, aidum, unakku Eppo, free time, kidaikum, Marai, Bada, Madhiri, Irukku, Kudai, Eduttu, tippo, Namma, Vittu, Vise, Shattu, Yellarayum, Koot pidanum."
+        },
+        {
+          "alternatives" : [
+            "Bus",
+            " stroke rail",
+            " Pannu.",
+            "koodai ",
+            "pom namma ",
+            "vai ring ",
+            "irunthuchchu"
+          ],
+          "latencyMs" : 609.975833,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8092352941176469,
+          "minConfidence" : 0.197,
+          "text" : "bus stock rail Enakkaaga wait Pannu seekiram kilambu late aayidum unakku eppo free time kidaikkum mazhai vara thaanea irukku kudai eduththuttu Po namma veettu visheshaththukku ellaaraiyum kooppidanum avanga vairing reception romba grand aa irundhuchchu"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-014"
+    },
+    {
+      "audioSeconds" : 30,
+      "clipID" : "window30\/08",
+      "combinedLatencyMs" : 688.623541,
+      "condition" : "window_30s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Miss Pandranga.",
+            " Mazhai,",
+            " Mazai,",
+            " kudai,",
+            " Eduthuttupo.",
+            "but I, ",
+            "Irukku,",
+            "Irukku, B."
+          ],
+          "latencyMs" : 262.827959,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.3013125,
+          "minConfidence" : 0.023,
+          "text" : "Party, Unnai, Unba, Miss, Pandranga. Marai, Vara, Madhiri, Irukku, Kudai, Eduttupo. The deadline ground, batai, Irukku."
+        },
+        {
+          "alternatives" : [
+            "nalaiyil ",
+            "anthaai ",
+            "aagi irundhuchchu",
+            "aagi irunthuchchu"
+          ],
+          "latencyMs" : 688.111833,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6635151515151514,
+          "minConfidence" : 0.044,
+          "text" : "party unnai irunthaa Miss pandraanga mazhai vara thaanea irukku koodai eduththuttu poagum indha project deadline niranbaththai aagi irukku veekkai nilaiyil naama beach kku polama avaru eppavum thalaikkanamaa paesuvaaru andai movie romba boring aagiyirunthuchchu"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-010"
+    },
+    {
+      "audioSeconds" : 30,
+      "clipID" : "window30\/09",
+      "combinedLatencyMs" : 604.704917,
+      "condition" : "window_30s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Unakku,",
+            " time kidaikum.",
+            " time kidaikum?",
+            "chaiku ",
+            "kadachiya.",
+            "kadichiya?"
+          ],
+          "latencyMs" : 441.682583,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.47444,
+          "minConfidence" : 0.05,
+          "text" : "Kazu, Goda, Kalyanath, Ku, leave, Vedukkannum. Naan, innaikku office meeting, Mood India, Dum, Beet, kku Varen, unakku, Eppo, free time, kidaikum. Pari Chaiku Nalla kadachiya?"
+        },
+        {
+          "alternatives" : [
+            " varaen. unakku",
+            " padichchiyaa",
+            " therinjathu",
+            " poagalaam.",
+            "am",
+            "."
+          ],
+          "latencyMs" : 604.197792,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8439285714285715,
+          "minConfidence" : 0.33,
+          "text" : "cousin poatha kalyaanaththukku leave edukkanum naan innaikku office meeting mudindiyathum veettukku varaen unakku eppo free time kidaikkum parichchaikku nallaa paduchchiyaa aval mugaththula oru thayakkam therinjuthu saayangaalam kovilukku poagalaam"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-016"
+    },
+    {
+      "audioSeconds" : 60,
+      "clipID" : "window60\/00",
+      "combinedLatencyMs" : 1511.157917,
+      "condition" : "window_60s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Pula, Ma.",
+            " Pula, Ma. Sikiram, Kilam, late, ahidum.",
+            ", , ",
+            ",, ",
+            ", , ",
+            ", , , ",
+            " Bitula, ",
+            "yarung, ",
+            "illai.",
+            "yilllay.",
+            "yerundirukanum.",
+            "yelundirukanum.",
+            " Enakku talai vali kudu.",
+            " Enakku, talai, bali, kudu.",
+            "Payan run ",
+            "Kurumbu, Pandran.",
+            "Kurumbu Panran.",
+            "you're in dutch.",
+            "you're in Dutch."
+          ],
+          "latencyMs" : 775.4605,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.233609375,
+          "minConfidence" : 0.004,
+          "text" : "Aval Mugaththula Oru Thayakam, Tere Nyudu, Indu, Varam, Velai, Dumba, Adigam, B, Kindhail, Namma, Beach, kku, Pulama. , , , , , , , , , , , , , Beetula, yarum, yillai. None already is happy to thin, clanks. Nalaik kalaiyila, seekiram, yerundirukkanum. Enakku talai bali kudu. In the Payan, run by Kurumbu, Panran. Avanga wading, rice option, run by grand, or, irundutsche."
+        },
+        {
+          "alternatives" : [
+            " pesuvaan seekkiram",
+            " paesuvaan seekiram",
+            " varuvaanga",
+            "saappittutten ",
+            "ezhunththirukkanum ",
+            "vairing ",
+            "vaithing ",
+            "irunththuchchu",
+            "irunthuchchu",
+            ".",
+            ","
+          ],
+          "latencyMs" : 1510.162583,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7621230769230772,
+          "minConfidence" : 0.067,
+          "text" : "aval mugaththula oru thayakkam therinjuthu. indha thorum vilai romba athigam. veekkai nilaiyil naama beach kku polama avan romba saamarththiyamaa pesuvaan. seekiram kilambu late aayidum. avan exam la nalla marks vaangittaan. kalyaanaththukku ellaarum varuvaanga. avalukku vaai romba neellam veettula yaarum illai naan already saappittu ten thanks naalaikku kaalaiyila seekkiram ezhunthirukkanum yenakku tholai valikkuthu indha paiyan romba kudumbu pandraan avanga vai ring reception romba grand aa irundhuchchu"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-014"
+    },
+    {
+      "audioSeconds" : 60,
+      "clipID" : "window60\/01",
+      "combinedLatencyMs" : 1042.107667,
+      "condition" : "window_60s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " kutpidanum.",
+            " kutppidanum.",
+            "Karam, ",
+            "Irukku...",
+            "Iruk."
+          ],
+          "latencyMs" : 388.005917,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.39992857142857136,
+          "minConfidence" : 0.027,
+          "text" : "Sayangalam Govilukku Pugalam, Namma, Vetu, Visheshathu, kku, Yellarayum, koot pidanum. Indakurambu, Konjam, Karama, Irukku."
+        },
+        {
+          "alternatives" : [
+            " visaeshaththukku",
+            " thayyakkam",
+            " puthu",
+            "apvaa ",
+            "varuvaaru",
+            "varubaaru",
+            " bo",
+            "ir"
+          ],
+          "latencyMs" : 1041.207584,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7164791666666667,
+          "minConfidence" : 0.026,
+          "text" : "saayangaalam kovilukku poagalaam namma veettu visheshaththukku ellaaraiyum kooppidanum aval mugaththula oru thayakkam therinjuthu avan exam la nalla marks vaangittaan pongalukku pudhu thuni vaanganum indha kuzhambu konjam kaaramaa irukku parikshaikku nallaa paduchchiyaa Doctor appointment kku naalaikku poaganum aazham theriyaama kaalai vinaade kadabai saaktittuvaa ni saakkittiyaa unga appa eppo varivaaru"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-010"
+    },
+    {
+      "audioSeconds" : 60,
+      "clipID" : "window60\/02",
+      "combinedLatencyMs" : 1027.867,
+      "condition" : "window_60s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " La, Nalla,",
+            " Vangetan.",
+            " Vaangitan.",
+            "Sele, ",
+            "Selay, ",
+            "Irukku?",
+            "Enakku Puriyalai.",
+            "Enakku, Puriyallai."
+          ],
+          "latencyMs" : 378.416375,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4311000000000001,
+          "minConfidence" : 0.144,
+          "text" : "Aaram, Teriyama, Kaalai, Vidade, Avan, exam, La Nalla, Marx, Vangitan. Inda, Selai, Unakku, Araga, Irukku. Party, Sonna, Paramuri, Enakku, Puriyalai."
+        },
+        {
+          "alternatives" : [
+            "avan ",
+            "silai ",
+            "seyalai ",
+            "bodha ",
+            "velai ",
+            "adhigam",
+            "yeppavum ",
+            "talaikanamaa face ",
+            "vaar.",
+            "vaaru"
+          ],
+          "latencyMs" : 1027.034042,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6066885245901638,
+          "minConfidence" : 0.129,
+          "text" : "Aazham Theriyaama Kaalai vidaathe Avan exam la nalla marks vaangittaan indha selai Unakku azhagaa Irukku kadhabai saaththittu vaa paatti sonna pazhamozhi yenakku puriyalai antha vishayaththula avanukku akkaraiyae illai saayangaalam kovilukku poagalaam salary vandhathum rent kattanum Kazan hodha kalyaanaththukku leave edukkanum indha thorum vilai romba athigam nee en ivvalavu avasara paduraanga. shopping podhun bauddh Paul vaanget ba avaru eppavum talaikanama face vaaru."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-031"
+    },
+    {
+      "audioSeconds" : 60,
+      "clipID" : "window60\/03",
+      "combinedLatencyMs" : 931.074667,
+      "condition" : "window_60s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "Avalukku,",
+            " Dumba Vetkam.",
+            " Dumba, Vetkam",
+            "Yellarum, ",
+            "Ena, ",
+            "podha.",
+            "poda,",
+            "ade",
+            "eri"
+          ],
+          "latencyMs" : 669.307209,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.3179259259259259,
+          "minConfidence" : 0.013,
+          "text" : "Avaluku, Dumba, Vetkam. Traffic, aisle, Martin, Kitten, Konjam, Lake, Aagum, Andhe, Padam, paththiya, Kalyanath, kku, yellarum, Baruvanga, Sayangalam, Kovil, kku, Pogalam, Ni, dinner, kku, enna, saapida, poda."
+        },
+        {
+          "alternatives" : [
+            " vetkam. traffic",
+            " aakum. antha",
+            " paathriyaa kalyaanaththukku",
+            " paathriya kalyaanaththukku",
+            "koilukku ",
+            "poagalaam.",
+            "poagalaam?",
+            "saakti ",
+            "nalla ",
+            "paduchiyaa",
+            "padichchhiyaa",
+            "vaayilu onbu ",
+            "thaikkaa irukku",
+            "thaaikkaa irukku"
+          ],
+          "latencyMs" : 930.017625,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.5642075471698115,
+          "minConfidence" : 0.058,
+          "text" : "avalukku romba vetkam traffic ayil maattikkittaen konjam lake aakum antha padam paarththiyaa kalyaanaththukku ellaarum varuvaanga saayangaalam kovilukku poagalaam nee ethunarukku enna cappita pora avan paechchai nambaathae aazham theriyaama kaalai vidaathae bi kai jhalel naambij kku polama kadabai sakti ti vaa paritshaik nallaa padichchiyaa avalukku vaayil onbu Neelam indha project deadline romba thaikka irukku"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-004"
+    },
+    {
+      "audioSeconds" : 60,
+      "clipID" : "window60\/04",
+      "combinedLatencyMs" : 1212.368417,
+      "condition" : "window_60s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " gootru, Maya,",
+            " gootriumayya,",
+            " irrukanum.",
+            "saakuda selevu Panda ",
+            "saakuda selevu, Panda ",
+            "mataru",
+            " , , , ,, , , ,, ,, ",
+            " , , , , , , , , , , ",
+            ",, ,, ",
+            ",, , , ",
+            ",.",
+            ", ,"
+          ],
+          "latencyMs" : 477.629,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.2086216216216216,
+          "minConfidence" : 0.002,
+          "text" : "Abanga wedding, rise option, run by grand, or irunduchu. Nanga, yellarum, gootri, Maya, irukkanum. Avar irunba kaniyam, Oru play saakuda, selevu, Panda mataru. , , , , , , , , , , , , , ,"
+        },
+        {
+          "alternatives" : [
+            "ezhunthirukkanum ",
+            "paarththiyaa",
+            "paarkkariyaa",
+            "thayyakkam ",
+            "saakthittu ",
+            "va.",
+            "vaam."
+          ],
+          "latencyMs" : 1211.673,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7707931034482757,
+          "minConfidence" : 0.071,
+          "text" : "avanga wedding reception romba grand aa irundhuchchu naangka ellaarum ottrumaiyaa irukkanum avaru romba kanniyam oru paisaa kooda ceytu Panna maattaaru parichchaikku nallaa paduchchiyaa naalaikku kaalaiyila seekiram ezhunththirukkanum antha padam paarkkiyaa aval mugaththula oru thayakkam therinjuthu avan exam la nalla marks vaangittaan saayangaalam kovilukku poagalaam avalukku romba vetkam unga appa varuvaaru unakku eppo free time kidaikkum kadabai saaktittu vaa."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-023"
+    },
+    {
+      "audioSeconds" : 60,
+      "clipID" : "window60\/05",
+      "combinedLatencyMs" : 1036.3335,
+      "condition" : "window_60s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " mattaan,",
+            " Sonanga?",
+            " Sonanga",
+            "Irukku. Avantan, ",
+            "Park, ",
+            "Par, ",
+            "Kuran..."
+          ],
+          "latencyMs" : 677.245667,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.28420689655172415,
+          "minConfidence" : 0.018,
+          "text" : "Beetulla, Yarum, Illai, Nee, Saap, Pritiya, Avan, Romba, Somberi, Oru, Velaiyum, Seyyam, aathaan, Amma, Kadai, kku, Pohitu, Vareennu, Sonanga. Innaikku, Safa, Irukku, Avantan, Amma, Vai, Kandum, Karethuma, Parth, Kuran."
+        },
+        {
+          "alternatives" : [
+            " sombaeri",
+            " kadaikku",
+            " kodu",
+            "podha ",
+            "vaayam",
+            "vaayaam",
+            "oorukkup ",
+            "poayirukkaaru. maamaa ooruk",
+            "poayirukkaaru. maamaa oorukkup Po"
+          ],
+          "latencyMs" : 1035.55275,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.78188679245283,
+          "minConfidence" : 0.247,
+          "text" : "veettula yaarum illai nee saappittiyaa avan romba somberi oru velaiyum ceyya maattaan amma kadaiku poayittu varennu sonnaanga unga appa eppo varuvaaru konjam tanni kudu cousin poatha kalyaanaththukku leave edukkanum innaikku saappaadu romba nallaa irukku avan than ammavai kandum karuththumaa paarttu kuraan aazham theriyaama kaalai vidaathae yenakku pasikkuthu saappaadu reethi vayam maamaa oorukku poayirukkaaru."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-020"
+    },
+    {
+      "audioSeconds" : 60,
+      "clipID" : "window60\/06",
+      "combinedLatencyMs" : 1034.453958,
+      "condition" : "window_60s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Tu Vaam?",
+            " Tu Vaam",
+            "veetu ",
+            "yellarayyum, ",
+            "kutpidanum.",
+            "koot, pidanum."
+          ],
+          "latencyMs" : 369.59,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.3138125,
+          "minConfidence" : 0.012,
+          "text" : "Kadabay, saathe, Tu Vaam. Anday, visayatulla, avanuku, akka, Reye, Illai. Namma, Vitu, visayshat, kku, yellarayum, kuthpidanum."
+        },
+        {
+          "alternatives" : [
+            " Saathittu",
+            " Saaththittu",
+            "visheshaththukku ",
+            "poathu ",
+            "vaaa",
+            "vaaram",
+            "kadaiku ",
+            "seekkiram ",
+            "leth aayidum",
+            "vaai romba ",
+            "vaayil onba ",
+            "neelam.",
+            "neelam.."
+          ],
+          "latencyMs" : 1033.751292,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7406296296296295,
+          "minConfidence" : 0.077,
+          "text" : "Kadhavai Saakthittu Vaa antha vishayaththula avanukku akkaraiyae illai namma veettu visaeshaththukku ellaaraiyum kooppidanum yenakku tholai valikkuthu kalyaanaththukku ellaarum varuvaanga shopping poathum potu pol vaangittu vaa amma kadaikku poayittu varennu sonnaanga yenakku pasikkuthu saappaadu raidhi bayam nee ethunarukku enna saappida pora saayangaalam kovilukku poagalaam avan pechchai nambaathae seekiram kilambu late aayidum avalukku vaayil onbu Neelam"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-029"
+    },
+    {
+      "audioSeconds" : 60,
+      "clipID" : "window60\/07",
+      "combinedLatencyMs" : 1259.102458,
+      "condition" : "window_60s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " paththiya,",
+            " Pechai,",
+            " Namba De.",
+            " Namba, De?",
+            "Vandadum, ",
+            "Selay, ",
+            "Unakku, ",
+            "Irukku.",
+            "iru.",
+            "irukka."
+          ],
+          "latencyMs" : 978.371666,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.30158695652173917,
+          "minConfidence" : 0.016,
+          "text" : "Nan already is happy to thin clanks. Avaluku Vai, Rumba, Neelam. Poda, Kalyana, Thukku, leave, Vedukanum, Andal, Padam, padthiya, Poongaluku, Puda, Tuni, Vanganum, B, Tula, Yarum, Illai, Avan, Pe, Chai, Namba, De. Salary, vandadum, rain, kattanum. Inda, selay, unakku, Araga, Iruk. Panda mataru. Innaikku, Safa, irukku."
+        },
+        {
+          "alternatives" : [
+            " paarththiyaa",
+            " vaanganum. veettula",
+            " illai. avan",
+            " peccai",
+            " nambaathae.",
+            "unnakku ",
+            "kudu ",
+            "plaisa kooda ",
+            "nalla ",
+            "irukku.",
+            "irukku,"
+          ],
+          "latencyMs" : 1258.412333,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7478333333333333,
+          "minConfidence" : 0.099,
+          "text" : "naan already saappittu ten thanks avalukku vaa itu romba neelam. cousin podhu kalyaanaththukku leave edukkanum. antha padam paarkkiyaa pongalukku pudhu thuni vaanganum veettula yaarum illai avan paechchai nambaathae parichchaikku nallaa paduchchiyaa salary vanthathum rent kattanum indha selai unakku azhagaa irukku un Thambi enka poayirukkaan Doctor appointment kku naalaikku poaganum konjam tanni kodu avaru romba kandiyam oru paisaa kooda ceytu Panna maattaaru innaikku saappaadu romba nallaa irukku"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-001"
+    },
+    {
+      "audioSeconds" : 60,
+      "clipID" : "window60\/08",
+      "combinedLatencyMs" : 1295.127333,
+      "condition" : "window_60s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Irukkanum,",
+            " vandadum,",
+            " Kattanum,",
+            " I already is happy ",
+            " Nan already's happy ",
+            "thin clanks.",
+            "thin, clangs.",
+            "Samarktiyama phase one.",
+            "Samarkthyama, phase one.",
+            "Beach, Takupulama.",
+            "Beach, Dakupolama.",
+            " Avaru, yepagum, talaikanama, fesubaru",
+            " Avaru, yepagum, talaikanama, fesubaru.",
+            " Ena ku pasikudu, ",
+            " Enakku pasi kudu, ",
+            "va.",
+            "wai,"
+          ],
+          "latencyMs" : 992.759916,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.3003818181818182,
+          "minConfidence" : 0.003,
+          "text" : "Inde, Baram, Velai, Dhonbe, Adigam, Kadabai, Saath, Ektu, Vaam, Kalyanath, kku, Yellarum, Baruvanga, Avan, exam, Len, Alla, Marx, Vangitan, Nanga, Yellarum, Go, Trumaya, Irukanum, Salary, Vandadum, rain, Kattanum. Nan already is happy to thin clangs. Oven drawn by Samarktiyama, phase one. Beacon, Jail, Nama, Beach. Avaru ye pagum talaikanama fesubaru. Enakku pasikudu, safad, radi, wai."
+        },
+        {
+          "alternatives" : [
+            " kadhavai",
+            " ottrumaiyaa",
+            " oottrumaiyaa",
+            "kandiyam ",
+            "maattaaru. avaru ",
+            "paesuvaaru",
+            "raithi ",
+            "vaayaa",
+            "vaai."
+          ],
+          "latencyMs" : 1294.440833,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6318387096774194,
+          "minConfidence" : 0.038,
+          "text" : "indha thorum vilai romba athigam kadhabai saaththittu vaa kalyaanaththukku ellaarum varuvaanga avan exam la nalla marks vaangittaan naangka ellaarum votrumaiyaa irukkanum salary vanthathum rain kattanum naan already saappittu ten thanks avan romba saamarththiyamaa paesuvaan. bee kaalil naama beej takku polama unga aapva eppo Varu avaru romba kandyam oru paisa kooda ceytu Panna maattaaru avaru eppavum thalaikkanamaa paesuvaaru. yenakku pasikkuthu saappaadu raidhi vaai"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-019"
+    },
+    {
+      "audioSeconds" : 60,
+      "clipID" : "window60\/09",
+      "combinedLatencyMs" : 1187.335209,
+      "condition" : "window_60s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " akka Reye,",
+            " Akka, Re,",
+            " Illai?",
+            " Unnakku Epo ",
+            " Unakku, Epo ",
+            "kidaikum?",
+            "kidaikum,",
+            "sunaanga.",
+            "sunanga?",
+            "saapida. None already, saapi, to tin, clangs.",
+            "saapida. None already, saapida.",
+            "erundirukkanum.",
+            "erundirukanum.",
+            "Konjam, ",
+            "karam, ",
+            "iruk.",
+            "Iruk.",
+            "Pohiru ",
+            "Ena, kaga, wait, ",
+            "Pannu.",
+            "panda.",
+            " Oven Pechai Nambade.",
+            " Oven, Pechai, Nambade.",
+            " Parties ",
+            "onna ",
+            "Paramuri, Enakku ",
+            "Puriyallai.",
+            ", one.",
+            ", ,"
+          ],
+          "latencyMs" : 723.69225,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.31312698412698425,
+          "minConfidence" : 0.014,
+          "text" : "Amari Yepagum, Talaikanamma, Pesu, Varu. Anday, Visayathula, avanuku, Akka, Rege, Illai. Unakku Epo free time kidaikum. Amma kadaiku pohetu vareennu sunanga. Nee, dinner, kku, Enna, saapida. None already, saapi, to tin, clanks. kalaiyala, seekiram, eyrundirukanum. Indakurambu, konjam, karama, irukku. Avalaku vailam. Mama, Uru kku, Poiru karu. Bus, stop, Ena kagavek, Panda. Oven Pechai nambade. Party Sonna Paramuri Enakku Puriyalai. , , , one."
+        },
+        {
+          "alternatives" : [
+            " aeppavum",
+            " saappittu ten",
+            "kaiyil enakkaaga wait",
+            "kaiyil enakkaaga",
+            " Pannu ",
+            "paatti ",
+            "pesuvaan",
+            "paesuvaan."
+          ],
+          "latencyMs" : 1186.60225,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8213492063492063,
+          "minConfidence" : 0.057,
+          "text" : "avaru eppavum thalaikkanamaa paesuvaaru antha vishayaththula avanukku akkaraiyae illai. unnakku eppo free time kidaikkum amma kadaikku poayittu varennu sonnaanga nee ethunarukku enna cappita pora naan already saappittutten thanks naalaikku kaalaiyila seekkiram ezhunththirukkanum indha kuzhambu konjam kaaramaa irukku avalukku vaai romba Neelam maamaa oorukku poayirukkaaru bus stock kail enakkaaga wait wait Pannu avan peccai nambaathae patti sonna pazhamozhi yenakku puriyalai avan romba saamarththiyamaa paesuvaan"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-034"
+    },
+    {
+      "audioSeconds" : 120,
+      "clipID" : "window120\/00",
+      "combinedLatencyMs" : 2115.389625,
+      "condition" : "window_120s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " talaikanama,",
+            " Tanni, Kudu.",
+            " Tanni, kudu?",
+            "Pandran.",
+            "Pandran, Enakku, Talai, Vali Kudu.",
+            ",, ",
+            ", , ",
+            ", ,",
+            "already, happy ",
+            "thin clangs.",
+            "tin, clangs.",
+            "Amma, ",
+            "karithuma, ",
+            "Quran.",
+            "Vedukanum. Unakku, ",
+            "Yedukanum. Unakku, "
+          ],
+          "latencyMs" : 1176.914042,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.2115454545454545,
+          "minConfidence" : 0.003,
+          "text" : "Avaru, Eppagum, Talaikanama, Pesu, Varu, Konjam, Tanni, kudu. Parties, Onna, Padamuri, Enakku, Puriyalai, Inda, Payan, run by Kurumbu, Panran. , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , None already is happy to tin clangs. Pari chek, nalla, pari chea. Party, unnai, unba miss, pandranga. Avantan, Ama, kandum, karituma, Park, the Kuran. Indakurambu, Konjam, Kadama, Irukku. Cousin, Oda, Kalyana, Tukkali, edukkanum, Unakku, Epo, free time, kidaikum."
+        },
+        {
+          "alternatives" : [
+            " paiyan",
+            " nirunbak kudumbu",
+            " peccai",
+            " nambaatha",
+            "rail ",
+            "vaai ",
+            "ottumaiyaa ",
+            "kudai ",
+            "kutai ",
+            "poagum",
+            "franks parichchaikku ",
+            "padichchiyaa ",
+            "karithuma ",
+            "kondram ",
+            "aandhal ",
+            "paarththiyaa",
+            " avanamb somberi ",
+            " avantamba somberi ",
+            "maattaan."
+          ],
+          "latencyMs" : 2113.36475,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6742500000000002,
+          "minConfidence" : 0.046,
+          "text" : "avaru aeppavum thalaikkanamaa paesuvaaru koondram tanni kodu patti sonna pazhamozhi yenakku puriyalai indha peyyan nirunba kudumbu pandraan yenakku tholai valikkuthu avan paechchai nambaathae bus stock l enakkaaga wait Pannu nee saappittiyaa yenakku pasikkuthu saappaadu reethi vai avalukku romba vetkam bee kai naam beech takk polama naanga ellaarum ottrumaiyaa irukkanum un Thambi enka poayirukkaan pongalukku pudhu thuni vaanganum mazhai vara thaanea irukku koodai eduththuttu pom naan already saappittu ten thanks parichchaikku nallaa paduchchiyaa party unnai irumba Miss pandraanga avantan ammavai kandum karituma park the Quran indha kuzhambu konjam kaaramaa irukku cousin podha kalyaanaththukku leave edukkanum unakku eppo free time kidaikkum seekiram kilambu lake aayidum nee en ivvalavu avasarappadura avan romba saamarththiyamaa paesuvaan andhal padam paarththiya avanamba somberi oru velaiyum ceyya maattaan"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-009"
+    },
+    {
+      "audioSeconds" : 120,
+      "clipID" : "window120\/01",
+      "combinedLatencyMs" : 2295.027166,
+      "condition" : "window_120s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Teren Yudu.",
+            " Len, Allah,",
+            " Wangitan.",
+            " Vangitan.",
+            " In the Kurambu, Konjam, karama, irukku. None ",
+            " In the Kurambu, Konjam, karama, Iruk. None ",
+            "tin ",
+            "clangs.",
+            "Fark, ",
+            "fart, ",
+            "the, Kuran.",
+            "Kuran.",
+            "airindu.",
+            "ayiren duksh.",
+            ", , ",
+            ", , , ",
+            ", , ",
+            ", , ",
+            ", , ",
+            ", , ",
+            ", ,, ",
+            ", , ",
+            ", , , ",
+            ", , , , ",
+            ", ,, , ",
+            ", , ",
+            ", , ",
+            ", , ",
+            ", , ",
+            ", ,",
+            ", , ",
+            " Avan, Rumba, Samarthri, Iruk, Kudai, Hedu, Tippo.",
+            " Avan, Rumba, Samarthri, Iruk, Kudai, Hedu, Tippu.",
+            " Nanga irukkanum.",
+            " Nanga, irukkanum.",
+            "Kadam ",
+            "paththiya, ",
+            "Salary vandadum, ",
+            "Kattanum.",
+            "kattanum..",
+            "Tai, ",
+            "a, ",
+            "iruk.",
+            "Irukk,"
+          ],
+          "latencyMs" : 1632.548042,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.2636020408163264,
+          "minConfidence" : 0.003,
+          "text" : "Enakku Thalai Vazhi kudu? Avan, Pechai, number De, Enakku Pasi kudu, Saaf, Paadu, Reidi, Vai. Aval, mugatula, Ore, tayakkam, Teren, Yude. Avan, exam, lanalla, marks, vangitan. None already is happy to tend clanks. Avantan, Ama, kandum, karituma, Park, the Kuran. Andai movie, don't be boring, airindukshe. , , , , , , , , , , , , , , , , , Avan Roomba Samarthri, Irukku, Kudai, Illa. Nanga irukanum. Andal kadam paththiya. Salary, vandadum, rain, kattanum. Traffic, aisle, Martikiten, Konjam, Lake, Agum, Unnak, Epo, free, time, kedaikum, In the, the deadline, run by Taik, ah, Iruk."
+        },
+        {
+          "alternatives" : [
+            " valikkudhu",
+            " valikkuthu",
+            "therinjathu ",
+            "konjam ",
+            "clangs",
+            "seyalai ",
+            "silai ",
+            "unnakku ",
+            "kudaiyeduththuttuppoam ",
+            "vaai romba ",
+            "neellam",
+            "ezhunththirukkanum ",
+            "Il ",
+            "maattikkitten ",
+            "kaaik aa irukku",
+            "kaaikkaa irukku"
+          ],
+          "latencyMs" : 2293.748084,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7471428571428577,
+          "minConfidence" : 0.082,
+          "text" : "Enakku Tholai Valikkudhu avan paechchai nambaathae yenakku pasikkuthu saappaadu raidhi vayam aval mugaththula oru thayakkam therinjuthu avan exam la nalla marks vaangittaan indha kuzhambu kondram kaaramaa irukku naan already saappittu ten clanks avantan ammaavai kandum karituma park the Quran andai movie romba boring aa irundhuchchu un phone uchaai illaiya indha selai unakku azhagaa irukku Doctor appointment kku naalaikku poaganum innaikku saappaadu romba nallaa irukku maamaa oorukku poayirukkaaru patti sonna pazhamozhi yenakku puriyalai avan romba saamarththiyamaa paesuvaan mazhai vara thaanea irukku kudai eduththuttuppoam antha vishayaththula avanukku akkaraiyae illai avalukku vaa romba Neelam nee saappittiyaa naalaikku kaalaiyila seekiram ezhunthirukkanum naangka ellaarum ottrumaiyaa irukkanum antha padam paarththiyaa salary vanthathum rain kattanum traffic ail maattikkittan konjam lake aakum unakku eppo free time kidaikkum indha project deadline romba thai aa irukku"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-004"
+    },
+    {
+      "audioSeconds" : 120,
+      "clipID" : "window120\/02",
+      "combinedLatencyMs" : 2591.468167,
+      "condition" : "window_120s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " kalaiyila",
+            " seeikkiram eyrundirukkanum?",
+            " seeikkiram, ellundirukkanum.",
+            "Banget, Bava.",
+            "Bangu, Bava.",
+            "go to Maya irukkanum.",
+            "gootrumaya irukanum.",
+            "cattanum.",
+            "katanum.",
+            " , ",
+            ", ",
+            ", , , , , , , , , , , , ,",
+            ", ,",
+            " , ",
+            ", , , ",
+            ", ,, ",
+            ",, ",
+            ", ",
+            " , , , ",
+            " , , ",
+            ", ",
+            ",",
+            ", , ",
+            ", , ",
+            ",",
+            ", .,",
+            " Aram periyama kalai vinade.",
+            " Aram, periyama, Kalai, vinade."
+          ],
+          "latencyMs" : 1415.602333,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.07358015267175565,
+          "minConfidence" : 0.002,
+          "text" : "Naalaikku kalaiyala seeikkiram eyrundirukkanum. Nee, Saap, Pitiyan, Kadabay, Saaktik, Bava, Un, Tambi, Enga, Poi, Irukkaan, Shopping, Pogum, Bode, Pole, Bangu, Nanga yelarum go to Maya irukanum. Salary, vandadum, rain, kattanum. , , , , , , , , , , , , , ,, , , , , , , , , , , , , , , , ,, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , . Aram teriyama kalai vinade."
+        },
+        {
+          "alternatives" : [
+            "poagumpoathu ",
+            "irunpa ",
+            "neellam",
+            "saappida pora ",
+            "oottrumaiyaa ",
+            "mugaththulla oru ",
+            "vaelaiyum ",
+            "kudu ",
+            "kotu ",
+            "peccai ",
+            "thalaikanamaa paesuvaaru ",
+            "thalaikkanama paesuvaaru ",
+            "theriyaamak kaalai ",
+            "vidaathe",
+            "vidaathae."
+          ],
+          "latencyMs" : 2590.014542,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7581550387596896,
+          "minConfidence" : 0.108,
+          "text" : "naalaikku kaalaiyila seekkiram ezhunthirukkanum nee saappittiyaa kadhabai saaththittu vaa un Thambi enka poayirukkaan shopping poathum potu pol vaangittu vaa avalukku vaa irunba Neelam nee thinarukku enna cappita pora indha thorum vilai romba athigam veettulla yaarum illai naangka ellaarum ottrumaiyaa irukkanum salary vanthathum rain kattanum aval mugaththula oru thayakkam therinjuthu indha project deadline romba thaikka irukku beekkai nalaiyil naama beach kku polama avan romba sombaeri oru velaiyum ceyya maattaan antha vishayaththula avanukku akkaraiyae illai konjam tanni kodu avan romba saamarththiyamaa paesuvaan indha kuzhambu konjam kaaramaa irukku unga appaaga ippo varuvaaru indha seyalai unnakku azhagaa irukku avanga vairing reception romba grand aa irundhuchchu avan pechchai nambaathae avaru romba kandiyam oru paisaa kooda ceytu Panna maattaaru avaru eppavum thalaikkanamaa pesuvaaru kalyaanaththukku ellaarum varuvaanga Doctor appointment kku naalaikku poaganum aazham theriyaama kaalai vidaathae"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-030"
+    },
+    {
+      "audioSeconds" : 120,
+      "clipID" : "window120\/03",
+      "combinedLatencyMs" : 2181.076916,
+      "condition" : "window_120s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " seekiram edundirukkanum?",
+            " seekiram edundirukkannum.",
+            " Poonkalukku ",
+            "Vanganum,",
+            "Vanganum..",
+            "vandadum rain, kattanum.",
+            "vandadum, rain kattanum.",
+            "vai kandum karithuma, ",
+            "kark, kuran.",
+            "kuran.",
+            "unba miss, ",
+            "Aaram, ",
+            "vidade. Pari, chaik, nalla, pare, chey.",
+            "vidade. Pari, chaik, nalla, pare, chey?",
+            " Enaku talai ",
+            "Vali ",
+            "kudu?",
+            "narum, gutru, Maya, ",
+            "narum, votrum, Maya, ",
+            "irukkanum,",
+            "exam la ",
+            "marks Vangitan.",
+            "marks, Wangitan.",
+            "resuction, ",
+            "hirindutsche.",
+            "irundutsche.",
+            "donbe, adigam.",
+            "donba, adigam.",
+            " Shopping pogum bodu, pole, bangitiba.",
+            " Shopping pogum bodu pole.",
+            "meeting, mudindyadum, beat, kku, varen.",
+            "meeting, mudindyadum, beat, kku varen."
+          ],
+          "latencyMs" : 1218.366,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.24550000000000008,
+          "minConfidence" : 0.004,
+          "text" : "Konjam, Tanni, kudu. Naalaikku kalaiyila seekiram edundirukkanum. Poongalukku Pudhu, Tuni, Vanganum. In the , the deadline grown by night, I irukka. Amma, kadai, kohitu, varanu. Salary, vandadum, rain, kattanum. Avantan amma vai, kandum, karituma, khuran. Party, unnai, unba, miss, pandranga. Aram, teriyama, kalai, vidade. Enakku talai vali kudu. Nang, yell, narum, votru, Maya, irukkanum. Avan exam, La Nalla marks, Vangitan. In tambi, yenga po irukan. Avan pechai nambade. Avanga wading, risuction, namba, grand, or hirundutsche. In the varam, velay, donbe adigam. Shopping. office meeting."
+        },
+        {
+          "alternatives" : [
+            " kudu",
+            " avasarappadura paatti",
+            " poatha",
+            " oodha",
+            "paarththa kuran ",
+            "paarththukkuraan ",
+            "naangaiyil ",
+            "narum ",
+            "paechchai ",
+            "nampaathae",
+            "naan nirnay ",
+            "naan nirnaya ",
+            "varen",
+            "pesuvaan ",
+            "peyyan ",
+            "kurumbu ",
+            "illai."
+          ],
+          "latencyMs" : 2179.162208,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7430082644628098,
+          "minConfidence" : 0.087,
+          "text" : "konjam tanni kodu naalaikku kaalaiyila seekkiram ezhunthirukkanum pongalukku pudhu thuni vaanganum neeyen ivvalavu avasarappadugal paatti sonna pazhamozhi yenakku puriyalai cousin podha kalyaanaththukku leave edukkanum indha project deadline romba thai aagirukku amma kadaikku poayittu varennu sonnaanga salary vanthathum rain kattanum avan than ammaavai kandum karuththumaa paarththa kuraan party unnai romba Miss pandraanga aazham theriyaama kaalai vidaathae parichchaikku nallaa padichchiyaa yenakku thalai valikkuthu naangka yel Arum ottrumaiyaa irukkanum avan exam la nalla marks vaangittaan un Thambi enka poayirukkaan avan peccai nambaathae avanga vairing reception romba grand aa irundhuchchu indha thorum vilai romba athigam shopping poathum potu pauul vaangittu vaa unfu nai uchaa illaiya naanirnay office meeting mudindiyathum veettukku varaen avan romba saamarththiyamaa paesuvaan indha paiyan romba kudumbu pandraan antha vishayaththula avanukku akkaraiyae illai"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-036"
+    },
+    {
+      "audioSeconds" : 120,
+      "clipID" : "window120\/04",
+      "combinedLatencyMs" : 2321.755417,
+      "condition" : "window_120s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Mood, India, Dum,",
+            " Varen. Innaikku, Safa, Dum, by Nalla, Irukku, Bus, stock, ail, kena, kaga, wait, Pannu.",
+            " Varen. Innaikku, Safa, Dum, by Nalla, Irukku, Bus, stock, ail, kena, Kaga, wait, Pannu.",
+            "tak ",
+            "edu kanum.",
+            "edukan.",
+            " Sayangalam Kovilukku pogalam.",
+            " Sayangalam, Kovilukku Pogalam.",
+            " Indase, ",
+            "la, ",
+            "unakku, ",
+            "Irukku.",
+            "Iruk...",
+            "cattanum. ",
+            "cuttanum. ",
+            "velai, don't be,",
+            "thin clangs.",
+            "tin clangs."
+          ],
+          "latencyMs" : 1480.569417,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.26998214285714284,
+          "minConfidence" : 0.003,
+          "text" : "Poongal kku Pudhu, Thuni, Vanganum, Un, Thambi, Enga, Po, Irukkaan, Naanga, Ye, Narum, Gotri, Maya, Irukkanum, Naan, Innaikku, office, meeting, Mudindyadum, beat, kku, Varen. Cousin Boda Kalyana tuk leave edukanum. Sayangalam Kovilukku Pogalam. Inda, Selai, Unakku, Araga, Iruk. Salary, vandadum, rain, kattanum. In the varam, velai, don't be, adigam. None already is happy to thin clanks."
+        },
+        {
+          "alternatives" : [
+            "ottrumaiyaa ",
+            "varen. ",
+            "vai kalyaanaththukku ",
+            "nilaiyil ",
+            "avasarappaduthal",
+            "parikshayikku nallaa ",
+            "unnakku ",
+            "poam antha ",
+            "oorukku poayirukkaaru.",
+            "oorukku poyirukkaaru",
+            "aayirundhuchchu ",
+            "aagi irundhuchchu ",
+            "saappittutten ",
+            "e for ",
+            "Free ",
+            "kidaikkum.",
+            "kidaikkum?"
+          ],
+          "latencyMs" : 2320.632291,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7713275862068966,
+          "minConfidence" : 0.088,
+          "text" : "pongalukku pudhu thuni vaanganum. un Thambi enka poayirukkaan naangka ellaarum otrumaiyaa irukkanum. naan innaikku office meeting mudindiyathum veettukku varaen. innaikku saappaadu romba nallaa irukku. bus thokkaiyil enakkaaga wait pannu. cousin poatha kalyaanaththukku leave edukkanum. yenakku pasikkuthu saappaadu raidhi va kalyaanaththukku ellaarum varuvaanga avan exam la nalla marks vaangittaan veekkai nalaiyil naama beach thukku polama nee en ivvalavu avasarappadugal antha padam paarkkiyaa saayangaalam kovilukku poagalaam parikshaikku nallaa paduchchiyaa indha selai unakku azhagaa irukku avaru eppavum thalaikkanamaa paesuvaaru mazhai vara thaanea irukku kudaiyeduththuttu Po antha vishayaththula avanukku akkaraiyae illai maamaa oorukku poayirukkaaru avalukku romba vetkam salary vanthathum rain kattanum indha thorum vilai romba athigam anthaai movie romba boring aagirundhuchchu naan already saappittuththaen thanks unakku eppo free time kidaikkum"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-012"
+    },
+    {
+      "audioSeconds" : 120,
+      "clipID" : "window120\/05",
+      "combinedLatencyMs" : 2344.395541,
+      "condition" : "window_120s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Apa,",
+            " Eppu,",
+            " Ge, Por,",
+            " Bare.",
+            "Sappadi, ",
+            "Irukku, Si, Kiram, Kilambu, Lake, Ahidum.",
+            "Irukku, Si, Kiram, Kilambu, Lake, Ahidum,",
+            "tayakum, ",
+            "terenyud.",
+            "teren, yude.",
+            " , , ",
+            " , , , ",
+            ", ",
+            ",, ",
+            ", , , ",
+            ", ",
+            ", ",
+            ", ,",
+            ", ,.",
+            ", , ",
+            ", , , ",
+            ", , ",
+            ",, , ",
+            ", , ",
+            ", , ",
+            ", , , , ",
+            ", , ",
+            ", ",
+            ", , , ",
+            ", , ",
+            ", , ",
+            ", , ",
+            ", , , , , , , ",
+            ",",
+            ", , , , , ,",
+            "aisle ",
+            "appointment, nalaik poganum.",
+            "appointment nalaik poganum.",
+            "drawn by ",
+            "Kurumbu, ",
+            "Nan already ",
+            "thin, clangs."
+          ],
+          "latencyMs" : 1264.283541,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.17051351351351354,
+          "minConfidence" : 0.005,
+          "text" : "Nee, aapkidiya, Unga, Appa, Eppo, Bari, Bari. Innaikku, Saapadi, Dumba, Nalla, Irukku. Salary, vandadum, rain, kattanum. Aval, mugatula, ore, tayakam, terenyude. , , , , , , , , , , , , , , Ni, dinner, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , Traffic ail marty kitten, konjam lake agum. Doctor appointment k nalaik poganum. And the movie, don't by boring, Aryan dutche. In the Payan, run by Kurumbi, Panran. None already is happy to thin clangs."
+        },
+        {
+          "alternatives" : [
+            "nee",
+            " kittiya?",
+            " kittiyaa",
+            "seekkiram ",
+            "paechchai ",
+            "nampaathae",
+            "nambaatha",
+            "onbakkandiyam ",
+            "poral nee eth",
+            "poral nee ethunarukku",
+            "aakaraiyae illai ",
+            "unakku ",
+            "unakku ",
+            "ottrumaiyaa ",
+            "ayil ",
+            "maattikkitten ",
+            "sapittutten ",
+            "saapittuttan "
+          ],
+          "latencyMs" : 2342.810208,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7265923076923074,
+          "minConfidence" : 0.076,
+          "text" : "ni hisab kittiya unga akka ippo varuvaaru innaikku saappaadu romba nallaa irukku seekiram kilambu lake aayidum avan romba somberi oru velaiyum ceyya maattaan avan peccai nambaathae salary vanthathum rain kattanum aval mugaththula oru thayakkam therinjathu avaru romba kandiyam oru paisaa kooda ceytu Panna maattaaru kalyaanaththukku ellaarum varuvaanga nee ethunarukku enna saappida poral neengan ivvalavu avasarappadura unfu naiyil shahir illaiya aandai vishayak tula aakaraiya illai pongalukku pudhu thuni vaanganum avan romba saamarththiyamaa paesuvaan indha silai unnakku azhagaa irukku unnakku eppo free time kidaikkum yenakku tholai valikkuthu naangka ellaarum otrumaiyaa irukkanum bus stock kail enakkaaga wait Pannu cousin oodha kalyaanaththukku leave edukkanum un Thambi enka poayirukkaan traffic ail maattikkittaen konjam lake aakum Doctor appointment kku naalaikku poaganum anthaai movie romba boring aagi irundhuchchu indha paiyan romba kurumbu pandraan naan already saapittutten flanks"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-011"
+    },
+    {
+      "audioSeconds" : 120,
+      "clipID" : "window120\/06",
+      "combinedLatencyMs" : 2131.789666,
+      "condition" : "window_120s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " at, kku,",
+            " yellarayum,",
+            " kutpidanum,",
+            " kutpidanum.,",
+            ",, ",
+            ",,, ",
+            ",, ",
+            ",, ,,",
+            ",,, ,",
+            "kanamma, ",
+            "fesubaru. ",
+            "bali, ",
+            "Vali, ",
+            "the, Kuran. ",
+            "nalaikku, poganum.",
+            "naalaikku poganum.",
+            "Satik, Va.",
+            "Satiktuvaa.",
+            "bangitiba.",
+            "bangit, ba.",
+            "Yarung, Illai.",
+            "Yarung Illai.",
+            "Padamuri, ",
+            "Enakku Puriyalai.",
+            "Enakku, Puriyalai, Andai, movie, don't be boring, Ayr, andu.",
+            " , , ",
+            ",, ",
+            ", , ",
+            ", ",
+            ", , .",
+            "Payan, driven ",
+            "Kurumbi Pandran.",
+            "Kurumbu Panran."
+          ],
+          "latencyMs" : 1693.487958,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.16671428571428584,
+          "minConfidence" : 0.002,
+          "text" : "Knees aapkidiya, Mama, Oru kku, Poirukkaaru. Inda, Krohe, deadline, number, tai, irukku. Namma, Vitu, Visesh, atukku, ellarayum, kutpidanum. Unnak, ,, ,, ,, ,, ,, ,, ,, ,, ,, ,, ,, ,, ,, ,, ,, , ,, , Avaru, ye pagum, talai, kanama, pesubaru. Enakku, talai, vali, kudu. Party, unnai, unba miss, Pandranga. Avantan, Amma, vai, kandum, karituma, Park, the Kuran. Dr. appointment, kku nalaikku poganum. Kadabay, Sattik, Va. Amma, kadai ku, kiram, kilambu, late, aidum. Shopping pogum, bodhi, pole, vangituba. Bitula, Yarum, Illai. Party, Sonna, Paramuri, Enakku, Puriyalai. , , , , , , , , , , , , , , , , , , , , , , , , In the Payan driven by Kurumbu Pandran."
+        },
+        {
+          "alternatives" : [
+            " visaeshaththukku",
+            " maattikittaen",
+            " maattikkitten",
+            "unnaidu romba ",
+            "kariththuma ",
+            "kadaikku ",
+            "vaayiromba ",
+            "neellam",
+            " veettulai yaarum ",
+            "aagirunthuchchu ",
+            "pesuvaan ",
+            "vaangittan",
+            "vaangkittaan",
+            "vetkam. namma ",
+            "trip ellaam ",
+            "pandraan."
+          ],
+          "latencyMs" : 2129.91025,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7412016806722692,
+          "minConfidence" : 0.087,
+          "text" : "niir saappittiyaa maamaa oorukku poayirukkaaru indha praiyai deadline romba thai aagi irukku namma veettu visheshaththukku ellaaraiyum kooppidanum unakku eppo free time kidaikkum avan romba somberry oru velaiyum ceyya maattaan traffic oil maattikkittaen konjam lake aakum avaru eppavum thalaikkanamaa paesuvaaru yenakku tholai valikkuthu party unnai romba Miss pandraanga avantan ammaavai kandum kariththumaa park the Quran Doctor appointment kku naalaikku poaganum kadavai saaththittu vaa amma kadaiku poayittu varennu sonnaanga seekiram kilambu lake aayidum shopping poagumpoathu Paul vaangittu vaa avalukku vaai romba Neelam veettula yaarum illai patti sonna pazhamozhi yenakku puriyalai anthaai movie romba boring aayirunthuchchu avan romba saamarththiyamaa paesuvaan unfu nalla marks vaangittaan avalukku romba vetkam namma family trick ellaam pack pandiyaa un Thambi enka poayirukkaan indha paiyan romba kudumbu pandraan"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-014"
+    },
+    {
+      "audioSeconds" : 120,
+      "clipID" : "window120\/07",
+      "combinedLatencyMs" : 2180.745459,
+      "condition" : "window_120s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " time kidaikum",
+            " vandadum,",
+            " Kattanum.",
+            "avasarapadula.",
+            "avasar, padula.",
+            "Agum, ",
+            "None already ",
+            "clangs.",
+            "Kudai, ",
+            "Edututtepo.",
+            "Edututtepo,",
+            "Enakku, Puriyalai.",
+            "Enakku Puriyallai."
+          ],
+          "latencyMs" : 1413.789,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.24062666666666663,
+          "minConfidence" : 0.007,
+          "text" : "Unakku Epu, free time, kidaikum salary, Vandadum, rain, kattanum. Aaram, Teriyama, Kale, Vinade, B, Kale, Nama, Beach, Kapulama, Ovan, Romba, Somberi, Oru, Velai, Yum, Seyama, Tan, Cousin, Oda, Kalyana, Tuk, leave, Yedu, Kanum. Nee, yen, ivalavu, avasara, padula. In the Kurambu, Konjam, Karam, Lake, Agum. Nan already is happy to thin clanks. Mama, Oru, kku, Pohiru, karu, Namma, family, click, kku, yelam, black, panniya, Marai, Vadam, Madhiri, Irukku, kudai, Eduttepo. Parties, onna, Paramuri, Enakku Puriyalai."
+        },
+        {
+          "alternatives" : [
+            " avasarappadura",
+            "thrangs ",
+            "oorukku ",
+            "silai ",
+            "seyalai ",
+            "unnakku ",
+            "vairing ",
+            "va ",
+            "saakte ",
+            "tevha",
+            "mugathula ",
+            "mukattula ",
+            "therinjutu",
+            "therinjuthu."
+          ],
+          "latencyMs" : 2178.923792,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.676065573770492,
+          "minConfidence" : 0.087,
+          "text" : "unakku eppo free time kidaikkum salary vanthathum rain kattanum aazham theriyaama kaalai vidaathae veetla naama beach kku polama avan romba somberi oru velaiyum ceyya maattaan cousin poatha kalyaanaththukku leave edukkanum nee en ivvalavu avasarappadugal pongalukku podhu thuni vaanganum indha kuzhambu konjam kaaramaa irukku traffic ayil maattikkittaen konjam lake aakum naan already saappittu ten franks mama urukku poirukkaaru namma family crick gellaam pack padniya mazhai varum thaanea irukku koodai eduththuttu poagum un Thambi enka poayirukkaan unga appa eppo varuvaaru indha selai unakku azhagaa irukku patti sonna pazhamozhi yenakku puriyalai antha vishayaththula avanukku akkaraiyae illai avan paechchai nambaathae saayangaalam kovilukku poagalaam avalukku romba vetkam anthaai movie romba boring aayirundhuchchu avanga bairing reception romba grand aa irundhuchchu kadabai saakti Teva aval mugaththula oru tayakkam therinjuthu"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-032"
+    },
+    {
+      "audioSeconds" : 120,
+      "clipID" : "window120\/08",
+      "combinedLatencyMs" : 2185.768166,
+      "condition" : "window_120s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "Parichey ku",
+            " kade cheyya.",
+            " kadecheya?",
+            "Poongaluku, ",
+            "Pudhu, ",
+            "pohetu, ",
+            "Sonnaga.",
+            "kudaheduttepo. Indakurambu, ",
+            "kudaheduttepo, Indakurambu, ",
+            "konjam, ",
+            "irukku.",
+            "irukku?",
+            " Parties, Unna ",
+            " Parties Unna ",
+            "Paramuri, Enakku ",
+            "kku, Pohiru, ",
+            "kku Poiru, ",
+            "Kar.",
+            "baram, ",
+            "donba, Adigam.",
+            "donba, Adigam,",
+            " , , ",
+            ", , , , ",
+            ", , ",
+            ", ",
+            ",",
+            ", , , , , , , , ,",
+            " , , ",
+            " , ",
+            ", ",
+            ",",
+            "thin clangs.",
+            "tin clanks.",
+            ", , ",
+            ",, ",
+            ",, ",
+            ", , ",
+            ",, , ",
+            ", ,, ",
+            ", , , ",
+            ", ",
+            ", ",
+            " , irukanum.",
+            " Irukanum."
+          ],
+          "latencyMs" : 1538.411375,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.20432407407407407,
+          "minConfidence" : 0.004,
+          "text" : "Paricheyku Nalla kade cheyya? Avan, Pechai, Nambade. Pongaluku, Pudhe, Tuni, Vanganum. Amma, Kadai, kku, pohitu, Vareennu, Sonnanga. Doctor Appointment, nalaik poganum. See, Kiram, kilambu, lake, aidum. Party, unnaidum, pandranga, irukku, kudahedut, Po. Indakurambu, Konjam, kadam, Irukku. Party Sonna Paramuri Enakku Puriyalai. Mama, Oru kku, Poiru, Karu. In the Badam, Velai, donba Adigam. , , , , , , , , , , , , , , , None already is happy to thin clanks. , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , irukanum."
+        },
+        {
+          "alternatives" : [
+            "padichchiyaa ",
+            "kadaiku ",
+            "aagi irundhuchchu ",
+            "povom ",
+            "poagum ",
+            "kondram ",
+            "tight ",
+            "aa irukku ",
+            "baai romba ",
+            "vaa i romba ",
+            "Neelam",
+            "paithing ",
+            "reithi ",
+            "neeyen ",
+            "naangka ",
+            "votrumaiyaa "
+          ],
+          "latencyMs" : 2184.467333,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7394080000000001,
+          "minConfidence" : 0.109,
+          "text" : "parichchaikku nallaa paduchchiyaa avan paechchai nambaathae pongalukku pudhu thuni vaanganum amma kadaikku poayittu varennu sonnaanga antha movie romba boring aagirundhuchchu Doctor appointment kku naalaikku poaganum seekkiram kilambu late aayidum party unnai iruppa Miss pandraanga mazhai vara thaanea irukku kudaiyeduththuttu pom indha kuzhambu konjam kaaramaa irukku patti sonna pazhamozhi yenakku puriyalai maamaa oorukku poayirukkaaru indha thorum vilai romba athigam un Thambi enka poayirukkaan veekkai nalaiyil naama beach kku polama indha progai deadline romba thai aagi irukku shopping poathum potu pol vaangittu vaa avalukku vaa romba neellam avanga vaithing reception romba grand aa irundhuchchu naan already saappittu ten clanks yenakku pasikkuthu saappaadu raidhi vai avaru eppavum thalaikkanamaa paesuvaaru avan romba somberi oru velaiyum ceyya maattaan salary vanthathum rain kattanum nee en ivvalavu avasarappadugal naanga ellaarum oottrumaiyaa irukkanum"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-027"
+    },
+    {
+      "audioSeconds" : 120,
+      "clipID" : "window120\/09",
+      "combinedLatencyMs" : 2169.610708,
+      "condition" : "window_120s",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "Ivanukku",
+            " Nilam?",
+            " Neeilam.",
+            "Teriyam, ",
+            "Kaalai vinade.",
+            "Kaalai, vinade",
+            " Bitula, ",
+            "Illai. Parichaikunalla, kadichiya.",
+            "Illai. Parichai, Nalla, kadichiya.",
+            " , , ",
+            " , ",
+            ", ",
+            ",, ",
+            ", ,",
+            "Visheshat, ",
+            "kut pidanum.",
+            "kut, pidanum.",
+            " , ",
+            ", , ",
+            ",, , ",
+            ", , ",
+            ",, ",
+            ", , ",
+            ", , , ",
+            ",",
+            ", And",
+            " None already ",
+            "sapitutin clangs.",
+            "sapitutin, clanks.",
+            "Selai, Unakku Araga ",
+            "Selai unakku araga ",
+            "iruk.",
+            " Poongalukku puda, ",
+            "wanganum.",
+            "iruku ",
+            "Eduttu ",
+            "tippu.",
+            "tippo?",
+            "uruk, ",
+            "poiru karu.",
+            "poirukaru.",
+            ", , ",
+            ",, ",
+            ", , ",
+            ",, ",
+            ", , ",
+            ",, ",
+            ",, ",
+            ",, ,, ",
+            ", , ",
+            ",, ",
+            ",."
+          ],
+          "latencyMs" : 1173.054583,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.1777628865979381,
+          "minConfidence" : 0.002,
+          "text" : "Avalikku Vaai, Rumba, Nilam. Aaram, Teriyama, Kaalai, vinade. Beetulla, Yarum, Illai. , , , , , , , , , , Aidum. Namma, Vitu, Viseshhat, kku, ellarayum, kutpidanum. , , , , , , , , , , , , , , , , , , , , , , , , , , ,  Nan already sapitutin, clangs. In the Selai, Unakku, Araga irukku. Poongaluku, puda, tuni, vanganum. Madri irukku kudai eduttu tippo. Mama, Uru kku pohiru karu. Salary, vandadum, rain, kattanum. Unfu, nail, chai, , , , , , , , , , , ,"
+        },
+        {
+          "alternatives" : [
+            " saamarthriyamaa",
+            " saamarththiyamaa",
+            " paejubaan",
+            " paejuban",
+            "oodha ",
+            "poatha ",
+            "yedukkanum",
+            "ethunarukku ",
+            "kadaikku ",
+            "unakku ",
+            "poagum maamaa ",
+            "kodu ",
+            "unpu, naan ",
+            "varaen"
+          ],
+          "latencyMs" : 2167.726792,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7771848739495796,
+          "minConfidence" : 0.094,
+          "text" : "avalukku vaai romba neellam aazham theriyaama kaalai vidaathae nee saappittiyaa veettula yaarum illai parichchaikku nallaa paduchchiyaa unakku eppo free time kidaikkum avan romba saamarthiyamaa paesuvaan seekiram kilambu lake aayidum namma veettu visaeshaththukku ellaaraiyum kooppidanum yenakku pasikkuthu saappaadu raidhi vaayidum avan romba somberi oru velaiyum ceyya maattaan cousin podha kalyaanaththukku leave edukkanum nee ethunarkku enna saappida pora avalukku romba vetkam amma kadaiku poayittu varennu sonnaanga antha movie romba boring aayirundhuchchu yenakku tholai valikkuthu naan already saappittu ten thanks indha silai unnakku azhagaa irukku pongalukku pudhu thuni vaanganum mazhai vara thaanea irukku koodai eduththuttu Po maamaa oorukku poayirukkaaru un Thambi enka poayirukkaan konjam tanni kudu unga appa eppo varuvaaru salary vanthathum rain kattanum. unpu naan innaikku office meeting mudindiyathum veettukku varaen."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-001"
+    }
+  ],
+  "sourceLabel" : "SYNTHETIC: Tamil TTS sentences (voice Vani) with synthetic room tone at -50 dBFS; target is the last sentence",
+  "vad" : false
+}

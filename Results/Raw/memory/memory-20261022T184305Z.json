@@ -1,0 +1,380 @@
+{
+  "metadata" : {
+    "benchmark" : "memory",
+    "buildConfiguration" : "release",
+    "chip" : "Apple M5 Pro",
+    "environment" : "macOS host process phys_footprint; one fresh process per measurement; not an iPhone measurement",
+    "gitCommit" : "ddebcc0",
+    "gitDirty" : true,
+    "machine" : "Mac17,9",
+    "memoryGB" : 48,
+    "notes" : [
+
+    ],
+    "osVersion" : "Version 27.0.1 (Build 26A434)",
+    "runID" : "memory-20261022T184305Z",
+    "timestamp" : "2026-10-22T18:43:05Z"
+  },
+  "results" : [
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 983040,
+      "footprintAfterClearBytes" : 5849568,
+      "footprintAfterFillBytes" : 2916808,
+      "footprintAfterSnapshotBytes" : 5816776,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "baseline_v1_int16_ring",
+      "peakDuringSnapshotDeltaBytes" : 3883008
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 983040,
+      "footprintAfterClearBytes" : 5849568,
+      "footprintAfterFillBytes" : 2916808,
+      "footprintAfterSnapshotBytes" : 5816776,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "baseline_v1_int16_ring",
+      "peakDuringSnapshotDeltaBytes" : 3883008
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 983040,
+      "footprintAfterClearBytes" : 5849568,
+      "footprintAfterFillBytes" : 2916808,
+      "footprintAfterSnapshotBytes" : 5816776,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "baseline_v1_int16_ring",
+      "peakDuringSnapshotDeltaBytes" : 3883008
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 1949696,
+      "footprintAfterClearBytes" : 9683400,
+      "footprintAfterFillBytes" : 3883464,
+      "footprintAfterSnapshotBytes" : 9683400,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "baseline_v1_int16_ring",
+      "peakDuringSnapshotDeltaBytes" : 7749632
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 1949696,
+      "footprintAfterClearBytes" : 9683400,
+      "footprintAfterFillBytes" : 3883464,
+      "footprintAfterSnapshotBytes" : 9683400,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "baseline_v1_int16_ring",
+      "peakDuringSnapshotDeltaBytes" : 7749632
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 1949696,
+      "footprintAfterClearBytes" : 9683400,
+      "footprintAfterFillBytes" : 3883464,
+      "footprintAfterSnapshotBytes" : 9683400,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "baseline_v1_int16_ring",
+      "peakDuringSnapshotDeltaBytes" : 7749632
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 3866624,
+      "footprintAfterClearBytes" : 17367496,
+      "footprintAfterFillBytes" : 5800392,
+      "footprintAfterSnapshotBytes" : 17367496,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "baseline_v1_int16_ring",
+      "peakDuringSnapshotDeltaBytes" : 15433728
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 3866624,
+      "footprintAfterClearBytes" : 17367496,
+      "footprintAfterFillBytes" : 5800392,
+      "footprintAfterSnapshotBytes" : 17367496,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "baseline_v1_int16_ring",
+      "peakDuringSnapshotDeltaBytes" : 15433728
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 3866624,
+      "footprintAfterClearBytes" : 17367496,
+      "footprintAfterFillBytes" : 5800392,
+      "footprintAfterSnapshotBytes" : 17367496,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "baseline_v1_int16_ring",
+      "peakDuringSnapshotDeltaBytes" : 15433728
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 1048576,
+      "footprintAfterClearBytes" : 4915656,
+      "footprintAfterFillBytes" : 2982344,
+      "footprintAfterSnapshotBytes" : 4915656,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "shipping",
+      "peakDuringSnapshotDeltaBytes" : 2981888
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 1048576,
+      "footprintAfterClearBytes" : 4915656,
+      "footprintAfterFillBytes" : 2982344,
+      "footprintAfterSnapshotBytes" : 4915656,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "shipping",
+      "peakDuringSnapshotDeltaBytes" : 2981888
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 1048576,
+      "footprintAfterClearBytes" : 4915656,
+      "footprintAfterFillBytes" : 2982344,
+      "footprintAfterSnapshotBytes" : 4915656,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "shipping",
+      "peakDuringSnapshotDeltaBytes" : 2981888
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 2015232,
+      "footprintAfterClearBytes" : 7815624,
+      "footprintAfterFillBytes" : 3949000,
+      "footprintAfterSnapshotBytes" : 7815624,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "shipping",
+      "peakDuringSnapshotDeltaBytes" : 5881856
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 2015232,
+      "footprintAfterClearBytes" : 7815624,
+      "footprintAfterFillBytes" : 3949000,
+      "footprintAfterSnapshotBytes" : 7815624,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "shipping",
+      "peakDuringSnapshotDeltaBytes" : 5881856
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 2015232,
+      "footprintAfterClearBytes" : 7815624,
+      "footprintAfterFillBytes" : 3949000,
+      "footprintAfterSnapshotBytes" : 7815624,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "shipping",
+      "peakDuringSnapshotDeltaBytes" : 5881856
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 3948544,
+      "footprintAfterClearBytes" : 13582792,
+      "footprintAfterFillBytes" : 5882312,
+      "footprintAfterSnapshotBytes" : 13582792,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "shipping",
+      "peakDuringSnapshotDeltaBytes" : 11649024
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 3948544,
+      "footprintAfterClearBytes" : 13582792,
+      "footprintAfterFillBytes" : 5882312,
+      "footprintAfterSnapshotBytes" : 13582792,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "shipping",
+      "peakDuringSnapshotDeltaBytes" : 11649024
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 3948544,
+      "footprintAfterClearBytes" : 13582792,
+      "footprintAfterFillBytes" : 5882312,
+      "footprintAfterSnapshotBytes" : 13582792,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "shipping",
+      "peakDuringSnapshotDeltaBytes" : 11649024
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 1949696,
+      "footprintAfterClearBytes" : 7799264,
+      "footprintAfterFillBytes" : 3883464,
+      "footprintAfterSnapshotBytes" : 7799264,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "float32_ring",
+      "peakDuringSnapshotDeltaBytes" : 5865496
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 1949696,
+      "footprintAfterClearBytes" : 7799264,
+      "footprintAfterFillBytes" : 3883464,
+      "footprintAfterSnapshotBytes" : 7799264,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "float32_ring",
+      "peakDuringSnapshotDeltaBytes" : 5865496
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 1949696,
+      "footprintAfterClearBytes" : 7799264,
+      "footprintAfterFillBytes" : 3883464,
+      "footprintAfterSnapshotBytes" : 7799264,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "float32_ring",
+      "peakDuringSnapshotDeltaBytes" : 5865496
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 3866624,
+      "footprintAfterClearBytes" : 13550024,
+      "footprintAfterFillBytes" : 5800392,
+      "footprintAfterSnapshotBytes" : 13550024,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "float32_ring",
+      "peakDuringSnapshotDeltaBytes" : 11616256
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 3866624,
+      "footprintAfterClearBytes" : 13550024,
+      "footprintAfterFillBytes" : 5800392,
+      "footprintAfterSnapshotBytes" : 13550024,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "float32_ring",
+      "peakDuringSnapshotDeltaBytes" : 11616256
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 3866624,
+      "footprintAfterClearBytes" : 13550024,
+      "footprintAfterFillBytes" : 5800392,
+      "footprintAfterSnapshotBytes" : 13550024,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "float32_ring",
+      "peakDuringSnapshotDeltaBytes" : 11616256
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 7700480,
+      "footprintAfterClearBytes" : 25067976,
+      "footprintAfterFillBytes" : 9634248,
+      "footprintAfterSnapshotBytes" : 25067976,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "float32_ring",
+      "peakDuringSnapshotDeltaBytes" : 23134208
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 7700480,
+      "footprintAfterClearBytes" : 25067976,
+      "footprintAfterFillBytes" : 9634248,
+      "footprintAfterSnapshotBytes" : 25067976,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "float32_ring",
+      "peakDuringSnapshotDeltaBytes" : 23134208
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 7700480,
+      "footprintAfterClearBytes" : 25067976,
+      "footprintAfterFillBytes" : 9634248,
+      "footprintAfterSnapshotBytes" : 25067976,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "float32_ring",
+      "peakDuringSnapshotDeltaBytes" : 23134208
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 4079640,
+      "footprintAfterClearBytes" : 6013408,
+      "footprintAfterFillBytes" : 6013408,
+      "footprintAfterSnapshotBytes" : 6013408,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "naive_append_trim_float",
+      "peakDuringSnapshotDeltaBytes" : 4079640
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 4079640,
+      "footprintAfterClearBytes" : 6013408,
+      "footprintAfterFillBytes" : 6013408,
+      "footprintAfterSnapshotBytes" : 6013408,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "naive_append_trim_float",
+      "peakDuringSnapshotDeltaBytes" : 4079640
+    },
+    {
+      "capacitySeconds" : 30,
+      "fillDeltaBytes" : 4079640,
+      "footprintAfterClearBytes" : 6013408,
+      "footprintAfterFillBytes" : 6013408,
+      "footprintAfterSnapshotBytes" : 6013408,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "naive_append_trim_float",
+      "peakDuringSnapshotDeltaBytes" : 4079640
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 8110104,
+      "footprintAfterClearBytes" : 10043872,
+      "footprintAfterFillBytes" : 10043872,
+      "footprintAfterSnapshotBytes" : 10043872,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "naive_append_trim_float",
+      "peakDuringSnapshotDeltaBytes" : 8110104
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 8110104,
+      "footprintAfterClearBytes" : 10043872,
+      "footprintAfterFillBytes" : 10043872,
+      "footprintAfterSnapshotBytes" : 10043872,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "naive_append_trim_float",
+      "peakDuringSnapshotDeltaBytes" : 8110104
+    },
+    {
+      "capacitySeconds" : 60,
+      "fillDeltaBytes" : 8110104,
+      "footprintAfterClearBytes" : 10043872,
+      "footprintAfterFillBytes" : 10043872,
+      "footprintAfterSnapshotBytes" : 10043872,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "naive_append_trim_float",
+      "peakDuringSnapshotDeltaBytes" : 8110104
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 16171032,
+      "footprintAfterClearBytes" : 18104800,
+      "footprintAfterFillBytes" : 18104800,
+      "footprintAfterSnapshotBytes" : 18104800,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "naive_append_trim_float",
+      "peakDuringSnapshotDeltaBytes" : 16171032
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 16171032,
+      "footprintAfterClearBytes" : 18104800,
+      "footprintAfterFillBytes" : 18104800,
+      "footprintAfterSnapshotBytes" : 18104800,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "naive_append_trim_float",
+      "peakDuringSnapshotDeltaBytes" : 16171032
+    },
+    {
+      "capacitySeconds" : 120,
+      "fillDeltaBytes" : 16171032,
+      "footprintAfterClearBytes" : 18104800,
+      "footprintAfterFillBytes" : 18104800,
+      "footprintAfterSnapshotBytes" : 18104800,
+      "footprintBeforeBytes" : 1933768,
+      "implementation" : "naive_append_trim_float",
+      "peakDuringSnapshotDeltaBytes" : 16171032
+    }
+  ]
+}

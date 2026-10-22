@@ -1,0 +1,1933 @@
+{
+  "dataset" : "asr_tamil_synthetic_v1_clean_normal",
+  "locales" : [
+    "ta-IN",
+    "en-IN"
+  ],
+  "metadata" : {
+    "benchmark" : "asr",
+    "buildConfiguration" : "release",
+    "chip" : "Apple M5 Pro",
+    "environment" : "macOS on-device SpeechTranscriber; SYNTHETIC: macOS TTS voice Vani (single speaker); noise artificially mixed",
+    "gitCommit" : "ddebcc0",
+    "gitDirty" : true,
+    "machine" : "Mac17,9",
+    "memoryGB" : 48,
+    "notes" : [
+      "locales: ta-IN,en-IN",
+      "mode: sequential",
+      "First clip includes model load (cold start)"
+    ],
+    "osVersion" : "Version 27.0.1 (Build 26A434)",
+    "runID" : "asr-20261022T185326Z",
+    "timestamp" : "2026-10-22T18:53:26Z"
+  },
+  "mode" : "sequential",
+  "results" : [
+    {
+      "audioSeconds" : 2.32025,
+      "clipID" : "ta-001\/normal",
+      "combinedLatencyMs" : 600.012375,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "ennaikku",
+            " nalla",
+            " irukku."
+          ],
+          "latencyMs" : 518.783458,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.9103999999999999,
+          "minConfidence" : 0.688,
+          "text" : "innaikku saappaadu romba nallaa irukku"
+        },
+        {
+          "alternatives" : [
+            "Innaikku saapadu,",
+            "Innaikku, Saap Paadu,",
+            " Dhumba,",
+            " Irukku.",
+            " Irukku"
+          ],
+          "latencyMs" : 81.098625,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.633,
+          "minConfidence" : 0.154,
+          "text" : "Innaikku Saapadu, Dumba, Nalla, Irukku?"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-001"
+    },
+    {
+      "audioSeconds" : 2.7259375,
+      "clipID" : "ta-002\/normal",
+      "combinedLatencyMs" : 557.82775,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " seekkiram",
+            " ezhunththirukkanum",
+            " ezhunthirukkanum."
+          ],
+          "latencyMs" : 471.633834,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.87025,
+          "minConfidence" : 0.79,
+          "text" : "naalaikku kaalaiyila seekiram ezhunthirukkanum"
+        },
+        {
+          "alternatives" : [
+            " kalaiyala",
+            " seekiram, ellundirukkanum.",
+            " seekirum, ellundirukkannum."
+          ],
+          "latencyMs" : 86.092166,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.604,
+          "minConfidence" : 0.393,
+          "text" : "Naalaikku kalaiyila seekirum, ellundirukkanum."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-002"
+    },
+    {
+      "audioSeconds" : 1.7448125,
+      "clipID" : "ta-003\/normal",
+      "combinedLatencyMs" : 532.927375,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "en Thambi ",
+            "Mun Thambi ",
+            "poayirukkaan."
+          ],
+          "latencyMs" : 468.014625,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8410000000000001,
+          "minConfidence" : 0.765,
+          "text" : "Thambi enka poayirukkaan"
+        },
+        {
+          "alternatives" : [
+            "In",
+            " Dambi,",
+            " po irukan?",
+            " pohirukan."
+          ],
+          "latencyMs" : 64.789875,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.238,
+          "minConfidence" : 0.136,
+          "text" : "Then dambi, yenga po irukan."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-003"
+    },
+    {
+      "audioSeconds" : 2.59175,
+      "clipID" : "ta-004\/normal",
+      "combinedLatencyMs" : 535.82325,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " kadaikku",
+            " kataikku",
+            " sonnaanga."
+          ],
+          "latencyMs" : 462.2935,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8416,
+          "minConfidence" : 0.658,
+          "text" : "amma kadaiku poayittu varennu sonnaanga"
+        },
+        {
+          "alternatives" : [
+            " kadaiku pohitu",
+            " sunangar.",
+            " sunangar?"
+          ],
+          "latencyMs" : 73.431667,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.525,
+          "minConfidence" : 0.238,
+          "text" : "Amma kadai kku pohitu bareennu sunanga."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-004"
+    },
+    {
+      "audioSeconds" : 3.051125,
+      "clipID" : "ta-005\/normal",
+      "combinedLatencyMs" : 554.007208,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " koodai",
+            " kutai",
+            " povom",
+            " pom"
+          ],
+          "latencyMs" : 465.837625,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7927142857142858,
+          "minConfidence" : 0.166,
+          "text" : "mazhai vara thaanea irukku kudai eduththuttu poagum"
+        },
+        {
+          "alternatives" : [
+            " Iruku,",
+            " Edututtupo.",
+            " Eduttupo?"
+          ],
+          "latencyMs" : 88.054541,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4461666666666666,
+          "minConfidence" : 0.269,
+          "text" : "Marai, Vara Madhiri, Irukku, Kudai, Eduttupo."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-005"
+    },
+    {
+      "audioSeconds" : 1.2050625,
+      "clipID" : "ta-006\/normal",
+      "combinedLatencyMs" : 516.020917,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "kitti yaar",
+            "ki tiyar."
+          ],
+          "latencyMs" : 463.793875,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.2625,
+          "minConfidence" : 0.05,
+          "text" : "apni Hisaab ki tiyar"
+        },
+        {
+          "alternatives" : [
+            "Nee is a Pidiya.",
+            "Niece of Pitya."
+          ],
+          "latencyMs" : 52.09475,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.15125,
+          "minConfidence" : 0.072,
+          "text" : "Nee is a Pitya."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-006"
+    },
+    {
+      "audioSeconds" : 1.8674375,
+      "clipID" : "ta-007\/normal",
+      "combinedLatencyMs" : 536.424542,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " vilaiyidumbu",
+            " athigam."
+          ],
+          "latencyMs" : 466.532666,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8527500000000001,
+          "minConfidence" : 0.672,
+          "text" : "indha thorum vilaiyidumpu athigam"
+        },
+        {
+          "alternatives" : [
+            " Varam belay,",
+            " varam, belay,",
+            " dumba, adigam.",
+            " dumba adigam."
+          ],
+          "latencyMs" : 69.795458,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.3449999999999999,
+          "minConfidence" : 0.097,
+          "text" : "In the Varam, belay, don't be adigam."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-007"
+    },
+    {
+      "audioSeconds" : 1.293625,
+      "clipID" : "ta-008\/normal",
+      "combinedLatencyMs" : 522.498834,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " kotu.",
+            " kodu."
+          ],
+          "latencyMs" : 464.308416,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.5593333333333333,
+          "minConfidence" : 0.475,
+          "text" : "konjam tanni kotu"
+        },
+        {
+          "alternatives" : [
+            "Konjam tannikudu?",
+            "Konjam tannikudu"
+          ],
+          "latencyMs" : 58.09775,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.7395,
+          "minConfidence" : 0.575,
+          "text" : "Konjam tannikudu."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-008"
+    },
+    {
+      "audioSeconds" : 3.2535,
+      "clipID" : "ta-009\/normal",
+      "combinedLatencyMs" : 546.450167,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " somberi",
+            " soampaeri",
+            " vaelaiyum"
+          ],
+          "latencyMs" : 469.853375,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8041428571428572,
+          "minConfidence" : 0.402,
+          "text" : "avan romba sombaeri oru velaiyum ceyya maattaan"
+        },
+        {
+          "alternatives" : [
+            " ,",
+            " , ,,",
+            " ,",
+            " ,,"
+          ],
+          "latencyMs" : 76.470125,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.064125,
+          "minConfidence" : 0.006,
+          "text" : ", , , , , , , ,"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-009"
+    },
+    {
+      "audioSeconds" : 1.530375,
+      "clipID" : "ta-010\/normal",
+      "combinedLatencyMs" : 532.121125,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "yenakku ",
+            "Talai ",
+            " valikkuthu.",
+            "valikkuthu"
+          ],
+          "latencyMs" : 464.276792,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8690000000000001,
+          "minConfidence" : 0.766,
+          "text" : "yenakku thalai valikkuthu"
+        },
+        {
+          "alternatives" : [
+            "Yenaku, talai, bali, kudu.",
+            "Yenaku, talai bali kudu."
+          ],
+          "latencyMs" : 67.742583,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.36425,
+          "minConfidence" : 0.253,
+          "text" : "Yenaku talai bali kudu."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-010"
+    },
+    {
+      "audioSeconds" : 1.52375,
+      "clipID" : "ta-011\/normal",
+      "combinedLatencyMs" : 521.100042,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "andhal",
+            " padum",
+            " paarththiyaal"
+          ],
+          "latencyMs" : 463.252792,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.35733333333333334,
+          "minConfidence" : 0.109,
+          "text" : "antha padam paarththiyaa"
+        },
+        {
+          "alternatives" : [
+            " pathiya.",
+            " paththiya."
+          ],
+          "latencyMs" : 57.743167,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4003333333333334,
+          "minConfidence" : 0.329,
+          "text" : "Andal padam pathriya."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-011"
+    },
+    {
+      "audioSeconds" : 1.7448125,
+      "clipID" : "ta-012\/normal",
+      "combinedLatencyMs" : 507.727625,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " appa vagaippu varuvaaru",
+            " appa vagaippoo varuvaaru"
+          ],
+          "latencyMs" : 464.424417,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.61325,
+          "minConfidence" : 0.124,
+          "text" : "unga appaaga ippo varuvaaru"
+        },
+        {
+          "alternatives" : [
+
+          ],
+          "latencyMs" : 43.213583,
+          "locale" : "en-IN",
+          "text" : ""
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-012"
+    },
+    {
+      "audioSeconds" : 1.359875,
+      "clipID" : "ta-013\/normal",
+      "combinedLatencyMs" : 526.642625,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "veettulla yaarum",
+            "veettula yaarum",
+            " illai."
+          ],
+          "latencyMs" : 466.392166,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7326666666666668,
+          "minConfidence" : 0.541,
+          "text" : "veettulai yaarum illai"
+        },
+        {
+          "alternatives" : [
+            "Bitu la Yarum Illai.",
+            "Bitula, Yarum, Illai"
+          ],
+          "latencyMs" : 60.146958,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4683333333333333,
+          "minConfidence" : 0.271,
+          "text" : "Bitula, Yarum, Illai."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-013"
+    },
+    {
+      "audioSeconds" : 2.0531875,
+      "clipID" : "ta-014\/normal",
+      "combinedLatencyMs" : 534.311708,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " nirunba",
+            " nirunbak",
+            " pandraan."
+          ],
+          "latencyMs" : 464.776791,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7628,
+          "minConfidence" : 0.552,
+          "text" : "indha peyar nirumba kurumbu pandraan"
+        },
+        {
+          "alternatives" : [
+            " Kurumbu Pandran.",
+            " Kurumbi, Pandran."
+          ],
+          "latencyMs" : 69.439417,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.5265714285714286,
+          "minConfidence" : 0.104,
+          "text" : "In the Payan, run by Kurumbu, Pandran."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-014"
+    },
+    {
+      "audioSeconds" : 2.176,
+      "clipID" : "ta-015\/normal",
+      "combinedLatencyMs" : 534.160667,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "kalyaanaththirku",
+            " varuvaanga.",
+            " varuvaanga,"
+          ],
+          "latencyMs" : 464.35125,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.923,
+          "minConfidence" : 0.833,
+          "text" : "kalyaanaththukku ellaarum varuvaanga"
+        },
+        {
+          "alternatives" : [
+            " yellarum Baruvanga.",
+            " Ellarum, Baruvanga."
+          ],
+          "latencyMs" : 69.708042,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4445,
+          "minConfidence" : 0.384,
+          "text" : "Kalyanath, kku, yellarum baruvanga."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-015"
+    },
+    {
+      "audioSeconds" : 2.1051875,
+      "clipID" : "ta-016\/normal",
+      "combinedLatencyMs" : 531.311625,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "sayangaalam",
+            " koilukku poagalaam",
+            " kovilukku pogalaam"
+          ],
+          "latencyMs" : 464.828792,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8336666666666667,
+          "minConfidence" : 0.716,
+          "text" : "saayangaalam kovilukku poagalaam"
+        },
+        {
+          "alternatives" : [
+            " kobilukku",
+            " pugalam.",
+            " Pogalam."
+          ],
+          "latencyMs" : 66.354167,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.539,
+          "minConfidence" : 0.309,
+          "text" : "Sayangalam Kobilukku Pugalam."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-016"
+    },
+    {
+      "audioSeconds" : 1.419125,
+      "clipID" : "ta-017\/normal",
+      "combinedLatencyMs" : 527.594291,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " vetkam.",
+            " vekkam"
+          ],
+          "latencyMs" : 463.866083,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.859,
+          "minConfidence" : 0.611,
+          "text" : "avalukku romba vetkam"
+        },
+        {
+          "alternatives" : [
+            "I have a",
+            "I'm a",
+            " look, don't by Witcum.",
+            " little bit."
+          ],
+          "latencyMs" : 63.629334,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.13716666666666666,
+          "minConfidence" : 0.03,
+          "text" : "Have a look, don't by Witcom."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-017"
+    },
+    {
+      "audioSeconds" : 2.0525625,
+      "clipID" : "ta-018\/normal",
+      "combinedLatencyMs" : 508.879958,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " aen",
+            " avasarappadugal.",
+            " avasarappadulla"
+          ],
+          "latencyMs" : 464.202875,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6102500000000001,
+          "minConfidence" : 0.179,
+          "text" : "nee en ivvalavu avasarappadugal"
+        },
+        {
+          "alternatives" : [
+
+          ],
+          "latencyMs" : 44.582291,
+          "locale" : "en-IN",
+          "text" : ""
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-018"
+    },
+    {
+      "audioSeconds" : 2.2738125,
+      "clipID" : "ta-019\/normal",
+      "combinedLatencyMs" : 540.891708,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " konjam",
+            " koondram",
+            " irukku."
+          ],
+          "latencyMs" : 462.947333,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7942,
+          "minConfidence" : 0.717,
+          "text" : "indha kuzhambu kondram kaaramaa irukku"
+        },
+        {
+          "alternatives" : [
+            "Inda Kurambu,",
+            " Irukku.",
+            " irukku?"
+          ],
+          "latencyMs" : 77.814833,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.5305,
+          "minConfidence" : 0.318,
+          "text" : "Indakurambu, Konjam, karama, Irukku?"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-019"
+    },
+    {
+      "audioSeconds" : 1.8436875,
+      "clipID" : "ta-020\/normal",
+      "combinedLatencyMs" : 531.50725,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " oorukku poayirukkaaru.",
+            " oorukku poyirukkaaru"
+          ],
+          "latencyMs" : 464.022833,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8943333333333334,
+          "minConfidence" : 0.809,
+          "text" : "maamaa oorukku poayirukkaaru"
+        },
+        {
+          "alternatives" : [
+            " Oru",
+            " Poiru, Karu.",
+            " Poiru, karu."
+          ],
+          "latencyMs" : 67.360917,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.315,
+          "minConfidence" : 0.149,
+          "text" : "Mama, Uru kku, Poiru karu."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-020"
+    },
+    {
+      "audioSeconds" : 1.5120625,
+      "clipID" : "ta-021\/normal",
+      "combinedLatencyMs" : 522.527084,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " peccai",
+            " paechchai",
+            " nambaathae."
+          ],
+          "latencyMs" : 466.117292,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.5326666666666667,
+          "minConfidence" : 0.404,
+          "text" : "avan pechchai nambaathae"
+        },
+        {
+          "alternatives" : [
+            "Aavan",
+            "Aapan",
+            " nambade.",
+            " Nambade?"
+          ],
+          "latencyMs" : 56.304542,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.37966666666666665,
+          "minConfidence" : 0.225,
+          "text" : "Avan Pechai Nambade."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-021"
+    },
+    {
+      "audioSeconds" : 1.8706875,
+      "clipID" : "ta-022\/normal",
+      "combinedLatencyMs" : 534.229792,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "pareetchaikku",
+            " padichchiyaa",
+            " paduchchiyaa?"
+          ],
+          "latencyMs" : 467.462083,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6829999999999999,
+          "minConfidence" : 0.45,
+          "text" : "parichchaikku nallaa paduchchiyaa"
+        },
+        {
+          "alternatives" : [
+            "Wari",
+            " padechiya.",
+            " pade cheyya."
+          ],
+          "latencyMs" : 66.652834,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.34479999999999994,
+          "minConfidence" : 0.099,
+          "text" : "Pari chai ku nalla padechiya?"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-022"
+    },
+    {
+      "audioSeconds" : 1.446375,
+      "clipID" : "ta-023\/normal",
+      "combinedLatencyMs" : 524.8775,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "sathapai",
+            "sadhavai",
+            " vaa."
+          ],
+          "latencyMs" : 464.502208,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.646,
+          "minConfidence" : 0.511,
+          "text" : "sathavai saaththittu vaa"
+        },
+        {
+          "alternatives" : [
+            "Jadabai Zakitiba.",
+            "Jadabay, Zakitiba."
+          ],
+          "latencyMs" : 60.252416,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.2005,
+          "minConfidence" : 0.153,
+          "text" : "Jadabai, Zakitiba."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-023"
+    },
+    {
+      "audioSeconds" : 2.0880625,
+      "clipID" : "ta-024\/normal",
+      "combinedLatencyMs" : 541.928042,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " silai",
+            " selai",
+            " unakku",
+            " irukku."
+          ],
+          "latencyMs" : 467.905708,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7796000000000001,
+          "minConfidence" : 0.554,
+          "text" : "indha seyalai unnakku azhagaa irukku"
+        },
+        {
+          "alternatives" : [
+            " Selai,",
+            " Unakku Araga,",
+            " Irukku."
+          ],
+          "latencyMs" : 73.891791,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.48860000000000003,
+          "minConfidence" : 0.167,
+          "text" : "Inda, Seyla, Unakku, Araga, Irukku?"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-024"
+    },
+    {
+      "audioSeconds" : 1.94025,
+      "clipID" : "ta-025\/normal",
+      "combinedLatencyMs" : 543.441416,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "poongalukku",
+            "poongkalukku",
+            " vaanganum."
+          ],
+          "latencyMs" : 468.432041,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.86525,
+          "minConfidence" : 0.821,
+          "text" : "pongalukku pudhu thuni vaanganum"
+        },
+        {
+          "alternatives" : [
+            "Ongaluku, Pudhu,",
+            "Ongalukku Pudhu,",
+            " Thuni,"
+          ],
+          "latencyMs" : 74.903417,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4675,
+          "minConfidence" : 0.337,
+          "text" : "Ongalukku, Pudhu, Tuni, Vanganum."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-025"
+    },
+    {
+      "audioSeconds" : 3.7179375,
+      "clipID" : "ta-026\/normal",
+      "combinedLatencyMs" : 577.020334,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "avar romba ",
+            "kandiyum ",
+            "kantiyam ",
+            "maattaaru."
+          ],
+          "latencyMs" : 471.618875,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7941111111111111,
+          "minConfidence" : 0.415,
+          "text" : "avaru romba kandiyam oru paisaa kooda ceytu Panna maattaaru"
+        },
+        {
+          "alternatives" : [
+            " oru",
+            " selebu panda",
+            " selevu Panda"
+          ],
+          "latencyMs" : 105.298,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.2958888888888889,
+          "minConfidence" : 0.092,
+          "text" : "Abaru donba kandyam, Oru play saakuda selevu panda mataru."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-026"
+    },
+    {
+      "audioSeconds" : 2.308,
+      "clipID" : "ta-027\/normal",
+      "combinedLatencyMs" : 542.893209,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " ottrumaiyaa",
+            " irukkanum."
+          ],
+          "latencyMs" : 468.332667,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.81025,
+          "minConfidence" : 0.713,
+          "text" : "naangka ellaarum oottrumaiyaa irukkanum"
+        },
+        {
+          "alternatives" : [
+            " yel Narum",
+            " yellarum",
+            " irukkanum?"
+          ],
+          "latencyMs" : 74.456917,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4368,
+          "minConfidence" : 0.08,
+          "text" : "Nanga El Narum gootrumaya irukkanum."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-027"
+    },
+    {
+      "audioSeconds" : 3.0445625,
+      "clipID" : "ta-028\/normal",
+      "combinedLatencyMs" : 558.513666,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "avan",
+            " than",
+            "ammaavai ",
+            " ammavai",
+            " kandum",
+            " karuththuma",
+            "vaarththai ",
+            " vaarththu",
+            " quran."
+          ],
+          "latencyMs" : 467.594333,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.5791428571428572,
+          "minConfidence" : 0.303,
+          "text" : "avan than ammavai kandum karuththuma vaarththu Quran"
+        },
+        {
+          "alternatives" : [
+            " kandum karithuma,",
+            " Parth,",
+            " Kuran.",
+            " Quran."
+          ],
+          "latencyMs" : 90.81425,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.39842857142857147,
+          "minConfidence" : 0.088,
+          "text" : "Avantan amma vai, kandum, karithuma, path, kuran."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-028"
+    },
+    {
+      "audioSeconds" : 1.6978125,
+      "clipID" : "ta-029\/normal",
+      "combinedLatencyMs" : 522.194916,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "avalukku",
+            " vaai romba",
+            "vaa romba ",
+            " neellam",
+            " neelam."
+          ],
+          "latencyMs" : 465.251,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8312499999999999,
+          "minConfidence" : 0.637,
+          "text" : "avalukku vaai romba Neelam"
+        },
+        {
+          "alternatives" : [
+            ", , ,",
+            ",",
+            " ,.",
+            " ,"
+          ],
+          "latencyMs" : 56.838,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.07275000000000001,
+          "minConfidence" : 0.012,
+          "text" : ", , , ,"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-029"
+    },
+    {
+      "audioSeconds" : 1.976625,
+      "clipID" : "ta-030\/normal",
+      "combinedLatencyMs" : 532.708625,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " vidaathe",
+            " vidaadhae"
+          ],
+          "latencyMs" : 464.162916,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8352499999999999,
+          "minConfidence" : 0.477,
+          "text" : "aazham theriyaama kaalai vidaathae"
+        },
+        {
+          "alternatives" : [
+            "Aram, Teriyama, Kalai, vinade.",
+            "Aram Teriyama kalai vinade."
+          ],
+          "latencyMs" : 68.421667,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4755,
+          "minConfidence" : 0.345,
+          "text" : "Aram, Teriyama, kalai vinade."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-030"
+    },
+    {
+      "audioSeconds" : 2.4756875,
+      "clipID" : "ta-031\/normal",
+      "combinedLatencyMs" : 551.826791,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " eppavum",
+            " aeppavum",
+            " paesuvaaru."
+          ],
+          "latencyMs" : 465.344709,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.81,
+          "minConfidence" : 0.547,
+          "text" : "avaru aerpavum thalaikkanamaa paesuvaaru"
+        },
+        {
+          "alternatives" : [
+            "Abaru, ye pagum, talaikanama, pesubaru.",
+            "Abaru ye pagum talaikanama pesubaru."
+          ],
+          "latencyMs" : 86.363042,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.3012,
+          "minConfidence" : 0.111,
+          "text" : "Abaru, ye, pagum, talaikanama, pesubaru."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-031"
+    },
+    {
+      "audioSeconds" : 2.3595625,
+      "clipID" : "ta-032\/normal",
+      "combinedLatencyMs" : 568.600708,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " therinthathu",
+            " therindhuthu"
+          ],
+          "latencyMs" : 486.453042,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8343999999999999,
+          "minConfidence" : 0.328,
+          "text" : "aval mugaththula oru thayakkam therinjathu"
+        },
+        {
+          "alternatives" : [
+            " ore,",
+            " Yude.",
+            " yudu."
+          ],
+          "latencyMs" : 82.044375,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.2655,
+          "minConfidence" : 0.042,
+          "text" : "Abal, mugatula, uri, tayakam, teren yude."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-032"
+    },
+    {
+      "audioSeconds" : 3.0161875,
+      "clipID" : "ta-033\/normal",
+      "combinedLatencyMs" : 565.085917,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " visaeshaththukku",
+            " visaesaththukku"
+          ],
+          "latencyMs" : 470.385542,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8705999999999999,
+          "minConfidence" : 0.718,
+          "text" : "namma veettu visheshaththukku ellaaraiyum kooppidanum"
+        },
+        {
+          "alternatives" : [
+            " Vis, ,",
+            " Visesh,",
+            " ,",
+            " , ,"
+          ],
+          "latencyMs" : 94.597375,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.11320000000000001,
+          "minConfidence" : 0.005,
+          "text" : "Namma, Vitu, Visi, , , , , , , ,"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-033"
+    },
+    {
+      "audioSeconds" : 2.2783125,
+      "clipID" : "ta-034\/normal",
+      "combinedLatencyMs" : 540.086417,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " saamarthiyamaa",
+            " samarththiyamaa",
+            " pesuvaan",
+            " pesuvaan."
+          ],
+          "latencyMs" : 466.651375,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8379999999999999,
+          "minConfidence" : 0.683,
+          "text" : "avan romba saamarththiyamaa paesuvaan"
+        },
+        {
+          "alternatives" : [
+            " Pe, Suban.",
+            " Pesuwan."
+          ],
+          "latencyMs" : 73.3225,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.2871428571428571,
+          "minConfidence" : 0.074,
+          "text" : "Awan, run by Samar, Tiyama, Pe, Suwan."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-034"
+    },
+    {
+      "audioSeconds" : 2.427875,
+      "clipID" : "ta-035\/normal",
+      "combinedLatencyMs" : 546.733542,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "paatti",
+            "patti",
+            " puriyalai."
+          ],
+          "latencyMs" : 466.411917,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8705999999999999,
+          "minConfidence" : 0.757,
+          "text" : "kaatti sonna pazhamozhi yenakku puriyalai"
+        },
+        {
+          "alternatives" : [
+            "Bhati Sonna Padamuri Enakku",
+            "Parti Sonna Padamuri Enakku",
+            " Puriyali.",
+            " Puriyalai?"
+          ],
+          "latencyMs" : 80.19975,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.5042,
+          "minConfidence" : 0.184,
+          "text" : "Bhati, Sonna, Padamuri, Enakku Puriyalai."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-035"
+    },
+    {
+      "audioSeconds" : 2.580125,
+      "clipID" : "ta-036\/normal",
+      "combinedLatencyMs" : 512.565375,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "andrai vishayaththula avanukku",
+            "antha vishayaththulla avanukku",
+            " illai."
+          ],
+          "latencyMs" : 464.845291,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7386,
+          "minConfidence" : 0.334,
+          "text" : "antha vishayaththula avanukku akkaraiyae illai"
+        },
+        {
+          "alternatives" : [
+            "And",
+            "."
+          ],
+          "latencyMs" : 47.603375,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.436,
+          "minConfidence" : 0.436,
+          "text" : "And."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-036"
+    },
+    {
+      "audioSeconds" : 3.190375,
+      "clipID" : "cs-001\/normal",
+      "combinedLatencyMs" : 550.501833,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " varaen.",
+            " varen"
+          ],
+          "latencyMs" : 466.533209,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.9018571428571429,
+          "minConfidence" : 0.552,
+          "text" : "naan innaikku office meeting mudindiyathum veettukku varaen"
+        },
+        {
+          "alternatives" : [
+            " beetuk,",
+            " beat, ku,",
+            " varen?",
+            " Baren."
+          ],
+          "latencyMs" : 83.833833,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.297,
+          "minConfidence" : 0.033,
+          "text" : "Now, in office meeting, Mood India, dum, beetu, varen."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-001"
+    },
+    {
+      "audioSeconds" : 2.3701875,
+      "clipID" : "cs-002\/normal",
+      "combinedLatencyMs" : 537.821291,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " poalaamaa",
+            " polama?"
+          ],
+          "latencyMs" : 468.47075,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.5593333333333333,
+          "minConfidence" : 0.155,
+          "text" : "veekkin varaiyil naama beach kku polama"
+        },
+        {
+          "alternatives" : [
+            " nama",
+            " beach,",
+            " the Pulama.",
+            " kapulama."
+          ],
+          "latencyMs" : 69.264166,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.35716666666666663,
+          "minConfidence" : 0.131,
+          "text" : "We can dail, Nama Beach, Pulama."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-002"
+    },
+    {
+      "audioSeconds" : 1.7448125,
+      "clipID" : "cs-003\/normal",
+      "combinedLatencyMs" : 511.268125,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "pinpoon",
+            " azhuchchaai illaiya?",
+            " aiyuchchaayi illaiya?"
+          ],
+          "latencyMs" : 465.014666,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.33266666666666667,
+          "minConfidence" : 0.188,
+          "text" : "thinpoon aiyuchchaai illaiya?"
+        },
+        {
+          "alternatives" : [
+
+          ],
+          "latencyMs" : 46.140625,
+          "locale" : "en-IN",
+          "text" : ""
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-003"
+    },
+    {
+      "audioSeconds" : 2.773,
+      "clipID" : "cs-004\/normal",
+      "combinedLatencyMs" : 549.082833,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "yai ",
+            "Thaai ",
+            "irukku."
+          ],
+          "latencyMs" : 467.079,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.43733333333333335,
+          "minConfidence" : 0.115,
+          "text" : "indha Pro Ai indha line romba thai aagi irukku"
+        },
+        {
+          "alternatives" : [
+            " Thai,",
+            " Iruk.",
+            " Irukka,"
+          ],
+          "latencyMs" : 81.905542,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.403,
+          "minConfidence" : 0.091,
+          "text" : "In the project, the deadline, Roomba, Tai, Irukka."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-004"
+    },
+    {
+      "audioSeconds" : 2.6913125,
+      "clipID" : "cs-005\/normal",
+      "combinedLatencyMs" : 538.4435,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "Doctor",
+            " appointment",
+            " kku",
+            " naalaikku",
+            " poaganum",
+            "poaganum."
+          ],
+          "latencyMs" : 466.862583,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7978000000000001,
+          "minConfidence" : 0.628,
+          "text" : "Doctor appointment kku naalaikku poaganum"
+        },
+        {
+          "alternatives" : [
+            " appointment nalaik poganum.",
+            " appointment, nalaik puganum."
+          ],
+          "latencyMs" : 71.4525,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.41859999999999997,
+          "minConfidence" : 0.274,
+          "text" : "Booked an appointment, nalaik poganum."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-005"
+    },
+    {
+      "audioSeconds" : 2.394375,
+      "clipID" : "cs-006\/normal",
+      "combinedLatencyMs" : 537.481666,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "saavan",
+            "Saavan",
+            " vaangittaan."
+          ],
+          "latencyMs" : 466.725375,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.4822,
+          "minConfidence" : 0.125,
+          "text" : "Saavn exam lanalla marks vaangittaan"
+        },
+        {
+          "alternatives" : [
+            "Aavan",
+            " Lenallah",
+            " Marks Wangitan.",
+            " Marx Wangitan."
+          ],
+          "latencyMs" : 70.653541,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.3084,
+          "minConfidence" : 0.022,
+          "text" : "An exam, Lenalla Marx, Wangitan."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-006"
+    },
+    {
+      "audioSeconds" : 3.21275,
+      "clipID" : "cs-007\/normal",
+      "combinedLatencyMs" : 547.726167,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " ail maattikkittaen",
+            " oil maattikkitten"
+          ],
+          "latencyMs" : 466.554291,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6078333333333333,
+          "minConfidence" : 0.148,
+          "text" : "traffic oil maattikkittaen konjam lake aakum"
+        },
+        {
+          "alternatives" : [
+            " aisle, Martikiten, Konjam",
+            " aisle Martikit in Konjam",
+            " Lake Agum,",
+            " Lake, Agum."
+          ],
+          "latencyMs" : 81.040625,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.6145,
+          "minConfidence" : 0.188,
+          "text" : "Traffic aisle Martikiten, Konjam Lake Agum."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-007"
+    },
+    {
+      "audioSeconds" : 2.2035,
+      "clipID" : "cs-008\/normal",
+      "combinedLatencyMs" : 522.152208,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " ethunarukku",
+            " saappida pora?",
+            " saappidap pora?"
+          ],
+          "latencyMs" : 466.653125,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6742,
+          "minConfidence" : 0.382,
+          "text" : "nee idhunarukku enna saappida pora"
+        },
+        {
+          "alternatives" : [
+            " , ,.",
+            " , ,?"
+          ],
+          "latencyMs" : 55.372,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.077,
+          "minConfidence" : 0.016,
+          "text" : ", , ,"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-008"
+    },
+    {
+      "audioSeconds" : 2.3536875,
+      "clipID" : "cs-009\/normal",
+      "combinedLatencyMs" : 537.038792,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " poagumpoathu",
+            " poathumpoathu",
+            " vaa."
+          ],
+          "latencyMs" : 464.690083,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7778333333333333,
+          "minConfidence" : 0.487,
+          "text" : "shopping poathum potu pol vaangittu vaa"
+        },
+        {
+          "alternatives" : [
+            " bogum bodipol,",
+            " pogun bodipol,",
+            " bangitibah."
+          ],
+          "latencyMs" : 72.239708,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.45475,
+          "minConfidence" : 0.242,
+          "text" : "Shopping podum bodipol, bangitiba."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-009"
+    },
+    {
+      "audioSeconds" : 2.313125,
+      "clipID" : "cs-010\/normal",
+      "combinedLatencyMs" : 544.288542,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "andai",
+            " aagi irundhuchchu",
+            " aagirundhuchchu."
+          ],
+          "latencyMs" : 466.048708,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.754,
+          "minConfidence" : 0.428,
+          "text" : "anthaai movie romba boring aagirundhuchchu"
+        },
+        {
+          "alternatives" : [
+            " you?",
+            " you in Dikshu?"
+          ],
+          "latencyMs" : 78.135334,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4254444444444444,
+          "minConfidence" : 0.152,
+          "text" : "Andai movie, don't be boring, are you in Dixie?"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-010"
+    },
+    {
+      "audioSeconds" : 2.714375,
+      "clipID" : "cs-011\/normal",
+      "combinedLatencyMs" : 531.027542,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " zaapi",
+            " 10",
+            " thanks."
+          ],
+          "latencyMs" : 464.58225,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.32850000000000007,
+          "minConfidence" : 0.12,
+          "text" : "naan already jaapi to ten thanks"
+        },
+        {
+          "alternatives" : [
+            " tin",
+            " clangs.",
+            " cranks."
+          ],
+          "latencyMs" : 66.322667,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.8844285714285715,
+          "minConfidence" : 0.739,
+          "text" : "None already is happy to thin clanks."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-011"
+    },
+    {
+      "audioSeconds" : 2.2208125,
+      "clipID" : "cs-012\/normal",
+      "combinedLatencyMs" : 539.755291,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "unakku",
+            "punnakku",
+            " kidaikkum?"
+          ],
+          "latencyMs" : 467.139042,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8457999999999999,
+          "minConfidence" : 0.67,
+          "text" : "unnakku eppo free time kidaikkum"
+        },
+        {
+          "alternatives" : [
+            "Unnak,",
+            " yepo free",
+            " kidaikum?",
+            " kedaikum."
+          ],
+          "latencyMs" : 72.49575,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.4162,
+          "minConfidence" : 0.11,
+          "text" : "Unaku, yepo, free time, kidaikum."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-012"
+    },
+    {
+      "audioSeconds" : 2.0355,
+      "clipID" : "cs-013\/normal",
+      "combinedLatencyMs" : 534.885,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "salary ",
+            " vandhathum",
+            "vanthathum ",
+            " rain kattanum.",
+            "Ren kattanum"
+          ],
+          "latencyMs" : 466.400208,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.8645,
+          "minConfidence" : 0.778,
+          "text" : "salary vanthathum rain kattanum"
+        },
+        {
+          "alternatives" : [
+            " kattanum.",
+            " cutanum."
+          ],
+          "latencyMs" : 68.362792,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.5297499999999999,
+          "minConfidence" : 0.384,
+          "text" : "Salary, vandadum, rain, katanum."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-013"
+    },
+    {
+      "audioSeconds" : 3.0329375,
+      "clipID" : "cs-014\/normal",
+      "combinedLatencyMs" : 564.904958,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " vithing",
+            " vaithin",
+            " irundhuchchu.",
+            " irunththuchchu"
+          ],
+          "latencyMs" : 469.648542,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7201428571428572,
+          "minConfidence" : 0.262,
+          "text" : "avanga vaithing reception romba grand aa irundhuchchu"
+        },
+        {
+          "alternatives" : [
+            " Dukshu.",
+            " Dukshe."
+          ],
+          "latencyMs" : 95.135792,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.24240000000000003,
+          "minConfidence" : 0.044,
+          "text" : "Abanga wedding, rice, option, lumber, grand, oh, you're in Dukshi."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-014"
+    },
+    {
+      "audioSeconds" : 2.331375,
+      "clipID" : "cs-015\/normal",
+      "combinedLatencyMs" : 537.675458,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "bus",
+            " stock",
+            "rail enakkaaga ",
+            "kai enakkaaga ",
+            " wait",
+            " pannu."
+          ],
+          "latencyMs" : 465.023292,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6124999999999999,
+          "minConfidence" : 0.135,
+          "text" : "bus stock rayil enakkaaga wait Pannu"
+        },
+        {
+          "alternatives" : [
+            "Bus stock,",
+            "Bus, stock,",
+            " I will gain",
+            " wait Pandu.",
+            " wait, Pandu"
+          ],
+          "latencyMs" : 72.520291,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.32025,
+          "minConfidence" : 0.086,
+          "text" : "Bus stop, I'll gain a kaga wait, Pandu."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-015"
+    },
+    {
+      "audioSeconds" : 2.784,
+      "clipID" : "cs-016\/normal",
+      "combinedLatencyMs" : 536.916,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "namma family",
+            " trip",
+            " ellaam",
+            " pack",
+            " panni",
+            " yaar",
+            "yaar."
+          ],
+          "latencyMs" : 465.558083,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.5157142857142858,
+          "minConfidence" : 0.208,
+          "text" : "Nam family trip ellaam pack panni yaar"
+        },
+        {
+          "alternatives" : [
+            " black panniya.",
+            " black pannia."
+          ],
+          "latencyMs" : 71.253916,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.35316666666666663,
+          "minConfidence" : 0.133,
+          "text" : "Nam, family, trip, yellam, black panya."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-016"
+    },
+    {
+      "audioSeconds" : 2.0911875,
+      "clipID" : "cs-017\/normal",
+      "combinedLatencyMs" : 539.714333,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "unko ",
+            "lo unko ",
+            "pandraanga."
+          ],
+          "latencyMs" : 467.2335,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.455,
+          "minConfidence" : 0.067,
+          "text" : "party un nahin lo Unka Miss pandraanga"
+        },
+        {
+          "alternatives" : [
+            "Bhati,",
+            " unba miss Pandranga.",
+            " unba, miss, Pandranga."
+          ],
+          "latencyMs" : 72.381583,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.10300000000000001,
+          "minConfidence" : 0.023,
+          "text" : "Bati, unnai, unba miss, Pandranga."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-017"
+    },
+    {
+      "audioSeconds" : 2.256125,
+      "clipID" : "cs-018\/normal",
+      "combinedLatencyMs" : 534.979583,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "seekiram",
+            " aayidum.",
+            " aagidum"
+          ],
+          "latencyMs" : 465.816917,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.87075,
+          "minConfidence" : 0.778,
+          "text" : "seekkiram kilambu lake aayidum"
+        },
+        {
+          "alternatives" : [
+            " Kilambu, lake",
+            " kilambu lake",
+            " aidum."
+          ],
+          "latencyMs" : 69.058875,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.49175,
+          "minConfidence" : 0.352,
+          "text" : "Sikiram kilambu, lake ahidum."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-018"
+    },
+    {
+      "audioSeconds" : 2.8306875,
+      "clipID" : "cs-019\/normal",
+      "combinedLatencyMs" : 557.229625,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " raythi",
+            " vaayaam",
+            " vaayam."
+          ],
+          "latencyMs" : 466.779583,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6992,
+          "minConfidence" : 0.325,
+          "text" : "yenakku pasikkuthu saappaadu raidhi vaayam"
+        },
+        {
+          "alternatives" : [
+            " radi,",
+            " vai.",
+            " va."
+          ],
+          "latencyMs" : 90.328667,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.22885714285714284,
+          "minConfidence" : 0.064,
+          "text" : "Yenaku pasi kudu, saap, padu, raidi, vayab."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-019"
+    },
+    {
+      "audioSeconds" : 2.4966875,
+      "clipID" : "cs-020\/normal",
+      "combinedLatencyMs" : 545.506833,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " podha",
+            " poatha",
+            " edukkanum."
+          ],
+          "latencyMs" : 464.969125,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7382000000000001,
+          "minConfidence" : 0.47,
+          "text" : "cousin oodha kalyaanaththukku leave edukkanum"
+        },
+        {
+          "alternatives" : [
+            " leave Yedu Kanum.",
+            " leave, Yedu Kanum."
+          ],
+          "latencyMs" : 80.440916,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.23125,
+          "minConfidence" : 0.069,
+          "text" : "Cousin, oh, the Kalyana, took leave Yedu, Kanum."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "cs-020"
+    }
+  ],
+  "sourceLabel" : "SYNTHETIC: macOS TTS voice Vani (single speaker); noise artificially mixed"
+}

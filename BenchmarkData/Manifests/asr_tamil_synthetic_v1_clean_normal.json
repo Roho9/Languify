@@ -1,0 +1,518 @@
+{
+ "dataset": "asr_tamil_synthetic_v1_clean_normal",
+ "annotations": "BenchmarkData/Annotations/tamil_pilot_v1.json",
+ "source_label": "SYNTHETIC: macOS TTS voice Vani (single speaker); noise artificially mixed",
+ "sample_rate": 16000,
+ "voice": "Vani",
+ "rates_wpm": {
+  "slow": 130,
+  "normal": 185,
+  "fast": 250
+ },
+ "clips": [
+  {
+   "clip_id": "ta-001/normal",
+   "sentence_id": "ta-001",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-001_normal.wav"
+  },
+  {
+   "clip_id": "ta-002/normal",
+   "sentence_id": "ta-002",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-002_normal.wav"
+  },
+  {
+   "clip_id": "ta-003/normal",
+   "sentence_id": "ta-003",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-003_normal.wav"
+  },
+  {
+   "clip_id": "ta-004/normal",
+   "sentence_id": "ta-004",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-004_normal.wav"
+  },
+  {
+   "clip_id": "ta-005/normal",
+   "sentence_id": "ta-005",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-005_normal.wav"
+  },
+  {
+   "clip_id": "ta-006/normal",
+   "sentence_id": "ta-006",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-006_normal.wav"
+  },
+  {
+   "clip_id": "ta-007/normal",
+   "sentence_id": "ta-007",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-007_normal.wav"
+  },
+  {
+   "clip_id": "ta-008/normal",
+   "sentence_id": "ta-008",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-008_normal.wav"
+  },
+  {
+   "clip_id": "ta-009/normal",
+   "sentence_id": "ta-009",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-009_normal.wav"
+  },
+  {
+   "clip_id": "ta-010/normal",
+   "sentence_id": "ta-010",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-010_normal.wav"
+  },
+  {
+   "clip_id": "ta-011/normal",
+   "sentence_id": "ta-011",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-011_normal.wav"
+  },
+  {
+   "clip_id": "ta-012/normal",
+   "sentence_id": "ta-012",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-012_normal.wav"
+  },
+  {
+   "clip_id": "ta-013/normal",
+   "sentence_id": "ta-013",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-013_normal.wav"
+  },
+  {
+   "clip_id": "ta-014/normal",
+   "sentence_id": "ta-014",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-014_normal.wav"
+  },
+  {
+   "clip_id": "ta-015/normal",
+   "sentence_id": "ta-015",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-015_normal.wav"
+  },
+  {
+   "clip_id": "ta-016/normal",
+   "sentence_id": "ta-016",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-016_normal.wav"
+  },
+  {
+   "clip_id": "ta-017/normal",
+   "sentence_id": "ta-017",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-017_normal.wav"
+  },
+  {
+   "clip_id": "ta-018/normal",
+   "sentence_id": "ta-018",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-018_normal.wav"
+  },
+  {
+   "clip_id": "ta-019/normal",
+   "sentence_id": "ta-019",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-019_normal.wav"
+  },
+  {
+   "clip_id": "ta-020/normal",
+   "sentence_id": "ta-020",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-020_normal.wav"
+  },
+  {
+   "clip_id": "ta-021/normal",
+   "sentence_id": "ta-021",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-021_normal.wav"
+  },
+  {
+   "clip_id": "ta-022/normal",
+   "sentence_id": "ta-022",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-022_normal.wav"
+  },
+  {
+   "clip_id": "ta-023/normal",
+   "sentence_id": "ta-023",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-023_normal.wav"
+  },
+  {
+   "clip_id": "ta-024/normal",
+   "sentence_id": "ta-024",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-024_normal.wav"
+  },
+  {
+   "clip_id": "ta-025/normal",
+   "sentence_id": "ta-025",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-025_normal.wav"
+  },
+  {
+   "clip_id": "ta-026/normal",
+   "sentence_id": "ta-026",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-026_normal.wav"
+  },
+  {
+   "clip_id": "ta-027/normal",
+   "sentence_id": "ta-027",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-027_normal.wav"
+  },
+  {
+   "clip_id": "ta-028/normal",
+   "sentence_id": "ta-028",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-028_normal.wav"
+  },
+  {
+   "clip_id": "ta-029/normal",
+   "sentence_id": "ta-029",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-029_normal.wav"
+  },
+  {
+   "clip_id": "ta-030/normal",
+   "sentence_id": "ta-030",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-030_normal.wav"
+  },
+  {
+   "clip_id": "ta-031/normal",
+   "sentence_id": "ta-031",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-031_normal.wav"
+  },
+  {
+   "clip_id": "ta-032/normal",
+   "sentence_id": "ta-032",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-032_normal.wav"
+  },
+  {
+   "clip_id": "ta-033/normal",
+   "sentence_id": "ta-033",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-033_normal.wav"
+  },
+  {
+   "clip_id": "ta-034/normal",
+   "sentence_id": "ta-034",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-034_normal.wav"
+  },
+  {
+   "clip_id": "ta-035/normal",
+   "sentence_id": "ta-035",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-035_normal.wav"
+  },
+  {
+   "clip_id": "ta-036/normal",
+   "sentence_id": "ta-036",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/ta-036_normal.wav"
+  },
+  {
+   "clip_id": "cs-001/normal",
+   "sentence_id": "cs-001",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-001_normal.wav"
+  },
+  {
+   "clip_id": "cs-002/normal",
+   "sentence_id": "cs-002",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-002_normal.wav"
+  },
+  {
+   "clip_id": "cs-003/normal",
+   "sentence_id": "cs-003",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-003_normal.wav"
+  },
+  {
+   "clip_id": "cs-004/normal",
+   "sentence_id": "cs-004",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-004_normal.wav"
+  },
+  {
+   "clip_id": "cs-005/normal",
+   "sentence_id": "cs-005",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-005_normal.wav"
+  },
+  {
+   "clip_id": "cs-006/normal",
+   "sentence_id": "cs-006",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-006_normal.wav"
+  },
+  {
+   "clip_id": "cs-007/normal",
+   "sentence_id": "cs-007",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-007_normal.wav"
+  },
+  {
+   "clip_id": "cs-008/normal",
+   "sentence_id": "cs-008",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-008_normal.wav"
+  },
+  {
+   "clip_id": "cs-009/normal",
+   "sentence_id": "cs-009",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-009_normal.wav"
+  },
+  {
+   "clip_id": "cs-010/normal",
+   "sentence_id": "cs-010",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-010_normal.wav"
+  },
+  {
+   "clip_id": "cs-011/normal",
+   "sentence_id": "cs-011",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-011_normal.wav"
+  },
+  {
+   "clip_id": "cs-012/normal",
+   "sentence_id": "cs-012",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-012_normal.wav"
+  },
+  {
+   "clip_id": "cs-013/normal",
+   "sentence_id": "cs-013",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-013_normal.wav"
+  },
+  {
+   "clip_id": "cs-014/normal",
+   "sentence_id": "cs-014",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-014_normal.wav"
+  },
+  {
+   "clip_id": "cs-015/normal",
+   "sentence_id": "cs-015",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-015_normal.wav"
+  },
+  {
+   "clip_id": "cs-016/normal",
+   "sentence_id": "cs-016",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-016_normal.wav"
+  },
+  {
+   "clip_id": "cs-017/normal",
+   "sentence_id": "cs-017",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-017_normal.wav"
+  },
+  {
+   "clip_id": "cs-018/normal",
+   "sentence_id": "cs-018",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-018_normal.wav"
+  },
+  {
+   "clip_id": "cs-019/normal",
+   "sentence_id": "cs-019",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-019_normal.wav"
+  },
+  {
+   "clip_id": "cs-020/normal",
+   "sentence_id": "cs-020",
+   "condition": "clean",
+   "rate": "normal",
+   "snr_db": null,
+   "noise": null,
+   "path": "BenchmarkData/Audio/asr_tamil_synthetic_v1/cs-020_normal.wav"
+  }
+ ]
+}

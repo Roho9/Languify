@@ -9,3 +9,5 @@ backend/dist/
 .env
 *.local.xcconfig
 Config/Local.xcconfig
+BenchmarkData/Audio/
+Benchmarks/.build/

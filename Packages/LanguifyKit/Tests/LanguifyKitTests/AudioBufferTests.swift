@@ -193,3 +193,59 @@ struct ListeningStateMachineTests {
         #expect(m.handle(.resumeRequested) == .starting)
     }
 }
+
+/// Regression guards for the vDSP buffer (experiment A in
+/// docs/benchmarks/ExperimentLog.md).
+@Suite("RollingAudioBuffer regression")
+struct RollingAudioBufferRegressionTests {
+    /// Values chosen to survive Int16 quantisation exactly: k / 32767.
+    func ramp(_ range: Range<Int>) -> [Float] { range.map { Float($0 % 30_000) / 32_767 } }
+
+    @Test(arguments: [1, 7, 1_365, 1_600, 4_096, 40_000])
+    func wrapAroundIsSampleExact(chunk: Int) {
+        let rate = 1_000.0
+        let buffer = RollingAudioBuffer(sampleRate: rate, capacitySeconds: 10)
+        let total = 37_123
+        var written = 0
+        while written < total {
+            let n = min(chunk, total - written)
+            buffer.append(ramp(written..<(written + n)), at: Double(written + n) / rate)
+            written += n
+        }
+        let snap = buffer.snapshot(lastSeconds: 10)
+        let expected = ramp((total - 10_000)..<total)
+        #expect(snap.samples.count == 10_000)
+        #expect(zip(snap.samples, expected).allSatisfy { abs($0 - $1) < 1e-6 })
+    }
+
+    @Test func roundsToNearestLevel() {
+        let buffer = RollingAudioBuffer(sampleRate: 1_000, capacitySeconds: 1)
+        // 0.6 of a step rounds up, 0.4 rounds down; truncation would give 0 for both.
+        let step = 1 / Float(32_767)
+        buffer.append([0.6 * step, 0.4 * step, -0.6 * step], at: 1)
+        let out = buffer.snapshot(lastSeconds: 1).samples.map { ($0 / step).rounded() }
+        #expect(out == [1, 0, -1])
+    }
+
+    @Test func quantisationErrorIsAtMostHalfAStep() {
+        let buffer = RollingAudioBuffer(sampleRate: 1_000, capacitySeconds: 5)
+        let input = (0..<5_000).map { Float(sin(Double($0) * 0.0137)) * 0.9 }
+        buffer.append(input, at: 5)
+        let out = buffer.snapshot(lastSeconds: 5).samples
+        let maxError = zip(input, out).map { abs($0 - $1) }.max() ?? 1
+        #expect(maxError <= 0.5 / 32_767 + 1e-7)
+    }
+
+    @Test func oversizedChunkKeepsNewestAudio() {
+        let buffer = RollingAudioBuffer(sampleRate: 1_000, capacitySeconds: 2)
+        buffer.append(ramp(0..<5_000), at: 5)
+        #expect(buffer.snapshot(lastSeconds: 2).samples.first.map { abs($0 - Float(3_000) / 32_767) < 1e-6 } == true)
+        #expect(buffer.totalFramesWritten == 5_000)
+    }
+
+    @Test func endingAtBeyondBufferedAudioReturnsEmpty() {
+        let buffer = RollingAudioBuffer(sampleRate: 1_000, capacitySeconds: 2)
+        buffer.append(ramp(0..<1_000), at: 10)
+        #expect(buffer.snapshot(lastSeconds: 2, endingAt: 5).isEmpty)
+    }
+}

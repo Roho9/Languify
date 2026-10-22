@@ -1,0 +1,572 @@
+{
+ "dataset": "tamil_pilot_v1",
+ "version": 1.1,
+ "source": "Sentences written for Languify benchmarking (colloquial spoken Tamil). Audio is synthesized; see Manifests.",
+ "consent": "No human speech. Synthetic text-to-speech only.",
+ "review_status": "Not yet reviewed by a native speaker; treat references as provisional.",
+ "sentences": [
+  {
+   "id": "ta-001",
+   "category": "everyday",
+   "text": "இன்னைக்கு சாப்பாடு ரொம்ப நல்லா இருக்கு.",
+   "target": {
+    "native": "சாப்பாடு",
+    "transliteration": "saappaadu",
+    "meaning": "food, a meal"
+   }
+  },
+  {
+   "id": "ta-002",
+   "category": "everyday",
+   "text": "நாளைக்கு காலையில சீக்கிரம் எழுந்திருக்கணும்.",
+   "target": {
+    "native": "சீக்கிரம்",
+    "transliteration": "seekkiram",
+    "meaning": "early, quickly"
+   }
+  },
+  {
+   "id": "ta-003",
+   "category": "everyday",
+   "text": "உன் தம்பி எங்க போயிருக்கான்?",
+   "target": {
+    "native": "தம்பி",
+    "transliteration": "thambi",
+    "meaning": "younger brother"
+   }
+  },
+  {
+   "id": "ta-004",
+   "category": "everyday",
+   "text": "அம்மா கடைக்கு போயிட்டு வரேன்னு சொன்னாங்க.",
+   "target": {
+    "native": "கடைக்கு",
+    "transliteration": "kadaikku",
+    "meaning": "to the shop"
+   }
+  },
+  {
+   "id": "ta-005",
+   "category": "everyday",
+   "text": "மழை வர மாதிரி இருக்கு, குடை எடுத்துட்டு போ.",
+   "target": {
+    "native": "குடை",
+    "transliteration": "kudai",
+    "meaning": "umbrella"
+   }
+  },
+  {
+   "id": "ta-006",
+   "category": "everyday",
+   "text": "நீ சாப்பிட்டியா?",
+   "target": {
+    "native": "சாப்பிட்டியா",
+    "transliteration": "saappittiyaa",
+    "meaning": "did you eat?"
+   }
+  },
+  {
+   "id": "ta-007",
+   "category": "everyday",
+   "text": "இந்த வாரம் வேலை ரொம்ப அதிகம்.",
+   "target": {
+    "native": "அதிகம்",
+    "transliteration": "adhigam",
+    "meaning": "a lot, too much"
+   }
+  },
+  {
+   "id": "ta-008",
+   "category": "everyday",
+   "text": "கொஞ்சம் தண்ணி குடு.",
+   "target": {
+    "native": "தண்ணி",
+    "transliteration": "thanni",
+    "meaning": "water"
+   }
+  },
+  {
+   "id": "ta-009",
+   "category": "everyday",
+   "text": "அவன் ரொம்ப சோம்பேறி, ஒரு வேலையும் செய்ய மாட்டான்.",
+   "target": {
+    "native": "சோம்பேறி",
+    "transliteration": "somberi",
+    "meaning": "lazy person"
+   }
+  },
+  {
+   "id": "ta-010",
+   "category": "everyday",
+   "text": "எனக்கு தலை வலிக்குது.",
+   "target": {
+    "native": "வலிக்குது",
+    "transliteration": "valikkudhu",
+    "meaning": "it hurts"
+   }
+  },
+  {
+   "id": "ta-011",
+   "category": "everyday",
+   "text": "அந்த படம் பார்த்தியா?",
+   "target": {
+    "native": "படம்",
+    "transliteration": "padam",
+    "meaning": "film"
+   }
+  },
+  {
+   "id": "ta-012",
+   "category": "everyday",
+   "text": "உங்க அப்பா எப்போ வருவாரு?",
+   "target": {
+    "native": "எப்போ",
+    "transliteration": "eppo",
+    "meaning": "when"
+   }
+  },
+  {
+   "id": "ta-013",
+   "category": "everyday",
+   "text": "வீட்டுல யாரும் இல்லை.",
+   "target": {
+    "native": "யாரும்",
+    "transliteration": "yaarum",
+    "meaning": "nobody, anyone"
+   }
+  },
+  {
+   "id": "ta-014",
+   "category": "everyday",
+   "text": "இந்த பையன் ரொம்ப குறும்பு பண்றான்.",
+   "target": {
+    "native": "குறும்பு",
+    "transliteration": "kurumbu",
+    "meaning": "mischief"
+   }
+  },
+  {
+   "id": "ta-015",
+   "category": "everyday",
+   "text": "கல்யாணத்துக்கு எல்லாரும் வருவாங்க.",
+   "target": {
+    "native": "கல்யாணத்துக்கு",
+    "transliteration": "kalyaanaththukku",
+    "meaning": "for the wedding"
+   }
+  },
+  {
+   "id": "ta-016",
+   "category": "everyday",
+   "text": "சாயங்காலம் கோவிலுக்கு போகலாம்.",
+   "target": {
+    "native": "சாயங்காலம்",
+    "transliteration": "saayangaalam",
+    "meaning": "evening"
+   }
+  },
+  {
+   "id": "ta-017",
+   "category": "everyday",
+   "text": "அவளுக்கு ரொம்ப வெட்கம்.",
+   "target": {
+    "native": "வெட்கம்",
+    "transliteration": "vetkam",
+    "meaning": "shyness"
+   }
+  },
+  {
+   "id": "ta-018",
+   "category": "everyday",
+   "text": "நீ ஏன் இவ்வளவு அவசரப்படுற?",
+   "target": {
+    "native": "அவசரப்படுற",
+    "transliteration": "avasarappadura",
+    "meaning": "(you are) hurrying"
+   }
+  },
+  {
+   "id": "ta-019",
+   "category": "everyday",
+   "text": "இந்த குழம்பு கொஞ்சம் காரமா இருக்கு.",
+   "target": {
+    "native": "காரமா",
+    "transliteration": "kaaramaa",
+    "meaning": "spicy"
+   }
+  },
+  {
+   "id": "ta-020",
+   "category": "everyday",
+   "text": "மாமா ஊருக்கு போயிருக்காரு.",
+   "target": {
+    "native": "மாமா",
+    "transliteration": "maamaa",
+    "meaning": "uncle"
+   }
+  },
+  {
+   "id": "ta-021",
+   "category": "everyday",
+   "text": "அவன் பேச்சை நம்பாதே.",
+   "target": {
+    "native": "நம்பாதே",
+    "transliteration": "nambaadhe",
+    "meaning": "don't believe"
+   }
+  },
+  {
+   "id": "ta-022",
+   "category": "everyday",
+   "text": "பரீட்சைக்கு நல்லா படிச்சியா?",
+   "target": {
+    "native": "பரீட்சைக்கு",
+    "transliteration": "pareetchaikku",
+    "meaning": "for the exam"
+   }
+  },
+  {
+   "id": "ta-023",
+   "category": "everyday",
+   "text": "கதவை சாத்திட்டு வா.",
+   "target": {
+    "native": "சாத்திட்டு",
+    "transliteration": "saaththittu",
+    "meaning": "having closed"
+   }
+  },
+  {
+   "id": "ta-024",
+   "category": "everyday",
+   "text": "இந்த சேலை உனக்கு அழகா இருக்கு.",
+   "target": {
+    "native": "அழகா",
+    "transliteration": "azhagaa",
+    "meaning": "beautiful"
+   }
+  },
+  {
+   "id": "ta-025",
+   "category": "everyday",
+   "text": "பொங்கலுக்கு புது துணி வாங்கணும்.",
+   "target": {
+    "native": "துணி",
+    "transliteration": "thuni",
+    "meaning": "clothes"
+   }
+  },
+  {
+   "id": "ta-026",
+   "category": "uncommon",
+   "text": "அவரு ரொம்ப கஞ்சம், ஒரு பைசா கூட செலவு பண்ண மாட்டாரு.",
+   "target": {
+    "native": "கஞ்சம்",
+    "transliteration": "kanjam",
+    "meaning": "stingy"
+   }
+  },
+  {
+   "id": "ta-027",
+   "category": "uncommon",
+   "text": "நாங்க எல்லாரும் ஒற்றுமையா இருக்கணும்.",
+   "target": {
+    "native": "ஒற்றுமையா",
+    "transliteration": "otrumaiyaa",
+    "meaning": "united, in harmony"
+   }
+  },
+  {
+   "id": "ta-028",
+   "category": "idiom",
+   "text": "அவன் தன் அம்மாவை கண்ணும் கருத்துமா பார்த்துக்குறான்.",
+   "target": {
+    "native": "கண்ணும் கருத்துமா",
+    "transliteration": "kannum karuththumaa",
+    "meaning": "with great care"
+   }
+  },
+  {
+   "id": "ta-029",
+   "category": "idiom",
+   "text": "அவளுக்கு வாய் ரொம்ப நீளம்.",
+   "target": {
+    "native": "நீளம்",
+    "transliteration": "neelam",
+    "meaning": "long; in 'vaai (romba) neelam' it means talks back, is mouthy"
+   }
+  },
+  {
+   "id": "ta-030",
+   "category": "idiom",
+   "text": "ஆழம் தெரியாம காலை விடாதே.",
+   "target": {
+    "native": "ஆழம்",
+    "transliteration": "aazham",
+    "meaning": "depth (don't wade in without knowing the depth)"
+   }
+  },
+  {
+   "id": "ta-031",
+   "category": "uncommon",
+   "text": "அவரு எப்பவும் தலைக்கனமா பேசுவாரு.",
+   "target": {
+    "native": "தலைக்கனமா",
+    "transliteration": "thalaikkanamaa",
+    "meaning": "arrogantly"
+   }
+  },
+  {
+   "id": "ta-032",
+   "category": "uncommon",
+   "text": "அவள் முகத்துல ஒரு தயக்கம் தெரிஞ்சுது.",
+   "target": {
+    "native": "தயக்கம்",
+    "transliteration": "thayakkam",
+    "meaning": "hesitation"
+   }
+  },
+  {
+   "id": "ta-033",
+   "category": "uncommon",
+   "text": "நம்ம வீட்டு விசேஷத்துக்கு எல்லாரையும் கூப்பிடணும்.",
+   "target": {
+    "native": "விசேஷத்துக்கு",
+    "transliteration": "viseshaththukku",
+    "meaning": "for the family function"
+   }
+  },
+  {
+   "id": "ta-034",
+   "category": "uncommon",
+   "text": "அவன் ரொம்ப சாமர்த்தியமா பேசுவான்.",
+   "target": {
+    "native": "சாமர்த்தியமா",
+    "transliteration": "saamarththiyamaa",
+    "meaning": "cleverly"
+   }
+  },
+  {
+   "id": "ta-035",
+   "category": "uncommon",
+   "text": "பாட்டி சொன்ன பழமொழி எனக்கு புரியலை.",
+   "target": {
+    "native": "பழமொழி",
+    "transliteration": "pazhamozhi",
+    "meaning": "proverb"
+   }
+  },
+  {
+   "id": "ta-036",
+   "category": "uncommon",
+   "text": "அந்த விஷயத்துல அவனுக்கு அக்கறையே இல்லை.",
+   "target": {
+    "native": "அக்கறையே",
+    "transliteration": "akkaraiye",
+    "meaning": "any concern at all"
+   }
+  },
+  {
+   "id": "cs-001",
+   "category": "codeswitch",
+   "text": "நான் இன்னைக்கு office meeting முடிஞ்சதும் வீட்டுக்கு வரேன்.",
+   "target": {
+    "native": "முடிஞ்சதும்",
+    "transliteration": "mudinjathum",
+    "meaning": "as soon as it finishes"
+   }
+  },
+  {
+   "id": "cs-002",
+   "category": "codeswitch",
+   "text": "Weekend-ல நாம beach-க்கு போலாமா?",
+   "target": {
+    "native": "போலாமா",
+    "transliteration": "polaamaa",
+    "meaning": "shall we go?"
+   }
+  },
+  {
+   "id": "cs-003",
+   "category": "codeswitch",
+   "text": "உன் phone-ல charge இல்லையா?",
+   "target": {
+    "native": "இல்லையா",
+    "transliteration": "illaiyaa",
+    "meaning": "isn't there?"
+   }
+  },
+  {
+   "id": "cs-004",
+   "category": "codeswitch",
+   "text": "இந்த project deadline ரொம்ப tight-ஆ இருக்கு.",
+   "target": {
+    "native": "ரொம்ப",
+    "transliteration": "romba",
+    "meaning": "very"
+   }
+  },
+  {
+   "id": "cs-005",
+   "category": "codeswitch",
+   "text": "Doctor appointment-க்கு நாளைக்கு போகணும்.",
+   "target": {
+    "native": "போகணும்",
+    "transliteration": "poganum",
+    "meaning": "have to go"
+   }
+  },
+  {
+   "id": "cs-006",
+   "category": "codeswitch",
+   "text": "அவன் exam-ல நல்ல marks வாங்கிட்டான்.",
+   "target": {
+    "native": "வாங்கிட்டான்",
+    "transliteration": "vaangittaan",
+    "meaning": "he got"
+   }
+  },
+  {
+   "id": "cs-007",
+   "category": "codeswitch",
+   "text": "Traffic-ல மாட்டிக்கிட்டேன், கொஞ்சம் late ஆகும்.",
+   "target": {
+    "native": "மாட்டிக்கிட்டேன்",
+    "transliteration": "maattikkitten",
+    "meaning": "I got stuck"
+   }
+  },
+  {
+   "id": "cs-008",
+   "category": "codeswitch",
+   "text": "நீ dinner-க்கு என்ன சாப்பிட போற?",
+   "target": {
+    "native": "சாப்பிட",
+    "transliteration": "saappida",
+    "meaning": "to eat"
+   }
+  },
+  {
+   "id": "cs-009",
+   "category": "codeswitch",
+   "text": "Shopping போகும்போது பால் வாங்கிட்டு வா.",
+   "target": {
+    "native": "பால்",
+    "transliteration": "paal",
+    "meaning": "milk"
+   }
+  },
+  {
+   "id": "cs-010",
+   "category": "codeswitch",
+   "text": "அந்த movie ரொம்ப boring-ஆ இருந்துச்சு.",
+   "target": {
+    "native": "இருந்துச்சு",
+    "transliteration": "irundhuchu",
+    "meaning": "it was"
+   }
+  },
+  {
+   "id": "cs-011",
+   "category": "codeswitch",
+   "text": "நான் already சாப்பிட்டுட்டேன், thanks.",
+   "target": {
+    "native": "சாப்பிட்டுட்டேன்",
+    "transliteration": "saappittutten",
+    "meaning": "I've already eaten"
+   }
+  },
+  {
+   "id": "cs-012",
+   "category": "codeswitch",
+   "text": "உனக்கு எப்போ free time கிடைக்கும்?",
+   "target": {
+    "native": "கிடைக்கும்",
+    "transliteration": "kidaikkum",
+    "meaning": "will get, will be available"
+   }
+  },
+  {
+   "id": "cs-013",
+   "category": "codeswitch",
+   "text": "Salary வந்ததும் rent கட்டணும்.",
+   "target": {
+    "native": "கட்டணும்",
+    "transliteration": "kattanum",
+    "meaning": "have to pay"
+   }
+  },
+  {
+   "id": "cs-014",
+   "category": "codeswitch",
+   "text": "அவங்க wedding reception ரொம்ப grand-ஆ இருந்துச்சு.",
+   "target": {
+    "native": "இருந்துச்சு",
+    "transliteration": "irundhuchu",
+    "meaning": "it was"
+   }
+  },
+  {
+   "id": "cs-015",
+   "category": "codeswitch",
+   "text": "Bus stop-ல எனக்காக wait பண்ணு.",
+   "target": {
+    "native": "எனக்காக",
+    "transliteration": "enakkaaga",
+    "meaning": "for me"
+   }
+  },
+  {
+   "id": "cs-016",
+   "category": "codeswitch",
+   "text": "நம்ம family trip-க்கு எல்லாம் pack பண்ணியா?",
+   "target": {
+    "native": "எல்லாம்",
+    "transliteration": "ellaam",
+    "meaning": "everything"
+   }
+  },
+  {
+   "id": "cs-017",
+   "category": "codeswitch",
+   "text": "பாட்டி உன்னை ரொம்ப miss பண்றாங்க.",
+   "target": {
+    "native": "பாட்டி",
+    "transliteration": "paatti",
+    "meaning": "grandmother"
+   }
+  },
+  {
+   "id": "cs-018",
+   "category": "codeswitch",
+   "text": "சீக்கிரம் கிளம்பு, late ஆயிடும்.",
+   "target": {
+    "native": "கிளம்பு",
+    "transliteration": "kilambu",
+    "meaning": "get going, leave"
+   }
+  },
+  {
+   "id": "cs-019",
+   "category": "codeswitch",
+   "text": "எனக்கு பசிக்குது, சாப்பாடு ready-யா?",
+   "target": {
+    "native": "பசிக்குது",
+    "transliteration": "pasikkudhu",
+    "meaning": "I'm hungry"
+   }
+  },
+  {
+   "id": "cs-020",
+   "category": "codeswitch",
+   "text": "Cousin-ஓட கல்யாணத்துக்கு leave எடுக்கணும்.",
+   "target": {
+    "native": "எடுக்கணும்",
+    "transliteration": "edukkanum",
+    "meaning": "have to take"
+   }
+  }
+ ],
+ "changelog": [
+  "1.1 (2026-10-22): ta-029 target corrected from the split idiom 'vaai neelam' to the word actually adjacent in the sentence, 'neelam' (sentence reads vaai romba neelam)."
+ ]
+}

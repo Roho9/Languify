@@ -1,0 +1,523 @@
+{
+ "source_run": "Results/Raw/asr/asr-20261022T184830Z.json",
+ "metadata": {
+  "benchmark": "asr",
+  "buildConfiguration": "release",
+  "chip": "Apple M5 Pro",
+  "environment": "macOS on-device SpeechTranscriber; SYNTHETIC: macOS TTS voice Vani (single speaker); noise artificially mixed",
+  "gitCommit": "ddebcc0",
+  "gitDirty": true,
+  "machine": "Mac17,9",
+  "memoryGB": 48,
+  "notes": [
+   "locales: ta-IN,en-IN",
+   "mode: parallel",
+   "First clip includes model load (cold start)"
+  ],
+  "osVersion": "Version 27.0.1 (Build 26A434)",
+  "runID": "asr-20261022T184830Z",
+  "timestamp": "2026-10-22T18:48:30Z"
+ },
+ "source_label": "SYNTHETIC: macOS TTS voice Vani (single speaker); noise artificially mixed",
+ "mode": "parallel",
+ "overall": {
+  "label": "all",
+  "n_clips": 560,
+  "n_sentences": 56,
+  "cer_mean": 0.28820492243243945,
+  "cer_ci95": [
+   0.25581302571848463,
+   0.32137516067184857
+  ],
+  "wer_mean": 0.5743140589569161,
+  "wer_ci95": [
+   0.5108786848072563,
+   0.64484268707483
+  ],
+  "target_hit_rate": 0.6553571428571429,
+  "target_hit_ci95": [
+   0.61505592399637,
+   0.6935413841837998
+  ],
+  "exact_rate": 0.14285714285714285,
+  "latency_ms": {
+   "p50": 477.4818335,
+   "p90": 487.8433164,
+   "p95": 490.38093299999997,
+   "max": 568.403584
+  },
+  "ta_real_time_factor_p50": 0.21195930115721923,
+  "errors": 0
+ },
+ "conditions": [
+  {
+   "label": "clean/slow",
+   "n_clips": 56,
+   "n_sentences": 56,
+   "cer_mean": 0.09446005025939333,
+   "cer_ci95": [
+    0.06467452624991081,
+    0.12939712568647602
+   ],
+   "wer_mean": 0.330342970521542,
+   "wer_ci95": [
+    0.2465561224489796,
+    0.419203514739229
+   ],
+   "target_hit_rate": 0.8928571428571429,
+   "target_hit_ci95": [
+    0.7853131324833861,
+    0.9499613254188092
+   ],
+   "exact_rate": 0.26785714285714285,
+   "latency_ms": {
+    "p50": 478.447729,
+    "p90": 487.984062,
+    "p95": 489.9487815,
+    "max": 534.694792
+   },
+   "ta_real_time_factor_p50": 0.18770701023695577,
+   "errors": 0
+  },
+  {
+   "label": "clean/normal",
+   "n_clips": 56,
+   "n_sentences": 56,
+   "cer_mean": 0.10832763427076587,
+   "cer_ci95": [
+    0.07452589616681193,
+    0.14812426851463317
+   ],
+   "wer_mean": 0.35962301587301587,
+   "wer_ci95": [
+    0.270890022675737,
+    0.46403061224489794
+   ],
+   "target_hit_rate": 0.9107142857142857,
+   "target_hit_ci95": [
+    0.807437601433565,
+    0.9612584227369118
+   ],
+   "exact_rate": 0.23214285714285715,
+   "latency_ms": {
+    "p50": 477.9082915,
+    "p90": 488.11956250000003,
+    "p95": 488.81529125,
+    "max": 492.594333
+   },
+   "ta_real_time_factor_p50": 0.2106349402171152,
+   "errors": 0
+  },
+  {
+   "label": "clean/fast",
+   "n_clips": 56,
+   "n_sentences": 56,
+   "cer_mean": 0.1082873265589794,
+   "cer_ci95": [
+    0.07670288795176879,
+    0.1433148763205642
+   ],
+   "wer_mean": 0.3508361678004535,
+   "wer_ci95": [
+    0.2645549886621315,
+    0.44722222222222224
+   ],
+   "target_hit_rate": 0.8928571428571429,
+   "target_hit_ci95": [
+    0.7853131324833861,
+    0.9499613254188092
+   ],
+   "exact_rate": 0.23214285714285715,
+   "latency_ms": {
+    "p50": 478.503167,
+    "p90": 489.91252099999997,
+    "p95": 493.78882250000004,
+    "max": 526.277667
+   },
+   "ta_real_time_factor_p50": 0.27641117669456006,
+   "errors": 0
+  },
+  {
+   "label": "pink_noise/+20dB",
+   "n_clips": 56,
+   "n_sentences": 56,
+   "cer_mean": 0.12095026894351171,
+   "cer_ci95": [
+    0.08952092041787865,
+    0.15649882275523017
+   ],
+   "wer_mean": 0.3678004535147393,
+   "wer_ci95": [
+    0.2813775510204081,
+    0.47259070294784583
+   ],
+   "target_hit_rate": 0.875,
+   "target_hit_ci95": [
+    0.763742793023606,
+    0.9381100986103075
+   ],
+   "exact_rate": 0.21428571428571427,
+   "latency_ms": {
+    "p50": 477.8155835,
+    "p90": 487.338771,
+    "p95": 496.68078149999997,
+    "max": 502.783042
+   },
+   "ta_real_time_factor_p50": 0.2104057128555913,
+   "errors": 0
+  },
+  {
+   "label": "pink_noise/+10dB",
+   "n_clips": 56,
+   "n_sentences": 56,
+   "cer_mean": 0.17086095406651305,
+   "cer_ci95": [
+    0.12377114775762525,
+    0.22221063590510282
+   ],
+   "wer_mean": 0.4763463718820861,
+   "wer_ci95": [
+    0.36397392290249436,
+    0.5922335600907029
+   ],
+   "target_hit_rate": 0.7857142857142857,
+   "target_hit_ci95": [
+    0.6618028634399505,
+    0.8729421968525549
+   ],
+   "exact_rate": 0.19642857142857142,
+   "latency_ms": {
+    "p50": 476.3907915,
+    "p90": 487.6548335,
+    "p95": 490.6409375,
+    "max": 528.625792
+   },
+   "ta_real_time_factor_p50": 0.21201394003192875,
+   "errors": 0
+  },
+  {
+   "label": "pink_noise/+0dB",
+   "n_clips": 56,
+   "n_sentences": 56,
+   "cer_mean": 0.3127701284311602,
+   "cer_ci95": [
+    0.26263601353049776,
+    0.3600460339235369
+   ],
+   "wer_mean": 0.7476899092970521,
+   "wer_ci95": [
+    0.6556405895691609,
+    0.8375850340136054
+   ],
+   "target_hit_rate": 0.48214285714285715,
+   "target_hit_ci95": [
+    0.35668005624426746,
+    0.609898377487451
+   ],
+   "exact_rate": 0.017857142857142856,
+   "latency_ms": {
+    "p50": 478.963042,
+    "p90": 488.8605415,
+    "p95": 490.577406,
+    "max": 568.403584
+   },
+   "ta_real_time_factor_p50": 0.211174547225495,
+   "errors": 0
+  },
+  {
+   "label": "pink_noise/-5dB",
+   "n_clips": 56,
+   "n_sentences": 56,
+   "cer_mean": 0.7149489622729402,
+   "cer_ci95": [
+    0.6499774984398597,
+    0.7815845587663828
+   ],
+   "wer_mean": 1.005924036281179,
+   "wer_ci95": [
+    0.9523951247165533,
+    1.062939342403628
+   ],
+   "target_hit_rate": 0.08928571428571429,
+   "target_hit_ci95": [
+    0.03874157726308829,
+    0.19256239856643498
+   ],
+   "exact_rate": 0.0,
+   "latency_ms": {
+    "p50": 476.7108125,
+    "p90": 485.8852705,
+    "p95": 488.2668025,
+    "max": 490.519083
+   },
+   "ta_real_time_factor_p50": 0.20989906287333893,
+   "errors": 0
+  },
+  {
+   "label": "english_babble/+10dB",
+   "n_clips": 56,
+   "n_sentences": 56,
+   "cer_mean": 0.1673059738417917,
+   "cer_ci95": [
+    0.11999582269587702,
+    0.21844089960447932
+   ],
+   "wer_mean": 0.4778061224489796,
+   "wer_ci95": [
+    0.37227891156462584,
+    0.5942602040816326
+   ],
+   "target_hit_rate": 0.8214285714285714,
+   "target_hit_ci95": [
+    0.7015856902425105,
+    0.9000025025865582
+   ],
+   "exact_rate": 0.17857142857142858,
+   "latency_ms": {
+    "p50": 477.54847900000004,
+    "p90": 487.48556199999996,
+    "p95": 490.9463435,
+    "max": 504.763833
+   },
+   "ta_real_time_factor_p50": 0.21069470658438932,
+   "errors": 0
+  },
+  {
+   "label": "english_babble/+0dB",
+   "n_clips": 56,
+   "n_sentences": 56,
+   "cer_mean": 0.8351625746523259,
+   "cer_ci95": [
+    0.760914835142268,
+    0.8989879685060285
+   ],
+   "wer_mean": 1.0331632653061225,
+   "wer_ci95": [
+    0.9846513605442178,
+    1.0868622448979592
+   ],
+   "target_hit_rate": 0.07142857142857142,
+   "target_hit_ci95": [
+    0.028125581246379636,
+    0.16975682831486205
+   ],
+   "exact_rate": 0.0,
+   "latency_ms": {
+    "p50": 474.82237499999997,
+    "p90": 483.9538125,
+    "p95": 485.68162474999997,
+    "max": 490.378583
+   },
+   "ta_real_time_factor_p50": 0.2082844393335765,
+   "errors": 0
+  },
+  {
+   "label": "overlapping_speaker",
+   "n_clips": 56,
+   "n_sentences": 56,
+   "cer_mean": 0.24897535102701301,
+   "cer_ci95": [
+    0.20557445574469693,
+    0.3002584433872052
+   ],
+   "wer_mean": 0.593608276643991,
+   "wer_ci95": [
+    0.5057681405895692,
+    0.686592970521542
+   ],
+   "target_hit_rate": 0.7321428571428571,
+   "target_hit_ci95": [
+    0.6040519481066103,
+    0.8304284133810503
+   ],
+   "exact_rate": 0.08928571428571429,
+   "latency_ms": {
+    "p50": 477.0610835,
+    "p90": 485.0964795,
+    "p95": 486.8820515,
+    "max": 495.894791
+   },
+   "ta_real_time_factor_p50": 0.20925945413912828,
+   "errors": 0
+  }
+ ],
+ "categories_clean_normal": [
+  {
+   "label": "clean/normal/everyday",
+   "n_clips": 25,
+   "n_sentences": 25,
+   "cer_mean": 0.10429553381563073,
+   "cer_ci95": [
+    0.05642813569872393,
+    0.16533484692122463
+   ],
+   "wer_mean": 0.3534285714285714,
+   "wer_ci95": [
+    0.21676190476190477,
+    0.5313333333333333
+   ],
+   "target_hit_rate": 0.92,
+   "target_hit_ci95": [
+    0.7503348787704218,
+    0.977780066308908
+   ],
+   "exact_rate": 0.28,
+   "latency_ms": {
+    "p50": 478.305333,
+    "p90": 488.0951838,
+    "p95": 489.0114162,
+    "max": 492.594333
+   },
+   "ta_real_time_factor_p50": 0.2526358092305633,
+   "errors": 0
+  },
+  {
+   "label": "clean/normal/uncommon",
+   "n_clips": 8,
+   "n_sentences": 8,
+   "cer_mean": 0.04046794573574976,
+   "cer_ci95": [
+    0.013569604086845466,
+    0.06953771317761022
+   ],
+   "wer_mean": 0.16527777777777777,
+   "wer_ci95": [
+    0.07500000000000001,
+    0.26180555555555557
+   ],
+   "target_hit_rate": 0.875,
+   "target_hit_ci95": [
+    0.5291051942301386,
+    0.9775830911367038
+   ],
+   "exact_rate": 0.375,
+   "latency_ms": {
+    "p50": 486.203042,
+    "p90": 488.3723955,
+    "p95": 488.53580175,
+    "max": 488.699208
+   },
+   "ta_real_time_factor_p50": 0.19758270963664085,
+   "errors": 0
+  },
+  {
+   "label": "clean/normal/idiom",
+   "n_clips": 3,
+   "n_sentences": 3,
+   "cer_mean": 0.05238095238095238,
+   "cer_ci95": [
+    0.0,
+    0.10000000000000002
+   ],
+   "wer_mean": 0.25,
+   "wer_ci95": [
+    0.0,
+    0.5
+   ],
+   "target_hit_rate": 1.0,
+   "target_hit_ci95": [
+    0.43849391955098227,
+    1.0
+   ],
+   "exact_rate": 0.3333333333333333,
+   "latency_ms": {
+    "p50": 479.5335,
+    "p90": 482.7152,
+    "p95": 483.1129125,
+    "max": 483.510625
+   },
+   "ta_real_time_factor_p50": 0.2404453510402833,
+   "errors": 0
+  },
+  {
+   "label": "clean/normal/codeswitch",
+   "n_clips": 20,
+   "n_sentences": 20,
+   "cer_mean": 0.14890363753716326,
+   "cer_ci95": [
+    0.09209772921026119,
+    0.21442317624218585
+   ],
+   "wer_mean": 0.46154761904761904,
+   "wer_ci95": [
+    0.3352380952380952,
+    0.6102380952380952
+   ],
+   "target_hit_rate": 0.9,
+   "target_hit_ci95": [
+    0.6989617935882066,
+    0.9721341060158468
+   ],
+   "exact_rate": 0.1,
+   "latency_ms": {
+    "p50": 475.35625000000005,
+    "p90": 481.5204494,
+    "p95": 486.99292915,
+    "max": 491.677458
+   },
+   "ta_real_time_factor_p50": 0.19956663454808568,
+   "errors": 0
+  }
+ ],
+ "english_in_codeswitch": {
+  "n_english_words": 39,
+  "recall_ta_model": 0.6923076923076923,
+  "recall_ta_ci95": [
+   0.535784513844354,
+   0.8143424655401694
+  ],
+  "recall_en_model": 0.6410256410256411,
+  "recall_union": 0.7692307692307693
+ },
+ "confidence_calibration": {
+  "n": 507,
+  "auroc_min_conf_detects_target_miss": 0.8021798365122615,
+  "mean_conf_when_hit": 0.641727274988106,
+  "mean_conf_when_miss": 0.35351529761904765,
+  "miss_rate_when_min_conf_below_0_5": 0.3739612188365651,
+  "miss_rate_when_min_conf_at_least_0_5": 0.03424657534246575
+ },
+ "worst_clean_examples": [
+  {
+   "clip": "ta-006/normal",
+   "cer": 0.6666666666666666,
+   "hyp": "apni Hisaab ki tiyar"
+  },
+  {
+   "clip": "cs-017/normal",
+   "cer": 0.5217391304347826,
+   "hyp": "party un nahin lo Unka Miss pandraanga"
+  },
+  {
+   "clip": "cs-003/normal",
+   "cer": 0.4444444444444444,
+   "hyp": "thinpoon aiyuchchaai illaiya?"
+  },
+  {
+   "clip": "ta-007/normal",
+   "cer": 0.3333333333333333,
+   "hyp": "indha thorum vilaiyidumpu athigam"
+  },
+  {
+   "clip": "cs-002/normal",
+   "cer": 0.2916666666666667,
+   "hyp": "veekkin varaiyil naama beach kku polama"
+  },
+  {
+   "clip": "cs-004/normal",
+   "cer": 0.2647058823529412,
+   "hyp": "indha Pro Ai indha line romba thai aagi irukku"
+  },
+  {
+   "clip": "ta-005/normal",
+   "cer": 0.25,
+   "hyp": "mazhai vara thaanea irukku kudai eduththuttu poagum"
+  },
+  {
+   "clip": "ta-012/normal",
+   "cer": 0.2222222222222222,
+   "hyp": "unga appaaga ippo varuvaaru"
+  }
+ ],
+ "cold_start_first_clip_ms": 534.694792
+}

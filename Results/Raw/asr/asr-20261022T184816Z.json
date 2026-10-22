@@ -1,0 +1,435 @@
+{
+  "dataset" : "asr_tamil_synthetic_v1",
+  "locales" : [
+    "ta-IN",
+    "en-IN"
+  ],
+  "metadata" : {
+    "benchmark" : "asr",
+    "buildConfiguration" : "release",
+    "chip" : "Apple M5 Pro",
+    "environment" : "macOS on-device SpeechTranscriber; SYNTHETIC: macOS TTS voice Vani (single speaker); noise artificially mixed",
+    "gitCommit" : "ddebcc0",
+    "gitDirty" : true,
+    "machine" : "Mac17,9",
+    "memoryGB" : 48,
+    "notes" : [
+      "locales: ta-IN,en-IN",
+      "mode: parallel",
+      "First clip includes model load (cold start)"
+    ],
+    "osVersion" : "Version 27.0.1 (Build 26A434)",
+    "runID" : "asr-20261022T184816Z",
+    "timestamp" : "2026-10-22T18:48:16Z"
+  },
+  "mode" : "parallel",
+  "results" : [
+    {
+      "audioSeconds" : 2.6545,
+      "clipID" : "ta-001\/slow",
+      "combinedLatencyMs" : 649.720084,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "Innaikku, Saap",
+            " Loomba,",
+            " Lunba,",
+            " Irukku."
+          ],
+          "latencyMs" : 306.747209,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.6103333333333333,
+          "minConfidence" : 0.231,
+          "text" : "Innaikku Saap Paadu, Lumba, Nalla, Irukku?"
+        },
+        {
+          "alternatives" : [
+            " nalla",
+            " irukku."
+          ],
+          "latencyMs" : 649.559375,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.9309999999999998,
+          "minConfidence" : 0.717,
+          "text" : "innaikku saappaadu romba nallaa irukku"
+        }
+      ],
+      "rate" : "slow",
+      "sentenceID" : "ta-001"
+    },
+    {
+      "audioSeconds" : 2.32025,
+      "clipID" : "ta-001\/normal",
+      "combinedLatencyMs" : 467.609917,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "Innaikku saapadu,",
+            "Innaikku, Saap Paadu,",
+            " Dhumba,",
+            " Irukku.",
+            " Irukku"
+          ],
+          "latencyMs" : 93.39675,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.633,
+          "minConfidence" : 0.154,
+          "text" : "Innaikku Saapadu, Dumba, Nalla, Irukku?"
+        },
+        {
+          "alternatives" : [
+            "ennaikku",
+            " nalla",
+            " irukku."
+          ],
+          "latencyMs" : 467.532583,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.9103999999999999,
+          "minConfidence" : 0.688,
+          "text" : "innaikku saappaadu romba nallaa irukku"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-001"
+    },
+    {
+      "audioSeconds" : 1.77775,
+      "clipID" : "ta-001\/fast",
+      "combinedLatencyMs" : 468.937125,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " sapadi,",
+            " dunba, nallah, Irukku.",
+            " dunba Nallah, Irukku."
+          ],
+          "latencyMs" : 88.703792,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.30679999999999996,
+          "minConfidence" : 0.03,
+          "text" : "Innaiku saapadi, dunba, nallah, irukku."
+        },
+        {
+          "alternatives" : [
+            "ennaikku",
+            " nalla",
+            " irukku."
+          ],
+          "latencyMs" : 468.864416,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.9156000000000001,
+          "minConfidence" : 0.723,
+          "text" : "innaikku saappaadu romba nallaa irukku"
+        }
+      ],
+      "rate" : "fast",
+      "sentenceID" : "ta-001"
+    },
+    {
+      "audioSeconds" : 2.32025,
+      "clipID" : "ta-001\/pink+20",
+      "combinedLatencyMs" : 466.562708,
+      "condition" : "pink_noise",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Safaadu,",
+            " Dhoondba, Nalla, Irukku.",
+            " Dhoondba, Nalla Irukku?"
+          ],
+          "latencyMs" : 93.012208,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.5429999999999999,
+          "minConfidence" : 0.156,
+          "text" : "Innaikku Safari, Dhoondba, Nalla, Irukku?"
+        },
+        {
+          "alternatives" : [
+            "ennaikku",
+            " thonbu nallaa",
+            " thonpa nallaa"
+          ],
+          "latencyMs" : 466.490334,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7868,
+          "minConfidence" : 0.454,
+          "text" : "innaikku saappaadu thonba nallaa irukku"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-001",
+      "snrDb" : 20
+    },
+    {
+      "audioSeconds" : 2.32025,
+      "clipID" : "ta-001\/pink+10",
+      "combinedLatencyMs" : 467.41475,
+      "condition" : "pink_noise",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " Hiruthu.",
+            " Hiru."
+          ],
+          "latencyMs" : 94.812375,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.1738,
+          "minConfidence" : 0.062,
+          "text" : "Inniku, Safaadi, Unda, Nalla, Hirutu."
+        },
+        {
+          "alternatives" : [
+            "ennaikku",
+            " vantha",
+            " irukku.",
+            " irukkum"
+          ],
+          "latencyMs" : 467.335666,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.7836,
+          "minConfidence" : 0.454,
+          "text" : "innaikku saappaadu romba nallaa irukku"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-001",
+      "snrDb" : 10
+    },
+    {
+      "audioSeconds" : 2.32025,
+      "clipID" : "ta-001\/pink+0",
+      "combinedLatencyMs" : 462.698541,
+      "condition" : "pink_noise",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "You",
+            "need"
+          ],
+          "latencyMs" : 56.811208,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.509,
+          "minConfidence" : 0.509,
+          "text" : "."
+        },
+        {
+          "alternatives" : [
+            "ennikku",
+            " undu",
+            " vanthu",
+            " irukkum."
+          ],
+          "latencyMs" : 462.62275,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.5446,
+          "minConfidence" : 0.301,
+          "text" : "innikku saappaadu unda nallaa irukkum"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-001",
+      "snrDb" : 0
+    },
+    {
+      "audioSeconds" : 2.32025,
+      "clipID" : "ta-001\/pink-5",
+      "combinedLatencyMs" : 467.311333,
+      "condition" : "pink_noise",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "You",
+            " window.",
+            " window, the money."
+          ],
+          "latencyMs" : 83.283792,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.1383,
+          "minConfidence" : 0.005,
+          "text" : "We need to stop by the window, the money, please."
+        },
+        {
+          "alternatives" : [
+            " dhundhuma nahin ki",
+            " bolo na nahi ki."
+          ],
+          "latencyMs" : 467.241666,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.05166666666666667,
+          "minConfidence" : 0.031,
+          "text" : "tumi ki kaakay dhundhuma nahin ki."
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-001",
+      "snrDb" : -5
+    },
+    {
+      "audioSeconds" : 2.32025,
+      "clipID" : "ta-001\/babble+10",
+      "combinedLatencyMs" : 470.709875,
+      "condition" : "english_babble",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            "Inriku Safa",
+            " Nallah Irukku."
+          ],
+          "latencyMs" : 91.125375,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.33285714285714285,
+          "minConfidence" : 0.06,
+          "text" : "Inriku, Sakad is owned by Nallah, Irukku."
+        },
+        {
+          "alternatives" : [
+            "innaikku",
+            "ennikku",
+            " irukku."
+          ],
+          "latencyMs" : 470.653875,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6986000000000001,
+          "minConfidence" : 0.394,
+          "text" : "innikku saappaadu romba nallaa irukku"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-001",
+      "snrDb" : 10
+    },
+    {
+      "audioSeconds" : 2.32025,
+      "clipID" : "ta-001\/babble+0",
+      "combinedLatencyMs" : 464.436792,
+      "condition" : "english_babble",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+
+          ],
+          "latencyMs" : 53.262708,
+          "locale" : "en-IN",
+          "text" : ""
+        },
+        {
+          "alternatives" : [
+
+          ],
+          "latencyMs" : 464.381917,
+          "locale" : "ta-IN",
+          "text" : ""
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-001",
+      "snrDb" : 0
+    },
+    {
+      "audioSeconds" : 2.32025,
+      "clipID" : "ta-001\/overlap",
+      "combinedLatencyMs" : 472.591416,
+      "condition" : "overlapping_speaker",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            ", , , ,",
+            ", , ,"
+          ],
+          "latencyMs" : 63.704791,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.039,
+          "minConfidence" : 0.007,
+          "text" : ", , , , ,"
+        },
+        {
+          "alternatives" : [
+            "kunjukku",
+            "thunaikku",
+            " itu romba",
+            " irukku."
+          ],
+          "latencyMs" : 472.537458,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.6734,
+          "minConfidence" : 0.238,
+          "text" : "thunikku saappaadu romba nallaa irukku"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-001",
+      "snrDb" : 6
+    },
+    {
+      "audioSeconds" : 3.106625,
+      "clipID" : "ta-002\/slow",
+      "combinedLatencyMs" : 467.910833,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " seekiram ellundirukanum.",
+            " seekiram, ellundirukanum."
+          ],
+          "latencyMs" : 103.306542,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.5155,
+          "minConfidence" : 0.397,
+          "text" : "Naalaikku kalaiyila seekiram ellundirukkanum."
+        },
+        {
+          "alternatives" : [
+            " seekkiram",
+            " ezhunththirukkanum",
+            " ezhunthirukkanum."
+          ],
+          "latencyMs" : 467.836375,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.927,
+          "minConfidence" : 0.87,
+          "text" : "naalaikku kaalaiyila seekiram ezhunthirukkanum"
+        }
+      ],
+      "rate" : "slow",
+      "sentenceID" : "ta-002"
+    },
+    {
+      "audioSeconds" : 2.7259375,
+      "clipID" : "ta-002\/normal",
+      "combinedLatencyMs" : 472.880958,
+      "condition" : "clean",
+      "hypotheses" : [
+        {
+          "alternatives" : [
+            " kalaiyala",
+            " seekiram, ellundirukkanum.",
+            " seekirum, ellundirukkannum."
+          ],
+          "latencyMs" : 104.867,
+          "locale" : "en-IN",
+          "meanConfidence" : 0.604,
+          "minConfidence" : 0.393,
+          "text" : "Naalaikku kalaiyila seekirum, ellundirukkanum."
+        },
+        {
+          "alternatives" : [
+            " seekkiram",
+            " ezhunththirukkanum",
+            " ezhunthirukkanum."
+          ],
+          "latencyMs" : 472.8045,
+          "locale" : "ta-IN",
+          "meanConfidence" : 0.87025,
+          "minConfidence" : 0.79,
+          "text" : "naalaikku kaalaiyila seekiram ezhunthirukkanum"
+        }
+      ],
+      "rate" : "normal",
+      "sentenceID" : "ta-002"
+    }
+  ],
+  "sourceLabel" : "SYNTHETIC: macOS TTS voice Vani (single speaker); noise artificially mixed"
+}
